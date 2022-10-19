@@ -8,7 +8,7 @@ The files in this repo are intended to serve as a key to solving problems that m
 ## Units Available
 - [X] Unit 1: Primitive Types
 - [X] Unit 2: Using Objects
-- [ ] Unit 3: Boolean Expressions and If Statements
+- [X] Unit 3: Boolean Expressions and If Statements
 - [ ] Unit 4: Iteration
 - [ ] Unit 5: Writing Classes
 - [ ] Unit 6: Array
