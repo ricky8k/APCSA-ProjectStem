@@ -4,3 +4,4 @@
 - 3.1 (Lesson 1) - Simple Ifs
 - 3.2 (Lesson 2) - Relational Operators
 - 3.3 (Lesson 3) - Else
+- 3.4 (Lesson 4) - Logical Operators and Truth Tables
