@@ -8,6 +8,8 @@ public class U3_L5_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
+    
+    // User Input
     System.out.println("Enter two numbers:");
     int a = scan.nextInt();
     int b = scan.nextInt();
