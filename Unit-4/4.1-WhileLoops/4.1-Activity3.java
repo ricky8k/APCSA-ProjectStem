@@ -21,7 +21,7 @@ public class U4_L1_Activity_Three
       if (word.indexOf(word) % 2 == 0)
       {
         System.out.print(word.substring(i, i + n)); i+=3;
-        if (i + n > word.length())
+        while (i + n > word.length())
           n--;
       }
     }
