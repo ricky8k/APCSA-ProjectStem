@@ -40,7 +40,7 @@ public class U4_L2_Activity_Three
         if (longitude < farWest)
           farWest = longitude;
       }
-      else /* Output error if criteria not met*/
+      else /* Output error if criteria not met */
       {
         System.out.println("Incorrect Latitude or Longitude");
       }
