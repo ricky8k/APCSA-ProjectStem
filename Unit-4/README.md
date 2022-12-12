@@ -7,3 +7,4 @@
 - 4.3 (Lesson 3) - The For Loop
 - 4.4 (Lesson 4) - Algorithms for Strings
 - 4.5 (Lesson 5) - Nested Loops
+- Assignment 4: String Shortener
