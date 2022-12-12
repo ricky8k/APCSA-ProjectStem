@@ -12,7 +12,7 @@ This repository was made for the 2022 AP CS A course. *These solutions may grow 
 - [X] Unit 2: Using Objects
 - [X] Unit 3: Boolean Expressions and If Statements
 - [X] Unit 4: Iteration
-- [ ] Unit 5: Writing Classes
+- [X] Unit 5: Writing Classes
 - [ ] Unit 6: Array
 
 ## License
