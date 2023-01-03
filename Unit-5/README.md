@@ -7,3 +7,4 @@
 - 5.4 (Lesson 4) - Return Methods
 - 5.5 (Lesson 5) - Classes - The Basics
 - 5.6 (Lesson 6) - Constructors
+- 5.7 (Lesson 7) - Documenting a Class
