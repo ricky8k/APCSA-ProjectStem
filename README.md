@@ -13,7 +13,7 @@ This repository was made for the 2023 AP CS A course. *These solutions may grow 
 - [X] Unit 3: Boolean Expressions and If Statements
 - [X] Unit 4: Iteration
 - [X] Unit 5: Writing Classes
-- [ ] Unit 6: Array
+- [X] Unit 6: Array
 
 ## License
 This repository is licensed under [GPL 3.0](https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/LICENSE).
