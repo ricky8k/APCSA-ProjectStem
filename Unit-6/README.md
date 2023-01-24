@@ -3,3 +3,4 @@
 ## Contents
 - 6.1 (Lesson 1) - One-Dimensional Arrays
 - 6.2 (Lesson 2) - Traversing an Array
+- 6.3 (Lesson 3) - Arrays of Strings
