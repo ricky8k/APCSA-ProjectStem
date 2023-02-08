@@ -9,3 +9,4 @@
 - 5.6 (Lesson 6) - Constructors
 - 5.7 (Lesson 7) - Documenting a Class
 - 5.8 (Lesson 8) - Static vs. Instance
+- Assignment 5: Player
