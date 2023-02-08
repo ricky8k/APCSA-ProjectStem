@@ -21,5 +21,3 @@ Answers to various units of the 2023 AP Computer Science A course on Project Ste
 ## License
 This repository is licensed under [GPL 3.0](https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/LICENSE).
 
-## Credits
-- GitHub: [ricky8k](https://github.com/ricky8k)
