@@ -1,11 +1,13 @@
-<p align="center"><img src="https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/icon.png" width="100"></p>
-<h1 align="center">AP Computer Science A - Project Stem</h1> <p align="center">
+<p><img src="https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/icon.png" width="100"></p>
+
+# APCSA-ProjectStem
+
 Answers to various units of the 2023 AP Computer Science A course on Project Stem.
 
-## Disclaimer
-The files in this repo are intended to serve as a key to solving problems that may be difficult to understand on Project STEM.  **You should work on these problems on your own before comparing your answers to the solutions here.**
-
-This repository was made for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
+> **Note**  
+> This repository serves as a key to solve difficult problems on Project Stem, intended for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
+>
+> *Try working on the problems on your own first!*
   
 ## Units Available
 - [X] Unit 1: Primitive Types
@@ -14,6 +16,7 @@ This repository was made for the 2023 AP CS A course. *These solutions may grow 
 - [X] Unit 4: Iteration
 - [X] Unit 5: Writing Classes
 - [X] Unit 6: Array
+- [X] Unit 7: ArrayList
 
 ## License
 This repository is licensed under [GPL 3.0](https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/LICENSE).
