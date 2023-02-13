@@ -24,8 +24,7 @@ public class U7_L1_Activity_One
     }
     
     // Final Output
-    System.out.println("\n" + words.size());
-    System.out.println(words);
+    System.out.println("\n" + words.size() + "\n" + words);
     /// Modify words
     if (words.size() > 2)
     {
