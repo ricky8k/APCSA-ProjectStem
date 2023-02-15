@@ -6,3 +6,4 @@
 - 6.3 (Lesson 3) - Arrays of Strings
 - 6.4 (Lesson 4) - Algorithms on Arrays
 - 6.5 (Lesson 5) - The Enhanced For Loop
+- Assignment 6: Array Statistics
