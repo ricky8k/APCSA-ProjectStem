@@ -3,7 +3,6 @@ import java.util.ArrayList;
 
 public class U7_L1_Activity_One
 {
-
   public static void main(String[] args)
   {
     // Initialize Scanner
@@ -33,5 +32,4 @@ public class U7_L1_Activity_One
     }
     System.out.println(words);
   }
-
 }
