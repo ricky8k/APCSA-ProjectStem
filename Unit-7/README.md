@@ -6,3 +6,4 @@
 - 7.3 (Lesson 3) - Array Algorithms with ArrayLists
 - 7.4 (Lesson 4) - Linear Search
 - 7.5 (Lesson 5) - Selection Sort
+- 7.6 (Lesson 6) - Insertion Sort
