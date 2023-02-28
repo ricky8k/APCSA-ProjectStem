@@ -17,6 +17,7 @@ Answers to various units of the 2023 AP Computer Science A course on Project Ste
 - [X] Unit 5: Writing Classes
 - [X] Unit 6: Array
 - [X] Unit 7: ArrayList
+- [X] Unit 8: 2D Array
 
 ## License
 This repository is licensed under [GPL 3.0](https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/LICENSE).
