@@ -12,15 +12,15 @@ public class U4_L1_Activity_Three
     // User Input
     System.out.println("Input a word:");
     String word = scan.nextLine();
-    // Create Indexes
-    int i = 0, n = 2;
+    // Create Index
+    int n = 2;
     
     // Final Output
-    while (i <= word.length())
+    for (int i = 0; i <= word.length();)
     {
       if (word.indexOf(word) % 2 == 0)
       {
-        System.out.print(word.substring(i, i + n)); i+=3;
+        System.out.print(word.substring(i, i + n)); i += 3;
         while (i + n > word.length())
           n--;
       }

@@ -15,9 +15,9 @@ public class U4_L1_Activity_One
     while (x != 5)
     {
       x = scan.nextInt();
-      sum = sum + x;
+      sum += x;
     }
-    sum-=5; /* Adjust for stop error */
+    sum -= 5; /* Adjust for stop error */
     
     // Final Output
     System.out.println("Sum is " + sum);
