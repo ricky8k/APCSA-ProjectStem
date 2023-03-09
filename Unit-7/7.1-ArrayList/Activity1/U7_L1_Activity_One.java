@@ -8,18 +8,16 @@ public class U7_L1_Activity_One
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
     
-    // Create Variables
+    // Create Variable
     ArrayList<String> words = new ArrayList<String>();
-    String input = "";
     
     // User Input
     System.out.println("Please enter words, enter STOP to stop the loop.");
+    String input = scan.nextLine();
     while (!(input.equals("STOP")))
     {
+      words.add(input);
       input = scan.nextLine();
-      // Check input
-      if (!(input.equals("STOP")))
-        words.add(input);
     }
     
     // Final Output
