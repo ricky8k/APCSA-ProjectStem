@@ -22,6 +22,7 @@ A user-friendly website front-end is available on [roboco.is-cute.moe](https://r
 - [X] Unit 7: ArrayList
 - [X] Unit 8: 2D Array
 - [X] Unit 9: Inheritance
+- [X] Unit 10: Recursion
 
 ## 📜 License
 This repository is licensed under [GPL 3.0](https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/LICENSE).
