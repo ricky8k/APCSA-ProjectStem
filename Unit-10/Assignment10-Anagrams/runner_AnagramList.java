@@ -1,3 +1,6 @@
+// Provided code from Project STEM.
+// No modifications were made to this file.
+
 import java.util.ArrayList;
 import java.util.Scanner;
 public class runner_AnagramList
