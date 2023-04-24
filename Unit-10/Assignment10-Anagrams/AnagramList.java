@@ -5,7 +5,7 @@ public class AnagramList
   // Initialize Variable
   private final ArrayList<String> anagrams;
 
-  // Create New List and Sort
+  // Create new ArrayList anagrams and sort
   public AnagramList(String word)
   {
     anagrams = new ArrayList<String>();
@@ -48,7 +48,7 @@ public class AnagramList
     }
   }
 
-  // Searches anagrrams for given term
+  // Searches anagrams for given term
   public int searchAnagrams(String target)
   {
     for (int i = 0; i < anagrams.size(); i++)
