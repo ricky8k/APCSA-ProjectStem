@@ -1,0 +1,12 @@
+input: ./docs
+output: .retype
+url: ricky8k.github.io
+
+branding:
+  title: Project STEM
+
+footer:
+  links:
+    - text: Source
+      link: https://github.com/ricky8k/APCSA-ProjectStem
+      icon: mark-github
