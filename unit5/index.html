@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.741886757450">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.0.3">
+
+    <!-- Primary Meta Tags -->
+    <title>Unit 5: Writing Classes</title>
+    <meta name="title" content="Unit 5: Writing Classes">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ricky8k.github.io/unit5/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricky8k.github.io/unit5/">
+    <meta property="og:title" content="Unit 5: Writing Classes">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ricky8k.github.io/unit5/">
+    <meta property="twitter:title" content="Unit 5: Writing Classes">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=3.0.3.741886757450" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=3.0.3.741886757450" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project STEM</span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="unit-5-writing-classes" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-5-writing-classes">#</doc-anchor-trigger>
+        <span>Unit 5: Writing Classes</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="lesson-1-void-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-1-void-methods">#</doc-anchor-trigger>
+        <span>Lesson 1: Void Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l1-activity-one-java">
+<template #title>U5_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U5_L1_Activity_One
+{
+  public static void myMethod()
+  {
+    // Final Output
+    System.out.println(&quot;I'm a void method!&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-2-parameters">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-parameters">#</doc-anchor-trigger>
+        <span>Lesson 2: Parameters</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-one-java">
+<template #title>U5_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_One
+{
+  public static void timeOfDay(int x)
+  {
+    // Final Output
+    if (x == 0) // 00:00 (Midnight)
+      System.out.println(&quot;midnight&quot;);
+    else if (x == 12) // 12:00 (Noon)
+      System.out.println(&quot;noon&quot;);
+    else if (x == 18) // 18:00 (Dusk)
+      System.out.println(&quot;dusk&quot;);
+    else if (x &gt; 0 &amp;&amp; x &lt; 12) // 00:01 - 11:59 (Morning)
+      System.out.println(&quot;morning&quot;);
+    else if (x &gt; 12 &amp;&amp; x &lt; 18) // 12:01 - 17:59 (Afternoon)
+      System.out.println(&quot;afternoon&quot;);
+    else if (x &gt; 18 &amp;&amp; x &lt; 24) // 18:01 - 23:59 (Evening)
+      System.out.println(&quot;evening&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-two-java">
+<template #title>U5_L2_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Two
+{
+  public static void reverser(String str)
+  {
+    // Initialize Variable
+    String revStr = &quot;&quot;;
+    
+    // Reverse str
+    for (int i = str.length(); i &gt; 0; i--)
+    {
+      revStr = revStr + str.substring(i - 1, i);
+    }
+    
+    // Final Output
+    System.out.println(revStr);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-three-java">
+<template #title>U5_L2_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Three
+{
+  public static void printDouble(double num, int n)
+  {
+    // Final Output
+    for (int i = 0; i &lt; n; i++)
+    {
+      System.out.println(num);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l2-activity-four-java">
+<template #title>U5_L2_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U5_L2_Activity_Four
+{
+  public static void coinConverter(int n)
+  {
+    // Coin Conversion
+    int dollars = n / 100;
+    int quarters = (n - (dollars * 100)) / 25;
+    int dimes = (n - (dollars * 100) - (quarters * 25)) / 10;
+    int nickels = (n - (dollars * 100) - (quarters * 25) - (dimes * 10)) / 5;
+    int pennies = (n - (dollars * 100) - (quarters * 25) - (dimes * 10) - (nickels * 5));
+    
+    // Final Output
+    System.out.println(&quot;Dollar Bills: &quot; + dollars);
+    System.out.println(&quot;Quarters: &quot; + quarters);
+    System.out.println(&quot;Dimes: &quot; + dimes);
+    System.out.println(&quot;Nickels: &quot; + nickels);
+    System.out.println(&quot;Pennies: &quot; + pennies);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-3-parameters---primitive-vs-class">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-parameters---primitive-vs-class">#</doc-anchor-trigger>
+        <span>Lesson 3: Parameters - Primitive vs. Class</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-one-java">
+<template #title>U5_L3_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L3_Activity_One
+{
+  public static void makeEqTriangle(RegularPolygon x)
+  {
+    x.setNumSides(3);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-two-java">
+<template #title>U5_L3_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+import testing.Math;
+
+public class U5_L3_Activity_Two
+{
+  public static void randomize(Rectangle x)
+  {
+    // Randomize Length
+    int length = (int) ((Math.random() * 11) + 10);
+    if (length % 2 != 0)
+      length++;
+    
+    // Randomize Width
+    int width = (int) ((Math.random() * 7) + 7);
+    if (width % 2 == 0)
+      width++;
+    
+    // Set New Length &amp; Width for Rectangle x
+    x.setLength(length);
+    x.setWidth(width);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l3-activity-three-java">
+<template #title>U5_L3_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L3_Activity_Three
+{
+  public static void updateNumSides(RegularPolygon x, int y)
+  {
+    x.setNumSides(y);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-4-return-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-4-return-methods">#</doc-anchor-trigger>
+        <span>Lesson 4: Return Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-one-java">
+<template #title>U5_L4_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L4_Activity_One
+{
+  public static int totalSides(RegularPolygon x, RegularPolygon y)
+  {
+    // Calculate
+    int total = x.getNumSides() + y.getNumSides();
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-two-java">
+<template #title>U5_L4_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U5_L4_Activity_Two
+{
+  public static double distance(int x1, int y1, int x2, int y2)
+  {
+    // Calculate
+    double total = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-three-java">
+<template #title>U5_L4_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U5_L4_Activity_Three
+{
+  public static double circDiff(Circle x, Circle y)
+  {
+    // Calculate
+    double total = Math.abs(x.getCircumference() - y.getCircumference());
+    
+    return total;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4-1">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u5-l4-activity-four-java">
+<template #title>U5_L4_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U5_L4_Activity_Four
+{
+  public static int substringCount(String x, String y)
+  {
+    // Count
+    int count = 0;
+    for (int i = 0; i &lt;= x.length() - y.length(); i++)
+    {
+      if (x.substring(i, i + y.length()).equals(y))
+      {
+        count++;
+      }
+    }
+    
+    return count;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-5-classes---the-basics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-5-classes---the-basics">#</doc-anchor-trigger>
+        <span>Lesson 5: Classes - The Basics</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="person-java">
+<template #title>Person.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Person
+{
+  // Initialize Variables
+  private String firstName;
+  private String lastName;
+  private int age;
+  private String ssn;
+  
+  public Person(String f, String l, int a, String s)
+  {
+    // Store Variables to Class
+    firstName = f;
+    lastName = l;
+    age = a;
+    ssn = s;
+  }
+  
+  public String toString()
+  {
+    // Default Output
+    return &quot;SSN: &quot; + ssn + &quot;\n\tName: &quot; + firstName + &quot; &quot; + lastName + &quot;\n\tAge: &quot; + age; 
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-person-java">
+<template #title>runner_Person.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+ 
+public class runner_Person 
+{
+ 
+  public static void main(String[] args) 
+  {
+ 
+       Scanner scan = new Scanner(System.in);
+ 
+       System.out.println(&quot;Enter the person's first name:&quot;);
+       String firstName = scan.nextLine();
+       System.out.println(&quot;Enter the person's last name:&quot;);
+       String lastName = scan.nextLine();
+       System.out.println(&quot;Enter the person's age:&quot;);
+       int age = scan.nextInt();
+       scan.nextLine();
+       System.out.println(&quot;Enter the person's social security number:&quot;);
+       String ssn = scan.nextLine();
+ 
+       System.out.println();
+       Person person = new Person(firstName, lastName, age, ssn);
+       System.out.println(person);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="oven-java">
+<template #title>Oven.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Oven 
+{
+  // Represents the maximum possible temperature of an oven
+  private int maxTemp;
+
+  // Represents the current temperature of an oven
+  private int currentTemp;
+
+  // Constructs an oven with the given max temp and starting temp. The maximum
+  // temperature of an oven must be greater than 0, but no more than 500.
+  // The starting temperature should be less than or equal to the maximum t
+  // temperature, but no less than 0.
+  public Oven(int maxTemperature, int startTemperature) 
+  {
+    // Set maxTemp
+    if (maxTemperature &gt; 0 &amp;&amp; maxTemperature &lt;= 500)
+    {
+      maxTemp = maxTemperature;
+    }
+    else
+    {
+      maxTemp = 500;
+    }
+    // Set currentTemp
+    if (startTemperature &lt;= maxTemp &amp;&amp; startTemperature &gt;= 0)
+    {
+      currentTemp = startTemperature;
+    }
+    else if (startTemperature &gt; maxTemp)
+    {
+      currentTemp = maxTemp;
+    }
+    else
+    {
+      currentTemp = 0;
+    }
+  }
+
+  // Returns the maximum temperature of an oven
+  public int getMaxTemp() 
+  {
+    return maxTemp;
+  }
+
+  // Returns the current temperature of an oven
+  public int getCurrentTemp() 
+  {
+    return currentTemp;
+  }
+
+  // Turns an oven off by setting the current temperature to 0.
+  public void turnOff() 
+  {
+    if (currentTemp &gt; 0)
+    {
+      currentTemp = 0;
+    }
+  }
+
+  // Returns whether the current temperature of an oven is greater than 0. Should
+  // return false if the current temperature is 0.
+  public boolean isOn() 
+  {
+    if (currentTemp &gt; 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+
+  // Sets the current temperature of an oven to the given value. Remember,
+  // the current temperature should not exceed the max temp.
+  public void preheat(int temp) 
+  {
+    if (temp &lt; maxTemp)
+    {
+      currentTemp = temp;
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-oven-java">
+<template #title>runner_Oven.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_Oven 
+{
+
+  public static void main(String[] args) 
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Maximum oven temperature:&quot;);
+    int maxTemp = scan.nextInt();
+    System.out.println(&quot;Starting temperature of the oven:&quot;);
+    int startTemp = scan.nextInt();
+
+    Oven oven = new Oven(maxTemp, startTemp);
+
+    String instruction = &quot;&quot;;
+
+    while (!instruction.equals(&quot;q&quot;)) 
+    {
+      System.out.println(&quot;New oven with a maximum temperature of &quot; + oven.getMaxTemp() + &quot; and a starting temperature of &quot; +  oven.getCurrentTemp() + &quot; degrees.&quot;);
+
+      System.out.println(&quot;To preheat the oven enter \&quot;p\&quot;, to turn the oven off enter&quot; + &quot; \&quot;o\&quot;, to restart enter \&quot;r\&quot;, to quit enter \&quot;q\&quot;&quot;);
+
+      instruction = scan.next();
+
+      if (instruction.equals(&quot;p&quot;)) 
+      {
+        System.out.println(&quot;Enter the temperature to preheat the oven to:&quot;);
+        int temp = scan.nextInt();
+        oven.preheat(temp);
+        System.out.println(&quot;Current temperature of the oven is now &quot; + oven.getCurrentTemp() + &quot; degrees\n&quot;);
+      } 
+      else if (instruction.equals(&quot;o&quot;)) 
+      {
+        System.out.println(&quot;Turning the oven off.\n&quot;);
+        oven.turnOff();
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-6-constructors">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-6-constructors">#</doc-anchor-trigger>
+        <span>Lesson 6: Constructors</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="plane-java">
+<template #title>Plane.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Plane
+{
+  private int location;
+  private String str = &quot;&quot;;
+  
+  // Plane() ; No parameter
+  public Plane()
+  {
+    // Set location
+    location = 0;
+  }
+  
+  // Plane() ; With parameter
+  public Plane(int loc)
+  {
+    // Set location if loc is in range
+    if (loc &gt;= -2000 &amp;&amp; loc &lt;= 2000)
+    {
+      location = loc;
+    }
+    // Fallback location
+    else
+    {
+      location = 0;
+    }
+  }
+  
+  // upward() ; Move plane by 100
+  public void upward()
+  {
+    if (location + 100 &lt;= 2000)
+    {
+      location += 100;
+    }
+  }
+  
+  // downward() ; Move plane by -100
+  public void downward()
+  {
+    if (location - 100 &gt;= -2000)
+    {
+      location -= 100;
+    }
+  }
+  
+  // getLocation() ; Return location
+  public int getLocation()
+  {
+    return location;
+  }
+  
+  // toString()
+  public String toString()
+  {
+    str = &quot;&quot;;
+    for(int i = location / 100; i &gt; -20; i--)
+    {
+      str += &quot; &quot;;
+    }
+    str += &quot;@&quot;;
+    return str;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-plane-java">
+<template #title>runner_Plane.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_Plane
+{
+  public static void main (String str[]){
+    Scanner scan = new Scanner(System.in);
+    Plane p = new Plane ();
+    String instruction = &quot;&quot;;
+    while(!instruction.equals(&quot;q&quot;)){
+      System.out.println(p);
+      System.out.println(&quot;Location: &quot; + p.getLocation());
+      System.out.println(&quot;Type \&quot;u\&quot; to move upwards, \&quot;d\&quot; to move downwards, \&quot;n\&quot; for new Plane, \&quot;q\&quot; to quit.&quot;);
+      instruction = scan.nextLine();
+      if(instruction.equals(&quot;u&quot;)){
+        p.upward();
+      }
+      else if(instruction.equals(&quot;d&quot;)){
+        p.downward();
+      }
+      else if(instruction.equals(&quot;n&quot;)){
+        System.out.println(&quot;Starting location for a new Plane?&quot;);
+        int start = scan.nextInt();
+        p = new Plane(start);
+        scan.nextLine();
+      }
+      else if(!instruction.equals(&quot;q&quot;)){
+        System.out.println(&quot;Instruction not recognized.&quot;);
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-7-documenting-a-class">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-7-documenting-a-class">#</doc-anchor-trigger>
+        <span>Lesson 7: Documenting a Class</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-6">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="rectangle-java">
+<template #title>Rectangle.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Rectangle
+{
+  // Create Variables
+  private double bs, ht;
+  
+  // Rectangle()
+  /// Default
+  public Rectangle()
+  {
+    bs = 1;
+    ht = 1;
+  }
+  
+  /// Parameter
+  public Rectangle(double x, double y)
+  {
+    if (x &gt; 1)
+      bs = x;
+    else
+      bs = 1;
+    if (y &gt; 1)
+      ht = y;
+    else
+      ht = 1;
+  }
+  
+  // equals()
+  public boolean equals(Rectangle x)
+  {
+    return (bs == x.getBase()) &amp;&amp; (ht == x.getHeight());
+  }
+  
+  // getArea()
+  public double getArea()
+  {
+    return bs * ht;
+  }
+  
+  // getBase()
+  public double getBase()
+  {
+    return bs;
+  }
+  
+  // getDiagonal()
+  public double getDiagonal()
+  {
+    return Math.sqrt(Math.pow(bs, 2) + Math.pow(ht, 2));
+  }
+  
+  // getHeight()
+  public double getHeight()
+  {
+    return ht;
+  }
+  
+  // getPerimeter()
+  public double getPerimeter()
+  {
+    return (bs * 2) + (ht * 2);
+  }
+  
+  // setBase()
+  public void setBase(double x)
+  {
+    if (x &gt; 0)
+    {
+      bs = x;
+    }
+  }
+  
+  // setHeight()
+  public void setHeight(double x)
+  {
+    if (x &gt; 0)
+    {
+      ht = x;
+    }
+  }
+  
+  // toString()
+  public String toString()
+  {
+    String str = &quot;rectangle with base &quot; + bs + &quot;, height &quot; + ht;
+    return str;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-rectangle-java">
+<template #title>runner_Rectangle.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_Rectangle{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    Rectangle r = new Rectangle();
+    String instruction = &quot;&quot;;
+    while(!instruction.equals(&quot;q&quot;)){
+      System.out.println(&quot;Type the name of the method to test. Type c to construct a new rectangle, q to quit.&quot;);
+      instruction = scan.nextLine();
+      if(instruction.equals(&quot;getArea&quot;)){
+        System.out.println(r.getArea());
+      }
+      else if(instruction.equals(&quot;getBase&quot;)){
+        System.out.println(r.getBase());
+      }
+      else if(instruction.equals(&quot;getHeight&quot;)){
+        System.out.println(r.getHeight());
+      }
+      else if(instruction.equals(&quot;getPerimeter&quot;)){
+        System.out.println(r.getPerimeter());
+      }
+      else if(instruction.equals(&quot;toString&quot;)){
+        System.out.println(r);
+      }
+	else if(instruction.equals(&quot;getDiagonal&quot;)){
+		System.out.println(r.getDiagonal());
+	}
+      else if(instruction.equals(&quot;setBase&quot;)){
+        System.out.println(&quot;Enter parameter value:&quot;);
+        double arg = scan.nextDouble();
+        r.setBase(arg);
+        scan.nextLine();
+      }
+      else if(instruction.equals(&quot;setHeight&quot;)){
+        System.out.println(&quot;Enter parameter value:&quot;);
+        double arg = scan.nextDouble();
+        r.setHeight(arg);
+        scan.nextLine();
+      }
+      else if(instruction.equals(&quot;equals&quot;)){
+        System.out.println(&quot;Enter base and height:&quot;);
+        double bs = scan.nextDouble();
+        double ht = scan.nextDouble();
+        Rectangle rOther = new Rectangle(bs, ht);
+        System.out.println(r.equals(rOther));
+        scan.nextLine();
+      }
+      else if(instruction.equals(&quot;c&quot;)){
+        System.out.println(&quot;Enter base and height:&quot;);
+        double bs = scan.nextDouble();
+        double ht = scan.nextDouble();
+        r = new Rectangle(bs, ht);
+        scan.nextLine();
+      }
+      else if(!instruction.equals(&quot;q&quot;)){
+        System.out.println(&quot;Not recognized.&quot;);
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="lesson-8-static-vs-instance">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-8-static-vs-instance">#</doc-anchor-trigger>
+        <span>Lesson 8: Static vs. Instance</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-7">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+</doc-tab>
+<doc-tab id="car-java">
+<template #title>Car.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Car
+{
+  // Initialize Variables
+  private String carMake;
+  private String carModel;
+  private int carYear;
+  private double carMpg;
+  private static int count = 0;
+  private int carId;
+  
+  // Car() - Default
+  public Car()
+  {
+    // User Input
+    carMake = &quot;None&quot;;
+    carModel = &quot;None&quot;;
+    carYear = 2000;
+    carMpg = 0.0;
+    // Update carId
+    count++;
+    carId = count;
+  }
+  
+  // Car()
+  public Car(String make, String model, int year, double mpg)
+  {
+    // User Input
+    carMake = make;
+    carModel = model;
+    /// Verify year
+    if (year &gt;= 1885 &amp;&amp; year &lt;= 2022)
+    {
+      carYear = year;
+    }
+    else if (year &gt; 2022)
+    {
+      carYear = 2022;
+    }
+    else if (year &lt; 1885)
+    {
+      carYear = 2000;
+    }
+    /// Verify mpg
+    if (mpg &gt;= 0)
+    {
+      carMpg = mpg;
+    }
+    else
+    {
+      carMpg = 0;
+    }
+    // Update carId
+    count++;
+    carId = count;
+  }
+  
+  // toString()
+  public String toString()
+  {
+    return &quot;ID: &quot; + carId + &quot;\nMake: &quot; + carMake + &quot;\nModel: &quot; + carModel + &quot;\nYear: &quot; + carYear + &quot;\nMPG: &quot; + carMpg;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-car-java">
+<template #title>runner_Car.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+ 
+public class runner_Car {
+ 
+   public static void main(String[] args) {
+ 
+       Scanner scan = new Scanner(System.in);
+       String i = &quot;&quot;;
+ 
+       while(!i.equals(&quot;q&quot;)) {
+ 
+           System.out.println(&quot;Input the make of the car, \&quot;default\&quot; to create a default car or \&quot;q\&quot; to quit:&quot;);
+           i = scan.nextLine();
+ 
+           System.out.println();
+           if (i.equals(&quot;q&quot;)) {
+               System.out.println(&quot;Exiting. Bye!&quot;);
+           } else if (i.equals(&quot;default&quot;)) {
+               Car car = new Car();
+               System.out.print(car);
+           } else {
+               System.out.println(&quot;Model of the car:&quot;);
+               String model = scan.nextLine();
+               System.out.println(&quot;Year of the car:&quot;);
+               int year = scan.nextInt();
+               scan.nextLine();
+               System.out.println(&quot;Miles per gallon of the car:&quot;);
+               double mpg = scan.nextDouble();
+               scan.nextLine();
+               System.out.println();
+               System.out.println(new Car(i, model, year, mpg));
+           }
+           System.out.println();
+       }
+   }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="assignment-5-player">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-5-player">#</doc-anchor-trigger>
+        <span>Assignment 5: Player</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="player-java">
+<template #title>Player.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Player 
+{
+  // Initialize Variables
+  /// Player
+  private static int numPlayers = 0;
+  private String name;
+  private int hp;
+  /// Coordinates
+  private int x;
+  private int y;
+  private int z;
+  private int direction;
+  
+  // Create Player
+  /// Make Player with Default Values
+  public Player()
+  {
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = &quot;P&quot; + numPlayers;
+    System.out.print(numPlayers);
+    /// Player Health
+    hp = 20;
+    /// Coordinates
+    x = 0;
+    y = 0;
+    z = 0;
+    /// Direction
+    direction = 1;
+  }
+  
+  /// Make Player with Name, X, Y, Z
+  public Player(String n, int a, int b, int c)
+  {
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = n;
+    /// Player Health
+    hp = 20;
+    /// Coordinates
+    x = a;
+    y = b;
+    z = c;
+    /// Direction
+    direction = 1;
+  }
+  
+  /// Make Player with Name, X, Y, Z, HP, Direction
+  public Player(String n, int a, int b, int c, int h , int d)
+  {
+    // Player
+    /// Update Number of Players
+    numPlayers++;
+    /// Player Name
+    name = n;
+    /// Player Health
+    if (h &lt; 0)
+      hp = 0;
+    else
+      hp = h;
+    /// Coordinates
+    x = a;
+    y = b;
+    z = c;
+    /// Direction
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+      direction = d;
+    else
+      direction = 1;
+  }
+  
+  // Return Player Data
+  /// Fetch Current # of Players
+  public static int getNumPlayers()
+  {
+    return numPlayers;
+  }
+  /// Fetch Current Player Name
+  public String getName()
+  {
+    return name;
+  }
+  /// Fetch Current X-Coordinate
+  public int getX()
+  {
+    return x;
+  }
+  /// Fetch Current Y-Coordinate
+  public int getY()
+  {
+    return y;
+  }
+  /// Fetch Current Z-Coordinate
+  public int getZ()
+  {
+    return z;
+  }
+  /// Fetch Current Player HP
+  public int getHp()
+  {
+    return hp;
+  }
+  /// Fetch Current Player Direction
+  public int getDirection()
+  {
+    return direction;
+  }
+  /// Get Distance from Player to Coordinates
+  public double getDistance(int a, int b, int c)
+  {
+    return Math.sqrt(Math.pow(a - x, 2) + Math.pow(b - y, 2) + Math.pow(c - z, 2));
+  }
+  /// Get Distance from Player to Player
+  public double getDistance(Player p)
+  {
+    return Math.sqrt(Math.pow(p.getX() - x, 2) + Math.pow(p.getY() - y, 2) + Math.pow(p.getZ() - z, 2)); 
+  }
+  /// Convert to String
+  public String toString()
+  {
+    return &quot;Name: &quot; + name + &quot;\nHealth: &quot; + hp + &quot;\nCoordinates: X &quot; + x + &quot; Y &quot; + y + &quot; Z &quot; + z + &quot;\nDirection: &quot; + direction;
+  }
+  
+  // Modify Player
+  /// Set Player HP
+  public void setHp(int h)
+  {
+    if (h &lt; 0)
+      hp = 0;
+    else
+      hp = h;
+  }
+  /// Set Player Direction
+  public void setDirection(int d)
+  {
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+      direction = d;
+  }
+  /// Move Player
+  public void move(int d, int u)
+  {
+    // Set Direction
+    int direction = getDirection();
+    if (d &gt;= 1 &amp;&amp; d &lt;= 6)
+    {
+      direction = d;
+    }
+    // Move
+    if (direction == 1) // North
+    {
+      x += u;
+    }
+    else if (direction == 2) // South
+    {
+      x -= u;
+    }
+    else if (direction == 3) // Up
+    {
+      y += u;
+    }
+    else if (direction == 4) // Down
+    {
+      y -= u;
+    }
+    else if (direction == 5) // East
+    {
+      z += u;
+    }
+    else if (direction == 6) // West
+    {
+      z -= u;
+    }
+  }
+  /// Teleport Player
+  public void teleport(int a, int b, int c)
+  {
+    x = a;
+    y = b;
+    z = c;
+  }
+  /// Teleport Player to Player
+  public void teleport(Player p)
+  {
+    x = p.getX();
+    y = p.getY();
+    z = p.getZ();
+  }
+  /// Attack Player
+  public void attack(Player p, int d)
+  {
+    if (p.getHp() &gt; 0)
+    {
+      if (p.getHp() - d &gt;= 0)
+        p.setHp(p.getHp() - d);
+      else
+        p.setHp(0);
+      setHp(getHp() + (d / 2));
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-player-java">
+<template #title>runner_Player.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+import java.lang.Math;
+ 
+public class runner_Player {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    Player p1 = null;
+
+    System.out.println(&quot;Welcome!&quot;);
+    System.out.println(&quot;This program helps you test your Player class and its methods.&quot;);
+    System.out.println(&quot;A default Player object will be created for you,&quot;);
+    System.out.println(&quot;or you can use the 'c' option to use another Constructor.\n&quot;);
+
+     String instruction = &quot;&quot;;
+    while (!instruction.equals(&quot;q&quot;)) {
+      System.out.println(&quot;Type the name of the method you want to test, or Type c to construct a new Player. Type q to quit.&quot;);
+      instruction = scan.nextLine().trim();
+      if (instruction.equals(&quot;c&quot;)) {
+        System.out.println(&quot;Which constructor would you like to use?&quot;);
+        System.out.println(&quot;1 - Player(String name, int x, int y, int z)&quot;);
+        System.out.println(&quot;2 - Player(String name, int x, int y, int z, int hp, int direction&quot;);
+ 
+        int choice = scan.nextInt();
+        scan.nextLine();
+ 
+        if (choice != 1 &amp;&amp; choice != 2) {
+          System.out.println(&quot;Invalid choice&quot;);
+          break;
+        } else {
+          System.out.println(&quot;Player name:&quot;);
+          String name = scan.nextLine().trim();
+          System.out.println(&quot;Starting x-coordinate:&quot;);
+          int x = scan.nextInt();
+          System.out.println(&quot;Starting y-coordinate:&quot;);
+          int y = scan.nextInt();
+          System.out.println(&quot;Starting z-coordinate:&quot;);
+          int z = scan.nextInt();
+ 
+          if (choice == 1) {
+            p1 = new Player(name, x, y, z);
+            System.out.println(&quot;New player created!&quot;);
+            System.out.println(p1);
+          } else {
+            System.out.println(&quot;Starting health points:&quot;);
+            int hp = scan.nextInt();
+            System.out.println(&quot;Starting direction&quot;);
+            int dir = scan.nextInt();
+            p1 = new Player(name, x, y, z, hp, dir);
+            System.out.println(&quot;New player created!&quot;);
+            System.out.println(p1);
+          }
+          scan.nextLine();
+        }
+        instruction = scan.nextLine().trim();
+      } else if (p1 == null) {
+        p1 = new Player();
+      }
+ 
+      if (instruction.equals(&quot;getNumPlayers&quot;)) {
+        System.out.println(&quot;There are &quot; + Player.getNumPlayers() + &quot; existing Player objects&quot;);
+      } else if (instruction.equals(&quot;getX&quot;)) {
+        System.out.println(&quot;The x-coordinate of &quot; + p1.getName() + &quot; is X &quot; + p1.getX());
+      } else if (instruction.equals(&quot;getY&quot;)) {
+        System.out.println(&quot;The y-coordinate of &quot; + p1.getName() + &quot; is Y &quot; + p1.getY());
+      } else if (instruction.equals(&quot;getZ&quot;)) {
+        System.out.println(&quot;The z-coordinate of &quot; + p1.getName() + &quot; is Z &quot; + p1.getZ());
+      } else if (instruction.equals(&quot;getHp&quot;)) {
+        System.out.println(p1.getName() + &quot; has &quot; + p1.getHp() + &quot; health points&quot;);
+      } else if (instruction.equals(&quot;getDirection&quot;)) {
+        System.out.println(p1.getName() + &quot; is facing &quot; + p1.getDirection());
+      } else if (instruction.equals(&quot;toString&quot;)) {
+        System.out.println(p1);
+      } else if (instruction.equals(&quot;getName&quot;)) {
+        System.out.println(&quot;The players name is &quot; + p1.getName());
+      } else if (instruction.equals(&quot;move&quot;)) { 
+        System.out.println(&quot;Enter the direction (1-6) to move in:&quot;);
+        int direction = scan.nextInt();
+        System.out.println(&quot;Enter the number of units to move&quot;);
+        int units = scan.nextInt();
+        scan.nextLine();
+ 
+        p1.move(direction, units);
+        System.out.println(p1.getName() + &quot; is now at coordinates X &quot; + p1.getX() + &quot; Y &quot; + p1.getY() + &quot; Z &quot; + p1.getZ());
+      } else if (instruction.equals(&quot;setHp&quot;)) {
+        System.out.println(&quot;Enter the new health of &quot; + p1.getName() + &quot;:&quot;);
+        int hp = scan.nextInt();
+        scan.nextLine();
+ 
+        p1.setHp(hp);
+        System.out.println(p1.getName() + &quot; now has &quot; + p1.getHp() + &quot; health points&quot;);
+      } else if (instruction.equals(&quot;setDirection&quot;)) {
+        System.out.println(&quot;Enter the new direction that &quot; + p1.getName() + &quot; is facing:&quot;);
+        int dr = scan.nextInt();
+        scan.nextLine();
+        String dir;
+        p1.setDirection(dr);
+        dr = p1.getDirection();
+        if (dr == 1) {
+          dir = &quot;North&quot;;
+        } else if (dr == 2) {
+          dir = &quot;South&quot;;
+        } else if (dr == 3) {
+          dir = &quot;Up&quot;;
+        } else if (dr == 4) {
+          dir = &quot;Down&quot;;
+        } else if (dr == 5) {
+          dir = &quot;East&quot;;
+        } else if (dr == 6) {
+          dir = &quot;West&quot;;
+        } else {
+          dir = &quot;an invalid direction&quot;;
+        }
+        System.out.println(p1.getName() + &quot; is now facing &quot; + dir);
+      } else if (instruction.equals(&quot;attack&quot;)) {
+        Player p2 = new Player();
+        System.out.println(p1.getName() + &quot; is attacking &quot; + p2.getName());
+        System.out.println(&quot;Damage &quot; + p1.getName() + &quot; should deal to &quot; + p2.getName() + &quot;:&quot;);
+        int damage = scan.nextInt();
+        scan.nextLine();
+ 
+        p1.attack(p2, damage);
+        System.out.println(p2.getName() + &quot; now has &quot; + p2.getHp());
+        System.out.println(p1.getName() + &quot; now has &quot; + p1.getHp());
+      } else if (instruction.equals(&quot;teleport&quot;)) {
+        System.out.println(&quot;Method 1 or 2?&quot;);
+        System.out.println(&quot;1 - teleport(int x, int y, int z)&quot;);
+        System.out.println(&quot;2 - teleport(Player p)&quot;);
+ 
+        int choice = scan.nextInt();
+        scan.nextLine();
+ 
+        if (choice == 1) {
+          System.out.println(&quot;X-coordinate to teleport to:&quot;);
+          int x = scan.nextInt();
+          System.out.println(&quot;Y-coordinate to teleport to:&quot;);
+          int y = scan.nextInt();
+          System.out.println(&quot;Z-coordinate to teleport to:&quot;);
+          int z = scan.nextInt();
+ 
+          scan.nextLine();
+ 
+          p1.teleport(x, y, z);
+          System.out.println(p1.getName() + &quot; teleported to X &quot; + p1.getX() + &quot; Y &quot; + p1.getY() + &quot; Z &quot; + p1.getZ());
+ 
+        } else if (choice == 2) {
+          int x = (int) (Math.random() * 11);
+          int y = (int) (Math.random() * 11);
+          int z = (int) (Math.random() * 11);
+          Player p2 = new Player(&quot;P&quot; + (Player.getNumPlayers() + 1), x, y, z);
+          System.out.println(p2.getName() + &quot; is at X &quot; + p2.getX() + &quot; Y &quot; + p2.getY() + &quot; Z &quot; + p2.getZ());
+          System.out.println(&quot;Teleporting &quot; + p1.getName() + &quot; to &quot; + p2.getName());
+          p1.teleport(p2);
+          System.out.println(p1.getName() + &quot; now at X &quot; + p1.getX() + &quot; Y &quot; + p1.getY() + &quot; Z &quot; + p1.getZ());
+          if (p1.getX() == p2.getX() &amp;&amp; p1.getY() == p2.getY() &amp;&amp; p1.getZ() == p2.getZ()) {
+            System.out.println(&quot;The Players are at the same location&quot;);
+          } else {
+            System.out.println(&quot;The Players are in different locations&quot;);
+          }
+        } else {
+          System.out.println(&quot;Invalid choice&quot;);
+        }
+      } else if (instruction.equals(&quot;getDistance&quot;)) {
+        System.out.println(&quot;Method 1 or 2?&quot;);
+        System.out.println(&quot;1 - distance(int x, int y, int z)&quot;);
+        System.out.println(&quot;2 - distance(Player p)&quot;);
+ 
+        int choice = scan.nextInt();
+        scan.nextLine();
+ 
+        if (choice == 1) {
+          System.out.println(&quot;X-coordinate:&quot;);
+          int x = scan.nextInt();
+          System.out.println(&quot;Y-coordinate:&quot;);
+          int y = scan.nextInt();
+          System.out.println(&quot;Z-coordinate:&quot;);
+          int z = scan.nextInt();
+ 
+          scan.nextLine();
+          System.out.printf(&quot;%s is %f units from X %d Y %d Z %d&quot;, p1.getName(), p1.getDistance(x, y, z), x, y, z);
+        } else if (choice == 2) {
+          Player p2 = new Player(&quot;P&quot; + (Player.getNumPlayers() + 1), 10, -5, 87);
+ 
+          System.out.printf(&quot;The distance between %s and %s is %f&quot;, p1.getName(), p2.getName(), p1.getDistance(p2));
+        } else {
+          System.out.println(&quot;Invalid choice&quot;);
+        }
+      } else if (instruction.equals(&quot;q&quot;)){
+        System.out.println(&quot;Exiting. Bye!&quot;);
+      } else {
+        System.out.println(&quot;Invalid instruction&quot;);
+      }
+      System.out.println();
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../unit4/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Unit 4: Iteration</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../unit6/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Unit 6: Array</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/ricky8k/APCSA-ProjectStem">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                                    </g>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Unit 5: Writing Classes", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>

@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.741886757450">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.0.3">
+
+    <!-- Primary Meta Tags -->
+    <title>Unit 9: Inheritance</title>
+    <meta name="title" content="Unit 9: Inheritance">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ricky8k.github.io/unit9/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricky8k.github.io/unit9/">
+    <meta property="og:title" content="Unit 9: Inheritance">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ricky8k.github.io/unit9/">
+    <meta property="twitter:title" content="Unit 9: Inheritance">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=3.0.3.741886757450" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=3.0.3.741886757450" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project STEM</span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="unit-9-inheritance" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-9-inheritance">#</doc-anchor-trigger>
+        <span>Unit 9: Inheritance</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="lesson-1-inheritance">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-1-inheritance">#</doc-anchor-trigger>
+        <span>Lesson 1: Inheritance</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="specialitycoffee-java">
+<template #title>SpecialityCoffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class SpecialityCoffee extends Coffee
+{
+  // Initialize Variable
+  private String flavor;
+  
+  // Default SpecialityCoffee()
+  public SpecialityCoffee()
+  {
+    super();
+    flavor = &quot;Vanilla&quot;;
+  }
+  
+  // 3-Constructor SpecialityCoffee()
+  public SpecialityCoffee(String size, String type, String flavor)
+  {
+    this(size, false, 1, type, flavor);
+  }
+  
+  // 5-Constructor SpecialityCoffee()
+  public SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)
+  {
+    super(size, isSkinny, shots, type);
+    this.flavor = flavor;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    return super.toString() + &quot; with &quot; + flavor;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="coffee-java">
+<template #title>Coffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+public class Coffee
+{
+  private String size;
+  private boolean isSkinny;
+  private int shots;
+  private String type;
+
+  public Coffee()
+  {
+    this(&quot;small&quot;, false, 1, &quot;latte&quot;);
+  }
+
+  public Coffee(String size, boolean isSkinny, int shots, String type)
+  {
+    this.size = size;
+    this.isSkinny = isSkinny;
+    this.shots = shots;
+    this.type = type;
+  }
+
+  public String toString()
+  {
+    String s = size;
+    if (isSkinny)
+      s += &quot; skinny&quot;;
+    return s + &quot; &quot; + shots + &quot;-shot &quot; + type;
+  }
+
+  public String getSize()
+  {
+    return size;
+  }
+
+  public int getPrice()
+  {
+    int price;
+    if (size.equals(&quot;extra large&quot;))
+      price = 470;
+    else if (size.equals(&quot;large&quot;))
+      price = 440;
+    else if (size.equals(&quot;medium&quot;))
+      price = 360;
+    else
+      price = 330;
+
+    price += shots*30;
+    return price;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-coffee-java">
+<template #title>runner_Coffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+public class runner_Coffee
+{
+
+  private static SpecialityCoffee c;
+
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Choose constructor to test:\n1 - SpecialityCoffee()\n2 - SpecialityCoffee(String size, String type, String flavor)\n3 - SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)&quot;);
+    int which = scan.nextInt();
+    if (which == 1)
+    {
+      c = new SpecialityCoffee();
+    }
+    else if (which == 2 || which == 3)
+    {
+      scan.nextLine();
+      System.out.println(&quot;Size?&quot;);
+      String sz = scan.nextLine();
+      System.out.println(&quot;Type?&quot;);
+      String tp = scan.nextLine();
+      System.out.println(&quot;Flavor?&quot;);
+      String fl = scan.nextLine();
+      if (which == 3)
+      {
+        System.out.println(&quot;Is Skinny (y/n)?&quot;);
+        String sk = scan.nextLine().toLowerCase();
+        boolean iS = (sk.equals(&quot;y&quot;)||sk.equals(&quot;yes&quot;)||sk.equals(&quot;t&quot;)||sk.equals(&quot;true&quot;));
+        System.out.println(&quot;Shots?&quot;);
+        int sh = scan.nextInt();
+        c = new SpecialityCoffee(sz, iS, sh, tp, fl);
+      }
+      else
+      {
+        c = new SpecialityCoffee(sz, tp, fl);
+      }
+    }
+    if(c != null)
+    {
+      System.out.println(c);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-2-inheritance-overriding-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-inheritance-overriding-methods">#</doc-anchor-trigger>
+        <span>Lesson 2: Inheritance Overriding Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="specialitycoffee-java">
+<template #title>SpecialityCoffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class SpecialityCoffee extends Coffee 
+{
+  // Initialize Variable
+  private String flavor;
+
+  // Default SpecialityCoffee()
+  public SpecialityCoffee() 
+  {
+    // Calls super-constructor to create default coffee then sets flavor
+    super();
+    flavor = &quot;vanilla&quot;;
+  }
+
+  // 3-Constructor SpecialityCoffee()
+  public SpecialityCoffee(String size, String type, String flavor) 
+  {
+    // Calls constructor below with a mix of parameters and default values
+    this(size, false, 1, type, flavor);
+  }
+
+  // 5-Constructor SpecialityCoffee()
+  public SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)
+  {
+    // Calls super-constructor to set first 4 variables then sets flavor
+    super(size, isSkinny, shots, type);
+    this.flavor = flavor;
+  }
+  
+  // Get Price of Speciality Coffee
+  public int getPrice()
+  {
+    // Temporary Storage
+    int price = super.getPrice();
+    
+    // Check Size of Coffee
+    if (super.getSize().matches(&quot;large|extra large&quot;)) /* L or XL */
+    {
+      price += 50;
+    }
+    else /* Other Size */
+    {
+      price += 30;
+    }
+    
+    // End
+    return price;
+  }
+  
+  // Output to String
+  public String toString() 
+  {
+    // Calls Coffee toString and appends flavor to end
+    return super.toString() + &quot; with &quot; + flavor;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="coffee-java">
+<template #title>Coffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+public class Coffee 
+{
+  private String size;
+  private boolean isSkinny;
+  private int shots;
+  private String type;
+
+  public Coffee() 
+  {
+    this(&quot;small&quot;, false, 1, &quot;latte&quot;);
+  }
+
+  public Coffee(String size, boolean isSkinny, int shots, String type) 
+  {
+    this.size = size;
+    this.isSkinny = isSkinny;
+    this.shots = shots;
+    this.type = type;
+  }
+
+  public String toString() 
+  {
+    String s = size;
+    if (isSkinny)
+      s += &quot; skinny&quot;;
+    return s + &quot; &quot; + shots + &quot;-shot &quot; + type;
+  }
+
+  public String getSize() 
+  {
+    return size;
+  }
+
+  public int getPrice() 
+  {
+    int price;
+    if (size.equals(&quot;extra large&quot;))
+      price = 470;
+    else if (size.equals(&quot;large&quot;))
+      price = 440;
+    else if (size.equals(&quot;medium&quot;))
+      price = 360;
+    else
+      price = 330;
+
+    price += shots*30;
+    return price;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-coffee-java">
+<template #title>runner_Coffee.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+public class runner_Coffee 
+{
+
+  private static SpecialityCoffee c;
+
+  public static void main(String[] args) 
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Choose constructor to test:\n1 - SpecialityCoffee()\n2 - SpecialityCoffee(String size, String type, String flavor)\n3 - SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)&quot;);
+    int which = scan.nextInt();
+    if (which == 1) 
+    {
+      c = new SpecialityCoffee();
+    } 
+    else if (which == 2 || which == 3) 
+    {
+      scan.nextLine();
+      System.out.println(&quot;Size?&quot;);
+      String sz = scan.nextLine();
+      System.out.println(&quot;Type?&quot;);
+      String tp = scan.nextLine();
+      System.out.println(&quot;Flavor?&quot;);
+      String fl = scan.nextLine();
+      if (which == 3) 
+      {
+        boolean iS = false;
+        System.out.println(&quot;Is Skinny (y/n)?&quot;);
+        String sk = scan.nextLine().toLowerCase();
+        if(sk.equals(&quot;y&quot;)||sk.equals(&quot;yes&quot;)||sk.equals(&quot;t&quot;)||sk.equals(&quot;true&quot;))
+          iS = true;
+        System.out.println(&quot;Shots?&quot;);
+        int sh = scan.nextInt();
+        c = new SpecialityCoffee(sz, iS, sh, tp, fl);
+      }
+      else
+        c = new SpecialityCoffee(sz, tp, fl);
+    }
+    if(c != null) 
+    {
+      System.out.println(c);
+      int p = c.getPrice();
+      System.out.println(&quot;$&quot;+p/100 + &quot;.&quot;+ (p%100)/10 + p%10);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="doublecone-java">
+<template #title>DoubleCone.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class DoubleCone extends Cone
+{
+  // Initialize Variables
+  private String flavor;
+  private String flavor2;
+  private String topping;
+  
+  // 2-Constructor DoubleCone()
+  public DoubleCone(String f, boolean w)
+  {
+    // Creates Cone with 2x flavor f
+    super(f, w);
+    flavor = f;
+    flavor2 = f;
+  }
+  
+  // 3-Constructor DoubleCone()
+  public DoubleCone(String f1, String f2, boolean w)
+  {
+    // Creates Cone with flavors f1 and f2
+    super(f1, w);
+    flavor = f1;
+    flavor2 = f2;
+  }
+  
+  // Set Flavor of Double Cone
+  public void setFlavor(String f)
+  {
+    // Overwrites flavor and flavor2 to f
+    super.setFlavor(f);
+    flavor = f;
+    flavor2 = f;
+  }
+  
+  // Set Flavor of Double Cone
+  public void setFlavor(String f1, String f2)
+  {
+    // Overwrites flavor to f1 and flavor2 to f2
+    super.setFlavor(f1);
+    flavor = f1;
+    flavor2 = f2;
+  }
+  
+  // Add Topping to Double Cone
+  public void addTopping(String t)
+  {
+    // Sets topping to t
+    topping = t;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    // Temporary Storage
+    String output = &quot;double &quot; + super.toString();
+    
+    // Check Flavors
+    if (flavor.equals(flavor2)) /* Same 2 Flavors */
+    {
+      output += &quot; x2&quot;;
+    }
+    else /* Different 2 Flavors */
+    {
+      output += &quot; and &quot; + flavor2;
+    }
+    
+    // Check Topping
+    if (topping != null)
+      output += &quot; with &quot; + topping;
+    
+    // End
+    return output;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="cone-java">
+<template #title>Cone.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+public class Cone
+{
+
+  private String flavor;
+  private boolean waffle;
+
+  public Cone(String f, boolean w)
+  {
+    waffle = w;
+    flavor = f;
+  }
+
+  public void setFlavor(String f)
+  {
+    flavor = f;
+  }
+
+  public String getFlavor()
+  {
+    return flavor;
+  }
+
+  public boolean getWaffle()
+  {
+    return waffle;
+  }
+
+  public String toString()
+  {
+    String s = &quot;&quot;;
+    if (waffle)
+      s += &quot;waffle &quot;;
+    s += &quot;cone with &quot; + flavor;
+    return s;
+  }
+
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-doublecone-java">
+<template #title>runner_DoubleCone.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_DoubleCone {
+
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    DoubleCone c;
+
+    System.out.println(&quot;Type \&quot;s\&quot; for same flavors, \&quot;d\&quot; for different.&quot;);
+    String cons = scan.nextLine().toLowerCase();
+    System.out.println(&quot;Type \&quot;w\&quot; for waffle cone.&quot;);
+
+    boolean w = scan.nextLine().toLowerCase().equals(&quot;w&quot;);
+
+    if (cons.equals(&quot;s&quot;)) {
+      System.out.println(&quot;What flavour?&quot;);
+      String f = scan.nextLine();
+      System.out.println(&quot;topping?&quot;);
+      String t = scan.nextLine();
+      c = new DoubleCone(f, w);
+      c.addTopping(t);
+      
+    } else {
+      System.out.println(&quot;First flavour?&quot;);
+      String f1 = scan.nextLine();
+      System.out.println(&quot;Second flavour?&quot;);
+      String f2 = scan.nextLine();
+      System.out.println(&quot;topping?&quot;);
+      String t = scan.nextLine();
+      c = new DoubleCone(f1, f2, w);
+      c.addTopping(t);
+    }
+
+    System.out.println(c);
+    System.out.println(&quot;Change flavors? (y/n)&quot;);
+    if(scan.nextLine().toLowerCase().equals(&quot;y&quot;)) {
+      System.out.println(&quot;Type \&quot;s\&quot; for same flavors, \&quot;d\&quot; for different.&quot;);
+      String mtd = scan.nextLine().toLowerCase();
+      if (mtd.equals(&quot;s&quot;)) {
+        System.out.println(&quot;What flavour?&quot;);
+        String f = scan.nextLine();
+        c.setFlavor(f);
+      } else {
+        System.out.println(&quot;First flavour?&quot;);
+        String f1 = scan.nextLine();
+        System.out.println(&quot;Second flavour?&quot;);
+        String f2 = scan.nextLine();
+        c.setFlavor(f1, f2);
+      }
+      System.out.println(c);
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-3-is-a-and-has-a-relationships">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-is-a-and-has-a-relationships">#</doc-anchor-trigger>
+        <span>Lesson 3: Is-a and Has-a Relationships</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="animal-java">
+<template #title>Animal.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Animal
+{
+  // Initialize Variable
+  private String name;
+
+  // Create Animal with Specified Name
+  public Animal(String n)
+  {
+    name = n;
+  }
+
+  // Get Name of Animal
+  public String getName()
+  {
+    return name;
+  }
+
+  // Get Animal to Speak
+  public String speak()
+  {
+    return &quot;&quot;;
+  }
+
+  // Output to String
+  public String toString()
+  {
+    return getName() + &quot; (&quot; + speak() + &quot; &quot; + speak() + &quot;).&quot;;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="cow-java">
+<template #title>Cow.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Cow extends Animal
+{
+  // Create Cow
+  public Cow()
+  {
+    super(&quot;cow&quot;);
+  }
+
+  // Get Cow to Speak
+  public String speak()
+  {
+    return &quot;moo&quot;;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="farm-java">
+<template #title>Farm.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Farm
+{
+  // Initialize Variables
+  private Farmer theFarmer;
+  private Animal firstAnimal;
+  private Animal secondAnimal;
+  private Animal thirdAnimal;
+
+  // Construct Farm with Specified Animals
+  public Farm(Farmer f, Animal a1, Animal a2, Animal a3)
+  {
+    theFarmer = f;
+    firstAnimal = a1;
+    secondAnimal = a2;
+    thirdAnimal = a3;
+  }
+
+  // Output to String
+  public String toString()
+  {
+    String s = theFarmer + &quot; had a farm.&quot;;
+    s += &quot;\nAnd on that farm he had a &quot; + firstAnimal;
+    s += &quot;\nAnd on that farm he had a &quot; + secondAnimal;
+    s += &quot;\nAnd on that farm he had a &quot; + thirdAnimal;
+    return s;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="farmer-java">
+<template #title>Farmer.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Farmer
+{
+  // Initialize Variables
+  private String forename;
+  private String surname;
+
+  // Create Farmer with Specified Name
+  public Farmer(String f, String s)
+  {
+    forename = f;
+    surname = s;
+  }
+
+  // Output to String
+  public String toString()
+  {
+    return forename + &quot; &quot; + surname;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="pig-java">
+<template #title>Pig.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Pig extends Animal
+{
+  // Create Pig
+  public Pig()
+  {
+    super(&quot;pig&quot;);
+  }
+
+  // Get Pig to Speak
+  public String speak()
+  {
+    return &quot;oink&quot;;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="sheep-java">
+<template #title>Sheep.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Sheep extends Animal
+{
+  // Create Sheep
+  public Sheep()
+  {
+    super(&quot;sheep&quot;);
+  }
+
+  // Get Sheep to Speak
+  public String speak()
+  {
+    return &quot;baa&quot;;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-farm-java">
+<template #title>runner_Farm.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_Farm
+{
+  private static Scanner scan;
+
+  public static void main(String[] args)
+  {
+    scan = new Scanner(System.in);
+    System.out.println(&quot;First, what's your farmer's forename?&quot;);
+    String f = scan.nextLine();
+    System.out.println(&quot;And their surname?&quot;);
+    Farmer fm = new Farmer(f, scan.nextLine());
+    Animal a1 = addAnimal();
+    Animal a2 = addAnimal();
+    Animal a3 = addAnimal();
+    Farm theFarm = new Farm(fm, a1, a2, a3);
+    System.out.println();
+    System.out.println(theFarm);
+  }
+
+  private static Animal addAnimal()
+  {
+    String type = &quot;&quot;;
+    Animal a = null;
+    while(a == null){
+      System.out.println(&quot;Choose an animal: pig, cow or sheep.&quot;);
+      type = scan.nextLine().toLowerCase();
+      if (type.equals(&quot;pig&quot;))
+        a = new Pig();
+      else if (type.equals(&quot;cow&quot;))
+        a = new Cow();
+      else if (type.equals(&quot;sheep&quot;))
+        a = new Sheep();
+      else
+        System.out.println(&quot;Unrecognised animal.&quot;);
+    }
+    return a;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="assignment-9-ultimate-frisbee">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-9-ultimate-frisbee">#</doc-anchor-trigger>
+        <span>Assignment 9: Ultimate Frisbee</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="captain-java">
+<template #title>Captain.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Captain extends UltimatePlayer
+{
+  // Store Captain Type
+  // true = Offense, false = Defense
+  private boolean type;
+
+  // Create Captain Using Given Values
+  public Captain(String firstName, String lastName, String position, boolean type)
+  {
+    // Calls Super-Constructor to Create UltimatePlayer
+    super(firstName, lastName, position);
+    // Set Captain Type
+    this.type = type;
+  }
+  
+  // Throw Disc and Return Distance
+  public int throwDisc(int pow)
+  {
+    // Check Power
+    pow = Math.max(pow, 1);
+    pow = Math.min(pow, 10);
+    // Return Distance
+    return pow * 5;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    // Calls Super-Constructor to Create String and Appends Captain Type
+    return super.toString() + &quot;\n   Captain: &quot; + (type ? &quot;offense&quot; : &quot;defense&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="coach-java">
+<template #title>Coach.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Coach extends Person
+{
+  // Store Coach Role
+  private String role;
+  
+  // Create Coach with Given Values
+  public Coach(String firstName, String lastName, String role)
+  {
+    // Calls Super-Constructor to Create Person
+    super(firstName, lastName);
+    // Set Coach Role
+    this.role = role;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    // Calls Super-Constructor to Create String and Appends Role
+    return super.toString() + &quot;\n   Role: &quot; + role;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="person-java">
+<template #title>Person.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Person
+{
+  // Store Person's Name
+  private String firstName;
+  private String lastName;
+  
+  // Create Person with Given Strings
+  public Person(String firstName, String lastName)
+  {
+    // Set Person Name
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  // Throw Disc and Return Distance
+  public int throwDisc(int pow)
+  {
+    // Check Power
+    pow = Math.max(pow, 1);
+    pow = Math.min(pow, 10);
+    // Return Distance
+    return pow * 2;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    return lastName + &quot;, &quot; + firstName;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="ultimateplayer-java">
+<template #title>UltimatePlayer.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class UltimatePlayer extends Person
+{
+  // Store Player Values
+  private int jerseyNumber;
+  private String position;
+  /// Temporary Storage
+  private static int playerCount = 1;
+  
+  // Create Player Using Given Values
+  public UltimatePlayer(String firstName, String lastName, String position)
+  {
+    // Calls Super-Constructor to Create Person
+    super(firstName, lastName);
+    // Set Jersey Number
+    this.jerseyNumber = playerCount++;
+    // Set Player Position
+    if (position.matches(&quot;handler|cutter&quot;))
+    {
+      this.position = position;
+    }
+    else
+    {
+      this.position = &quot;handler&quot;;
+    }
+  }
+  
+  // Fetch Player Position
+  public String getPosition()
+  {
+    return position;
+  }
+  
+  // Throw Disc and Return Distance
+  public int throwDisc(int pow)
+  {
+    // Check Power
+    pow = Math.max(pow, 1);
+    pow = Math.min(pow, 10);
+    // Return Distance
+    return pow * 4;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    // Calls Super-Constructor to Create String and Appends Jersey Number and Position
+    return super.toString() + &quot;\n   Jersey #: &quot; + jerseyNumber + &quot;\n   Position: &quot; + position;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="ultimateteam-java">
+<template #title>UltimateTeam.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">import java.util.ArrayList;
+
+public class UltimateTeam
+{
+  // Store Team Data
+  private ArrayList&lt;UltimatePlayer&gt; players;
+  private ArrayList&lt;Coach&gt; coaches;
+  
+  // Create Team Using Given Values
+  public UltimateTeam(ArrayList&lt;UltimatePlayer&gt; players, ArrayList&lt;Coach&gt; coaches)
+  {
+    // Set Team Players
+    this.players = players;
+    // Set Team Coaches
+    this.coaches = coaches;
+  }
+  
+  // Get Cutters from Team
+  public String getCutters()
+  {
+    // Temporary Storage
+    String output = &quot;&quot;;
+    for (UltimatePlayer player: players)
+    {
+      if (player.getPosition().equals(&quot;cutter&quot;))
+      {
+        output += player.toString() + &quot;\n&quot;;
+      }
+    }
+    return output;
+  }
+  
+  // Get Handlers from Team
+  public String getHandlers()
+  {
+    // Temporary Storage
+    String output = &quot;&quot;;
+    for (UltimatePlayer player: players)
+    {
+      if (player.getPosition().equals(&quot;handler&quot;))
+      {
+        output += player.toString() + &quot;\n&quot;;
+      }
+    }
+    return output;
+  }
+  
+  // Output to String
+  public String toString()
+  {
+    // Temporary Storage
+    String output = &quot;COACHES\n&quot;;
+    // Add Coaches
+    for (Coach coach: coaches)
+    {
+      output += coach.toString() + &quot;\n&quot;;
+    }
+    // Add Players
+    output += &quot;PLAYERS\n&quot;;
+    for (UltimatePlayer player: players)
+    {
+      output += player.toString() + &quot;\n&quot;;
+    }
+    return output;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-ultimate-java">
+<template #title>runner_Ultimate.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class runner_Ultimate{
+
+  public static void main(String[] args){
+    ArrayList&lt;UltimatePlayer&gt; players = new ArrayList&lt;UltimatePlayer&gt;();
+    ArrayList&lt;Coach&gt; coaches = new ArrayList&lt;Coach&gt;();
+    Scanner scan = new Scanner(System.in);
+    String ins = &quot;&quot;;
+    while(!ins.equals(&quot;q&quot;)){
+      System.out.println(&quot;\nWhat do you want to do?\np - make a person\nt - make a team from the current player/coach lists\nq - quit&quot;);
+      ins = scan.nextLine().toLowerCase();
+      if(ins.equals(&quot;p&quot;)){
+        Person p;
+        System.out.println(&quot;\nWhich class do you want to use?\np - Person\nu - UltimatePlayer\nc - Captain\no - Coach&quot;);
+        String cls = scan.nextLine().toLowerCase();
+        System.out.println(&quot;First name?&quot;);
+        String fn = scan.nextLine();
+        System.out.println(&quot;Last name?&quot;);
+        String ln = scan.nextLine();
+        if(cls.equals(&quot;u&quot;)||cls.equals(&quot;c&quot;)){
+          System.out.println(&quot;Position?&quot;);
+          String ps = scan.nextLine();
+          if(cls.equals(&quot;c&quot;)){
+            System.out.println(&quot;Offensive coach? (t/f)&quot;);
+            boolean tp = scan.nextLine().toLowerCase().equals(&quot;t&quot;);
+            p = new Captain(fn, ln, ps, tp);
+          }
+          else
+            p = new UltimatePlayer(fn, ln, ps);
+          players.add((UltimatePlayer)p);
+          System.out.println(&quot;\n&quot; + fn + &quot; &quot; + ln + &quot; was added to the players list.&quot;);
+        }
+        else if(cls.equals(&quot;o&quot;)){
+          System.out.println(&quot;Role?&quot;);
+          String rl = scan.nextLine();
+          p = new Coach(fn, ln, rl);
+          coaches.add((Coach)p);
+          System.out.println(&quot;\n&quot; + fn + &quot; &quot; + ln + &quot; was added to the coaches list.&quot;);
+        }
+        else{
+          p = new Person(fn, ln);
+          System.out.println(&quot;\nSorry, only UltimatePlayers, Captains and Coaches can be added to the team.&quot;);
+        }
+        System.out.println(&quot;\n&quot; + p);
+        System.out.println(&quot;\nType \&quot;t\&quot; for &quot; + fn + &quot; to throw a disc.&quot;);
+        if(scan.nextLine().toLowerCase().equals(&quot;t&quot;)){
+          System.out.println(&quot;Enter power level between 1 and 10.&quot;);
+          System.out.println(fn + &quot; threw the disc &quot; + p.throwDisc(scan.nextInt()) + &quot; yards.&quot;);
+          scan.nextLine();
+        }
+      }
+      else if(ins.equals(&quot;t&quot;)){
+        UltimateTeam t = new UltimateTeam(players, coaches);
+        System.out.println(&quot;\nYour team is ready!\n&quot;);
+        while(!ins.equals(&quot;q&quot;)){
+          System.out.println(&quot;\nWhat do you want to do?\nc - see the cutters\nh - see handlers\nt = see the whole team\nq - quit&quot;);
+          ins = scan.nextLine().toLowerCase();
+          if(ins.equals(&quot;h&quot;))
+            System.out.println(&quot;\n&quot; + t.getHandlers());
+          else if(ins.equals(&quot;c&quot;))
+            System.out.println(&quot;\n&quot; + t.getCutters());
+          else if(ins.equals(&quot;t&quot;))
+            System.out.println(&quot;\n&quot; + t + &quot;\n&quot;);
+        }
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../unit8/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Unit 8: 2​D Array</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../unit10/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Unit 10: Recursion</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/ricky8k/APCSA-ProjectStem">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                                    </g>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Unit 9: Inheritance", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>

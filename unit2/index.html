@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.741886757450">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.0.3">
+
+    <!-- Primary Meta Tags -->
+    <title>Unit 2: Using Objects</title>
+    <meta name="title" content="Unit 2: Using Objects">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ricky8k.github.io/unit2/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricky8k.github.io/unit2/">
+    <meta property="og:title" content="Unit 2: Using Objects">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ricky8k.github.io/unit2/">
+    <meta property="twitter:title" content="Unit 2: Using Objects">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=3.0.3.741886757450" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=3.0.3.741886757450" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project STEM</span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="unit-2-using-objects" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-2-using-objects">#</doc-anchor-trigger>
+        <span>Unit 2: Using Objects</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="lesson-1-strings-and-class-types">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-1-strings-and-class-types">#</doc-anchor-trigger>
+        <span>Lesson 1: Strings and Class Types</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l1-activity-one-java">
+<template #title>U2_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U2_L1_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;What is your name?&quot;);
+    String name = scan.nextLine();
+    System.out.println(&quot;What is your favorite number?&quot;);
+    int number = scan.nextInt();
+    
+    // Final Output
+    System.out.println(&quot;Your name is &quot; + name + &quot; and you like the number &quot; + number + &quot;.&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l1-activity-two-java">
+<template #title>U2_L1_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 1 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L1_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Initial Order
+    String itemName = &quot;apple pie&quot;;
+    System.out.println(&quot;The current order is &quot; + itemName);
+    // Change Order
+    System.out.println(&quot;I want to eat something else, what do you want to eat?&quot;);
+    itemName = scan.nextLine();
+    
+    // Final Output
+    System.out.println(&quot;The order has changed to &quot; + itemName);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-2-escape-sequences-and-string-concatenation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-escape-sequences-and-string-concatenation">#</doc-anchor-trigger>
+        <span>Lesson 2: Escape Sequences and String Concatenation</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l2-activity-one-java">
+<template #title>U2_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U2_L2_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Type of Item
+    System.out.println(&quot;What type of item are you buying?&quot;);
+    String itemType = scan.nextLine();
+    /// Number of Item(s)
+    System.out.println(&quot;How many are you buying?&quot;);
+    int itemQuantity = scan.nextInt();
+    /// Unit Weight of Item
+    System.out.println(&quot;How much does each one weigh?&quot;);
+    double unitWeight = scan.nextDouble();
+    
+    // Final Output
+    System.out.println(itemQuantity + &quot; &quot; + itemType + &quot; at &quot; + unitWeight + &quot; pounds each will weigh &quot; + (unitWeight * itemQuantity) + &quot; pounds total&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l2-activity-one-java">
+<template #title>U2_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class U2_L2_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Final Output
+    System.out.println(&quot;\&quot;That brain of mine is something more than merely mortal; as time will show.\&quot;\nAda Lovelace\nThe first computer programmer&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l2-activity-one-java">
+<template #title>U2_L2_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U2_L2_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Final Output
+    System.out.print(&quot;(\\(\\\n( - -)\n((\') (\')&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-3-string-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-string-methods">#</doc-anchor-trigger>
+        <span>Lesson 3: String Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l3-activity-one-java">
+<template #title>U2_L3_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 1 */
+
+import java.util.Scanner;
+
+public class U2_L3_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a string:&quot;);
+    String initStr = scan.nextLine();
+    System.out.println(&quot;Enter a number:&quot;);
+    int x = scan.nextInt();
+    
+    // Final Output
+    String finalStr = initStr.substring(0, x) + initStr.substring(initStr.length() - x);
+    System.out.println(finalStr);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l3-activity-two-java">
+<template #title>U2_L3_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L3_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a string:&quot;);
+    String initStr = scan.nextLine();
+    System.out.println(&quot;How many characters would you like to delete at the end?&quot;);
+    int delChar = scan.nextInt();
+    
+    // Final Output
+    String finalStr = initStr.substring(0, initStr.length() - delChar);
+    System.out.println(finalStr);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l3-activity-three-java">
+<template #title>U2_L3_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U2_L3_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// First Word
+    System.out.println(&quot;Enter first word:&quot;);
+    String w1 = scan.nextLine().toLowerCase();
+    /// Second Word
+    System.out.println(&quot;Enter second word:&quot;);
+    String w2 = scan.nextLine().toLowerCase();
+    
+    // Comparing First Letters (ignores dash)
+    int wordResult = w1.compareTo(w2);
+    
+    // Final Output
+    System.out.println(&quot;Result: &quot; + wordResult);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4">#</doc-anchor-trigger>
+        <span>Coding Activity 4</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l3-activity-four-java">
+<template #title>U2_L3_Activity_Four.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 3 Coding Activity Question 4 */
+
+import java.util.Scanner;
+
+public class U2_L3_Activity_Four
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a sentence:&quot;);
+    String sentence = scan.nextLine();
+    
+    // Final Output
+    System.out.println(sentence.indexOf(&quot; &quot;));
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-4-classes-and-objects">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-4-classes-and-objects">#</doc-anchor-trigger>
+        <span>Lesson 4: Classes and Objects</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l4-activity-one-java">
+<template #title>U2_L4_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 1 */
+
+import java.util.Scanner;
+ 
+public class U2_L4_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Get First String
+    System.out.println(&quot;Enter first string&quot;);
+    String s1 = scan.nextLine();
+    /// Get Second String
+    System.out.println(&quot;Enter second string&quot;);
+    String s2 = scan.nextLine();
+    /// Get # of Letters for Each String
+    System.out.println(&quot;Enter number of letters from each word&quot;);
+    int n = scan.nextInt();
+    
+    // Final Output
+    /// Print Last n Letters of s1 + First n Letters of s2
+    System.out.println(s1.substring(s1.length() - n, s1.length()) + s2.substring(0, n));
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l4-activity-two-java">
+<template #title>U2_L4_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L4_Activity_Two{
+  public static void main(String[] args){
+  
+    // User Input
+    Scanner scan = new Scanner(System.in);
+    String str1 = scan.nextLine();
+    String str2 = str1;
+    
+    // Final Output
+    str1 = str1.toUpperCase();
+    str2 = (str2.substring(0, 1).toUpperCase()) + str2.substring(1, str2.length()); 
+    System.out.println(str2);
+    System.out.println(str1);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-5-using-constructors">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-5-using-constructors">#</doc-anchor-trigger>
+        <span>Lesson 5: Using Constructors</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l5-activity-one-java">
+<template #title>U2_L5_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 5 Coding Activity Question 1 */
+
+import shapes.*;
+
+public class U2_L5_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Final Output
+    Circle shape1 = new Circle(10.1);
+    System.out.println(shape1);
+    Circle shape2 = new Circle(14.0);
+    System.out.println(shape2);
+    Circle shape3 = new Circle(20.5);
+    System.out.println(shape3);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l5-activity-two-java">
+<template #title>U2_L5_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 5 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L5_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Final Output
+    /// Parameters for Rectangle 1
+    System.out.println(&quot;Type a number for length and width:&quot;);
+    double s1length = scan.nextDouble();
+    Rectangle s1 = new Rectangle(s1length);
+    /// Parameters for Rectangle 2
+    System.out.println(&quot;Type a length:&quot;);
+    double s2length = scan.nextDouble();
+    System.out.println(&quot;Type a width:&quot;);
+    double s2width= scan.nextDouble();
+    Rectangle s2 = new Rectangle(s2length, s2width);
+    
+    // Final Output
+    System.out.println(s1);
+    System.out.println(s2);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l5-activity-three-java">
+<template #title>U2_L5_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 5 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L5_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Type a side length:&quot;);
+    double sLength = scan.nextDouble();
+    
+    // Creating Shapes
+    RegularPolygon s1 = new RegularPolygon(sLength);
+    RegularPolygon s2 = new RegularPolygon(4, sLength);
+    
+    // Final Output
+    System.out.println(s1);
+    System.out.println(s2);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-6-using-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-6-using-methods">#</doc-anchor-trigger>
+        <span>Lesson 6: Using Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l6-activity-one-java">
+<template #title>U2_L6_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 6 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L6_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter the radius of the circle:&quot;);
+    System.out.print(&quot;&gt; &quot;);
+    double r = scan.nextDouble();
+    Circle s = new Circle(r);
+    
+    // Final Output
+    System.out.println(&quot;A circle with a radius &quot; + s.getRadius() + &quot; has a circumference of &quot; + s.getCircumference() + &quot; and an area of &quot; + s.getArea());
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-5">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l6-activity-two-java">
+<template #title>U2_L6_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 6 Coding Activity Question 2 */
+
+import java.util.Scanner;
+import shapes.*;
+
+public class U2_L6_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Number of Sides
+    System.out.println(&quot;Enter number of sides: &quot;);
+    System.out.print(&quot;&gt; &quot;);
+    int sNum = scan.nextInt();
+    /// Side Length
+    System.out.println(&quot;Enter the side length: &quot;);
+    System.out.print(&quot;&gt; &quot;);
+    double sLength = scan.nextDouble();
+    
+    // Calculation
+    RegularPolygon polygon = new RegularPolygon(sNum, sLength);
+        
+    // Final Output
+    /// Area with Default sNum
+    System.out.println(&quot;Area with &quot; + polygon.getNumSides() + &quot; sides: &quot; + polygon.getArea());
+    /// Area with sNum + 2
+    System.out.println(&quot;Incrementing the number of sides by two&quot;);
+    polygon.addSides(2);
+    System.out.println(&quot;Area with &quot; + polygon.getNumSides() + &quot; sides: &quot; + polygon.getArea());
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-7-wrapper-classes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-7-wrapper-classes">#</doc-anchor-trigger>
+        <span>Lesson 7: Wrapper Classes</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-6">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l7-activity-one-java">
+<template #title>U2_L7_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 1 */
+
+public class U2_L7_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Final Output
+    int a = Integer.MAX_VALUE;
+    a++;
+    System.out.println(a);
+    int b = Integer.MIN_VALUE;
+    b--;
+    System.out.println(b);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-6">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l7-activity-two-java">
+<template #title>U2_L7_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L7_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // Prepare Variables
+    Integer x = null;
+    Integer y = null;
+    
+    // User Input
+    System.out.println(x + &quot; &quot; + y);
+    System.out.println(&quot;Enter values:&quot;);
+    x = scan.nextInt();
+    y = scan.nextInt();
+    
+    // Final Output
+    Double avg = (((double)(x + y)) / 2);
+    System.out.println(&quot;Average of &quot; + x + &quot; and &quot; + y + &quot; is &quot; + avg);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-3">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l7-activity-three-java">
+<template #title>U2_L7_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 7 Coding Activity Question 3 */
+
+import java.util.Scanner;
+import shapes.*;
+ 
+public class U2_L7_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter number of sides:&quot;);
+    Integer sides = scan.nextInt();
+    System.out.println(&quot;Enter side length:&quot;);
+    Double length = scan.nextDouble();
+    
+    // Create Shapes
+    RegularPolygon p1 = new RegularPolygon(sides, length);
+    RegularPolygon p2 = new RegularPolygon(sides + 1, length * 2);
+    
+    // Final Output
+    System.out.println(&quot;The area of a &quot; + p1 + &quot; is: &quot; + p1.getArea());
+    System.out.println(&quot;The area of a &quot; + p2 + &quot; is: &quot; + p2.getArea());
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-8-math-functions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-8-math-functions">#</doc-anchor-trigger>
+        <span>Lesson 8: Math Functions</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-7">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l8-activity-one-java">
+<template #title>U2_L8_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 8 Coding Activity Question 1 */
+
+import java.util.Scanner;
+import testing.Math;
+
+public class U2_L8_Activity_One
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter a positive integer:&quot;);
+    int n = scan.nextInt();
+    
+    // Calculation
+    System.out.println((int) Math.round((Math.random() * n) + 2));
+    System.out.println((int) Math.round((Math.random() * n) + 2));
+    System.out.println((int) Math.round((Math.random() * n) + 2));
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-7">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l8-activity-two-java">
+<template #title>U2_L8_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 8 Coding Activity Question 2 */
+
+import java.util.Scanner;
+
+public class U2_L8_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    /// Coordinates for x
+    System.out.println(&quot;Enter the first x-coordinate:&quot;);
+    double x1 = scan.nextDouble();
+    System.out.println(&quot;Enter the second x-coordinate:&quot;);
+    double x2 = scan.nextDouble();
+    /// Coordinates for y
+    System.out.println(&quot;Enter the first y-coordinate:&quot;);
+    double y1 = scan.nextDouble();
+    System.out.println(&quot;Enter the second y-coordinate:&quot;);
+    double y2 = scan.nextDouble();
+    
+    // Slope Calculation
+    double m = (y2 - y1) / (x2 - x1);
+    
+    // Final Output
+    System.out.println(&quot;Slope: &quot; + m);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-3-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-4">#</doc-anchor-trigger>
+        <span>Coding Activity 3</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u2-l8-activity-three-java">
+<template #title>U2_L8_Activity_Three.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 8 Coding Activity Question 3 */
+
+import java.util.Scanner;
+
+public class U2_L8_Activity_Three
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter two doubles:&quot;);
+    System.out.print(&quot;&gt;&quot;);
+    Double num1 = scan.nextDouble();
+    System.out.print(&quot;&gt;&quot;);
+    Double num2 = scan.nextDouble();
+    
+    // Difference Calculation
+    int diff = (int) Math.abs(Math.round(num2 - num1));
+    
+    // Final Output
+    System.out.println(&quot;Difference: &quot; + diff);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="assignment-2-control-tower">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-2-control-tower">#</doc-anchor-trigger>
+        <span>Assignment 2: Control Tower</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="assignment2-java">
+<template #title>Assignment2.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">/* Assignment 2 - Control Tower */
+/* Class name - must be &quot;Assignment2&quot; in order to run */
+import java.util.Scanner;
+import assignment2.Airplane;
+
+public class Assignment2
+{
+  public static void main(String[] args)
+  {
+    // Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    // User Input
+    System.out.println(&quot;Enter the details of the third airplane (call-sign, distance, bearing and altitude):&quot;);
+    /// Plane3
+    String pCSign = scan.nextLine().toUpperCase(); // Call-sign
+    Double pDist = scan.nextDouble(); // Distance
+    Integer pBear = scan.nextInt(); // Bearing
+    Integer pAlti = scan.nextInt(); // Altitude
+    System.out.println(&quot;&quot;);
+    
+    // Creating Planes
+    /// Plane1 (AAA01) with dist. 1.0 mi, bearing 0, alti. 0ft
+    Airplane plane1 = new Airplane(&quot;AAA01&quot;, 1.0, 0, 0);
+    /// Plane2 (AAA02) with dist. 15.8 mi, bearing 128, alti. 30000ft
+    Airplane plane2 = new Airplane(&quot;AAA02&quot;, 15.8, 128, 30000);
+    /// Plane3 (pCsign) with dist. pDist, bearing pBear, alti. pAlti
+    Airplane plane3 = new Airplane(pCSign, pDist, pBear, pAlti);
+    
+    // Initial Run
+    /// Plane Positions
+    System.out.println(&quot;Initial Positions:&quot;);
+    System.out.println(&quot;\&quot;Airplane 1\&quot;: &quot; + plane1.toString()); // Plane1
+    System.out.println(&quot;\&quot;Airplane 2\&quot;: &quot; + plane2.toString()); // Plane2
+    System.out.println(&quot;\&quot;Airplane 3\&quot;: &quot; + plane3.toString()); // Plane3
+    System.out.println(&quot;&quot;);
+    /// Plane Distances
+    System.out.println(&quot;Initial Distances:&quot;);
+    double distDiff1 = plane1.distTo(plane2); // Calculate Dist. Between P1 &amp; P2
+    System.out.println(&quot;The distance between Airplane 1 and Airplane 2 is &quot; + distDiff1 + &quot; miles.&quot;);
+    double distDiff2 = plane1.distTo(plane3); // Calculate Dist. Between P1 &amp; P3
+    System.out.println(&quot;The distance between Airplane 1 and Airplane 3 is &quot; + distDiff2 + &quot; miles.&quot;);
+    double distDiff3 = plane2.distTo(plane3); // Calculate Dist. Between P2 &amp; P3
+    System.out.println(&quot;The distance between Airplane 2 and Airplane 3 is &quot; + distDiff3 + &quot; miles.&quot;);
+    System.out.println(&quot;&quot;);
+    /// Plane Height Differences
+    System.out.println(&quot;Initial Height Differences:&quot;);
+    int altiDiff1 = (int) Math.abs(plane1.getAlt() - plane2.getAlt()); // Calculate Alti. Between P1 &amp; P2
+    System.out.println(&quot;The difference in height between Airplane 1 and Airplane 2 is &quot; + altiDiff1 + &quot; feet.&quot;);
+    int altiDiff2 = (int) Math.abs(plane1.getAlt() - plane3.getAlt()); // Calculate Alti. Between P1 &amp; P3
+    System.out.println(&quot;The difference in height between Airplane 1 and Airplane 3 is &quot; + altiDiff2 + &quot; feet.&quot;);
+    int altiDiff3 = (int) Math.abs(plane2.getAlt() - plane3.getAlt()); // Calculate Alti. Between P2 &amp; P3
+    System.out.println(&quot;The difference in height between Airplane 2 and Airplane 3 is &quot; + altiDiff3 + &quot; feet.&quot;);
+    System.out.println(&quot;&quot;);
+    
+    // Recalculation
+    /// Plane1
+    plane1.move(distDiff3, 65); // Moves plane by init. dist. between P2 &amp; P3; bearing 65 
+    /* Increase Alti. by 3000ft */
+    plane1.gainAlt();
+    plane1.gainAlt();
+    plane1.gainAlt();
+    /// Plane2
+    plane2.move(8, 135); // Moves plane by 8.0 mi.; bearing 135
+    /* Decrease Alti. by 2000ft */
+    plane2.loseAlt();
+    plane2.loseAlt();
+    /// Plane3
+    plane3.move(5, 55); // Moves plane by 5.0 mi.; bearing 55
+    /* Decrease Alti. by 4000ft */
+    plane3.loseAlt();
+    plane3.loseAlt();
+    plane3.loseAlt();
+    plane3.loseAlt();
+    
+    // New Run
+    /// Plane Positions
+    System.out.println(&quot;New Positions:&quot;);
+    System.out.println(&quot;\&quot;Airplane 1\&quot;: &quot; + plane1.toString()); // Plane1
+    System.out.println(&quot;\&quot;Airplane 2\&quot;: &quot; + plane2.toString()); // Plane2
+    System.out.println(&quot;\&quot;Airplane 3\&quot;: &quot; + plane3.toString()); // Plane3
+    System.out.println(&quot;&quot;);
+    /// Plane Distances
+    System.out.println(&quot;New Distances:&quot;);
+    distDiff1 = plane1.distTo(plane2); // Calculate Dist. Between P1 &amp; P2
+    System.out.println(&quot;The distance between Airplane 1 and Airplane 2 is &quot; + distDiff1 + &quot; miles.&quot;);
+    distDiff2 = plane1.distTo(plane3); // Calculate Dist. Between P1 &amp; P3
+    System.out.println(&quot;The distance between Airplane 1 and Airplane 3 is &quot; + distDiff2 + &quot; miles.&quot;);
+    distDiff3 = plane2.distTo(plane3); // Calculate Dist. Between P2 &amp; P3
+    System.out.println(&quot;The distance between Airplane 2 and Airplane 3 is &quot; + distDiff3 + &quot; miles.&quot;);
+    System.out.println(&quot;&quot;);
+    /// Plane Height Differences
+    System.out.println(&quot;New Height Differences:&quot;);
+    altiDiff1 = (int) Math.abs(plane1.getAlt() - plane2.getAlt()); // Calculate Alti. Between P1 &amp; P2
+    System.out.println(&quot;The difference in height between Airplane 1 and Airplane 2 is &quot; + altiDiff1 + &quot; feet.&quot;);
+    altiDiff2 = (int) Math.abs(plane1.getAlt() - plane3.getAlt()); // Calculate Alti. Between P1 &amp; P3
+    System.out.println(&quot;The difference in height between Airplane 1 and Airplane 3 is &quot; + altiDiff2 + &quot; feet.&quot;);
+    altiDiff3 = (int) Math.abs(plane2.getAlt() - plane3.getAlt()); // Calculate Alti. Between P2 &amp; P3
+    System.out.println(&quot;The difference in height between Airplane 2 and Airplane 3 is &quot; + altiDiff3 + &quot; feet.&quot;);
+    System.out.println(&quot;&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../unit1/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Unit 1: Primitive Types</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../unit3/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Unit 3: Boolean Expressions and If Statements</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/ricky8k/APCSA-ProjectStem">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                                    </g>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Unit 2: Using Objects", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>

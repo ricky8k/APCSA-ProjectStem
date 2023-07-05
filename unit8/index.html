@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.741886757450">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.0.3">
+
+    <!-- Primary Meta Tags -->
+    <title>Unit 8: 2D Array</title>
+    <meta name="title" content="Unit 8: 2D Array">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ricky8k.github.io/unit8/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricky8k.github.io/unit8/">
+    <meta property="og:title" content="Unit 8: 2D Array">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ricky8k.github.io/unit8/">
+    <meta property="twitter:title" content="Unit 8: 2D Array">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=3.0.3.741886757450" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.741886757450" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=3.0.3.741886757450" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project STEM</span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="unit-8-2d-array" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unit-8-2d-array">#</doc-anchor-trigger>
+        <span>Unit 8: 2D Array</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="lesson-1-2-d-arrays">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-1-2-d-arrays">#</doc-anchor-trigger>
+        <span>Lesson 1: 2-D Arrays</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u8-l1-activity-one-java">
+<template #title>U8_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class U8_L1_Activity_One
+{
+  public static int sumOfDiag(int[][] arr)
+  {
+    // Initialize Variable
+    int sum = 0;
+    
+    // Add Lead Diagonal
+    for (int i = 0; i &lt; arr.length; i++)
+    {
+      // Validate
+      if (i &gt; arr[0].length - 1)
+      {
+        break;
+      }
+      sum += arr[i][i];
+    }
+    
+    // End
+    return sum;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-u8-l1-activity-one-java">
+<template #title>runner_U8_L1_Activity_One.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_U8_L1_Activity_One
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Enter number of rows:&quot;);
+    int rows = scan.nextInt();
+    System.out.println(&quot;Enter number of columns:&quot;);
+    int cols = scan.nextInt();
+    int[][] mat = new int[rows][cols];
+    System.out.println(&quot;Enter values:&quot;);
+    for(int r = 0; r &lt; rows; r++)
+    {
+      for(int c = 0; c &lt; cols; c++)
+        mat[r][c] = scan.nextInt();
+    }
+    System.out.println(&quot;\nMatrix:&quot;);
+    for(int[] r : mat)
+    {
+      for(int n : r)
+      {
+        System.out.print(n + &quot;\t&quot;);
+      }
+      System.out.println();
+    }
+    System.out.println();
+    System.out.println(&quot;Diagonal Sum: &quot; + U8_L1_Activity_One.sumOfDiag(mat));
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="coding-activity-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
+        <span>Coding Activity 2</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="u8-l1-activity-two-java">
+<template #title>U8_L1_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class U8_L1_Activity_Two
+{
+  public static int[][] productTable(int r, int c)
+  {
+    // Initialize Variable
+    int[][] arr = new int[r][c];
+
+    // Create Product Table
+    for (int row = 0; row &lt; arr.length; row++)
+    {
+      for (int column = 0; column &lt; arr[row].length; column++)
+      {
+        arr[row][column] = row * column;
+      }
+    }
+    
+    // End
+    return arr;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-u8-l1-activity-two-java">
+<template #title>runner_U8_L1_Activity_Two.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+public class runner_U8_L1_Activity_Two
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Enter number of rows:&quot;);
+    int rows = scan.nextInt();
+    System.out.println(&quot;Enter number of columns:&quot;);
+    int cols = scan.nextInt();
+    System.out.println();
+    int[][] mat = U8_L1_Activity_Two.productTable(rows, cols);
+    for(int[] r : mat)
+    {
+      for(int n : r)
+      {
+        System.out.print(n + &quot;\t&quot;);
+      }
+      System.out.println();
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="lesson-2-2-d-array-algorithms">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-2-d-array-algorithms">#</doc-anchor-trigger>
+        <span>Lesson 2: 2-D Array Algorithms</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity-1-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
+        <span>Coding Activity 1</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="temperaturemonth-java">
+<template #title>TemperatureMonth.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class TemperatureMonth
+{
+  private double[][] temperatures;
+
+  public TemperatureMonth(double[][] t)
+  {
+    temperatures = t;
+  }
+
+  public double[] getMaxTempWeekly()
+  {
+    // Initialize Variable
+    double[] arr = new double[temperatures.length];
+
+    // Check for Max Temperatures
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Reset Temporary Storage
+      double maxTemp = temperatures[pos][0];
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        if (temperatures[pos][pos2] &gt; maxTemp)
+          maxTemp = temperatures[pos][pos2];
+      }
+      // Add maxTemp in Row to arr
+      arr[pos] = maxTemp;
+    }
+    
+    // End
+    return arr;
+  }
+
+  public double[] getMinTempWeekly()
+  {
+    // Initialize Variable
+    double[] arr = new double[temperatures.length];
+
+    // Check for Min Temperatures
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Reset Temporary Storage
+      double minTemp = temperatures[pos][0];
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        if (temperatures[pos][pos2] &lt; minTemp)
+          minTemp = temperatures[pos][pos2];
+      }
+      // Add minTemp in Row to arr
+      arr[pos] = minTemp;
+    }
+    
+    // End
+    return arr;
+  }
+
+  public double getRange()
+  {
+    // Temporary Storage
+    double min = temperatures[0][0], max = temperatures[0][0];
+    
+    // Check Range
+    for (int pos = 0; pos &lt; temperatures.length; pos++)
+    {
+      // Scan Row
+      for (int pos2 = 0; pos2 &lt; temperatures[pos].length; pos2++)
+      {
+        // Check for Max Value
+        if (temperatures[pos][pos2] &gt; max)
+          max = temperatures[pos][pos2];
+        // Check for Min Value
+        if (temperatures[pos][pos2] &lt; min)
+          min = temperatures[pos][pos2];
+      }
+    }
+    
+    // End
+    return max - min;
+  }
+
+  public double getCertainTemp(int week, int day)
+  {
+    // End
+    return temperatures[week][day];
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="runner-temperaturemonth-java">
+<template #title>runner_TemperatureMonth.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class runner_TemperatureMonth {
+ public static void main(String[] args) {
+   Scanner scan = new Scanner(System.in);
+   System.out.println(&quot;Enter number of weeks:&quot;);
+   int rows = scan.nextInt();
+
+   System.out.println(&quot;Enter number of days in a week:&quot;);
+   int cols = scan.nextInt();
+
+   double[][] mat = new double[rows][cols];
+   System.out.println(&quot;Enter temperature values:&quot;);
+
+   for(int r = 0; r &lt; rows; r++){
+       for(int c = 0; c &lt; cols; c++)
+           mat[r][c] = scan.nextDouble();
+   }
+
+   System.out.println(&quot;Enter Week To Access (0-indexed): &quot;);
+   int i = scan.nextInt();
+
+   System.out.println(&quot;Enter Day of the Week to Access(0-indexed): &quot;);
+   int j = scan.nextInt();
+
+   scan.close();
+    
+   TemperatureMonth t = new TemperatureMonth(mat);
+   System.out.println(&quot;\nTemperatures:&quot;);
+
+   for(double[] r : mat) {
+       for(double n : r) {
+           System.out.print(n + &quot;\t&quot;);
+       }
+
+       System.out.println();
+   }
+
+   System.out.println();
+   System.out.print(&quot;getMaxTempWeekly: &quot;);
+   double[] weeklyMax = t.getMaxTempWeekly();
+
+   System.out.print(&quot;[&quot;);
+   for(double max:weeklyMax) System.out.print(max + &quot; &quot;);
+   System.out.println(&quot;]&quot;);
+  
+   System.out.print(&quot;getMinTempWeekly: &quot;);
+   double[] weeklyMin = t.getMinTempWeekly();
+   System.out.print(&quot;[&quot;);
+   for(double min:weeklyMin) System.out.print(min + &quot; &quot;);
+   System.out.println(&quot;]&quot;);
+
+   System.out.println(&quot;getRange: &quot; + t.getRange());
+   System.out.print(&quot;getCertainTemp(&quot; + i + &quot;,&quot; + j + &quot;): &quot; + t.getCertainTemp(i,j));
+
+ }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="assignment-8-battleship">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-8-battleship">#</doc-anchor-trigger>
+        <span>Assignment 8: Battleship</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="coding-activity">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
+        <span>Coding Activity</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab id="board-java">
+<template #title>Board.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Board
+{
+  // Initialize Variable
+  private String[][] squares;
+
+  // Construct 10x10 Board
+  public Board()
+  {
+    // Create Array
+    squares = new String[10][10];
+    // Add Tiles
+    for (int row = 0; row &lt; squares.length; row++)
+    {
+      for (int col = 0; col &lt; squares[0].length; col++)
+      {
+        squares[row][col] = &quot;-&quot;;
+      }
+    }
+  }
+
+  // Output to String
+  public String toString()
+  {
+    // Temporary Storage
+    String output = &quot;&quot;;
+    // Create Output
+    for (int row = 0; row &lt; squares.length; row++)
+    {
+      for (int col = 0; col &lt; squares[0].length; col++)
+      {
+        output += squares[row][col] + &quot; &quot;;
+      }
+      output += &quot;\n&quot;;
+    }
+    return output;
+  }
+
+  // Create New Ship at Specified Location
+  public boolean addShip(int row, int col, int len, boolean horizontal)
+  {
+    // Validate Given Values
+    if (row &lt; 0 || col &lt; 0 || row &gt;= squares.length || col &gt;= squares[0].length)
+      return false;
+    // Horizontal
+    if (horizontal)
+    {
+      // Check New Ship Position
+      if (col + len &gt; squares.length)
+        return false;
+      for (int c = col; c &lt; col + len; c++)
+      {
+        if (!squares[row][c].equals(&quot;-&quot;))
+          return false;
+      }
+      // Add New Ship to Board if Valid
+      for (int c = col; c &lt; col + len; c++)
+      {
+        squares[row][c] = &quot;b&quot;;
+      }
+    }
+    // Vertical
+    else
+    {
+      // Check New Ship Position
+      if (row + len &gt; squares.length)
+        return false;
+      for (int r = row; r &lt; row + len; r++)
+      {
+        if (!squares[r][col].equals(&quot;-&quot;))
+          return false;
+      }
+      // Add New Ship to Board if Valid
+      for (int r = row; r &lt; row + len; r++)
+      {
+        squares[r][col] = &quot;b&quot;;
+      }
+    }
+    // Confirm New Ship Added
+    return true;
+  }
+
+  // Find Ship
+  public boolean foundShip(int len)
+  {
+    // Horizontal
+    for (int row = 0; row &lt; squares.length; row++)
+    {
+      // Temporary Storage
+      int count = 0;
+      while (count &lt; squares[0].length)
+      {
+        // Temporary Storage
+        int foundLen = 0;
+        // Find Ships in Given Length
+        while (count &lt; squares[0].length &amp;&amp; squares[row][count].equals(&quot;b&quot;))
+        {
+          foundLen++;
+          count++;
+        }
+        if (foundLen == len)
+          return true;
+        // Reset Variable
+        foundLen = 0;
+        count++;
+      }
+    }
+    // Vertical
+    for (int pos = 0; pos &lt; squares[0].length; pos++)
+    {
+      // Temporary Storage
+      int counter = 0;
+      while (counter &lt; squares.length)
+      {
+        // Temporary Storage
+        int foundLen = 0;
+        // Find Ships in Given Length
+        while (counter &lt; squares.length &amp;&amp; squares[counter][pos].equals(&quot;b&quot;))
+        {
+          foundLen++;
+          counter++;
+        }
+        if (foundLen == len)
+          return true;
+        // Reset Variable
+        foundLen = 0;
+        counter++;
+      }
+    }
+    // End
+    return false;
+  }
+
+  // Shoot Ship
+  public int shoot(int row, int col)
+  {
+    // Validate Given Values
+    if (row &lt; 0 || col &lt; 0 || row &gt;= squares.length || col &gt;= squares[0].length)
+      return -1;
+    // Missed Shot
+    if (squares[row][col].equals(&quot;-&quot;))
+    {
+      squares[row][col] = &quot;m&quot;;
+      return 0;
+    }
+    // Hit Shot
+    if (squares[row][col].equals(&quot;b&quot;))
+    {
+      squares[row][col] = &quot;x&quot;;
+      return 1;
+    }
+    // Already Shot
+    return 2;
+  }
+
+  // Game Over
+  public boolean gameOver()
+  {
+    // Check for Battleships on Board
+    for (int row = 0; row &lt; squares.length; row++)
+    {
+      for (int col = 0; col &lt; squares[0].length; col++)
+      {
+        if (squares[row][col].equals(&quot;b&quot;))
+          return false;
+      }
+    }
+    // End
+    return true;
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab id="battleship-java">
+<template #title>Battleship.java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
+// No modifications were made to this file.
+
+import java.util.Scanner;
+
+public class Battleship
+{
+  public static void main(String[] args)
+  {
+    // Set up board and print welcome
+    Board b = new Board();
+    Scanner scan = new Scanner(System.in);
+    System.out.println(&quot;Welcome to Battleship!\n&quot;);
+    boolean addNew = true;
+
+    while(addNew)
+    {
+      System.out.println(&quot;Type \&quot;a\&quot; to add new ship, \&quot;b\&quot; to see the board, \&quot;p\&quot; to play or \&quot;q\&quot; to quit.&quot;);
+      String ans = scan.nextLine();
+      if(ans.toLowerCase().equals(&quot;q&quot;))
+        return;
+      if(ans.toLowerCase().equals(&quot;a&quot;))
+      {
+        // Get parameters for new ship
+        System.out.println(&quot;Starting in which row?&quot;);
+        int r = scan.nextInt();
+        System.out.println(&quot;Starting in which column?&quot;);
+        int c = scan.nextInt();
+        System.out.println(&quot;How long?&quot;);
+        int l = scan.nextInt();
+        scan.nextLine();
+        System.out.println(&quot;Horizontal (h) or vertical (v)?&quot;);
+        String d = scan.nextLine();
+        boolean h = (d.toLowerCase().equals(&quot;h&quot;));
+
+        // Call addShip method and return message based on true/false value
+        if(b.addShip(r, c, l, h))
+        {
+          System.out.println(&quot;\nNew ship added!\n&quot;);
+        }
+        else
+          System.out.println(&quot;\nCan't put a ship there!\n&quot;);
+      }
+      else if(ans.toLowerCase().equals(&quot;b&quot;))
+        System.out.println(&quot;\n&quot; + b + &quot;\n&quot;);
+      else if(ans.toLowerCase().equals(&quot;p&quot;))
+      {
+        if(b.foundShip(3) &amp;&amp; b.foundShip(4))
+        {
+          addNew = false;
+          System.out.println(&quot;\nOk, let's play!\n&quot;);
+        }
+        else
+          System.out.println(&quot;\nYou need ships of length 3 and 4 to play!\n&quot;);
+      }
+    }
+
+    // As long as ships remain, play game
+    while(!b.gameOver())
+    {
+      System.out.println(&quot;Press \&quot;s\&quot; to shoot at a square, \&quot;b\&quot; to see the board, \&quot;q\&quot; to quit.&quot;);
+      String ans = scan.nextLine();
+      if(ans.toLowerCase().equals(&quot;q&quot;))
+        return;
+      else if(ans.toLowerCase().equals(&quot;s&quot;)){
+        // Get row and column to shoot
+        System.out.println(&quot;Input row.&quot;);
+        int r = scan.nextInt();
+        System.out.println(&quot;Input column.&quot;);
+        int c = scan.nextInt();
+
+        // Perform shot and store result
+        int result = b.shoot(r,c);
+
+        // Choose message based on result
+        if(result == 1)
+          System.out.println(&quot;\nHit!\n&quot;);
+        else if(result == 0)
+          System.out.println(&quot;\nMiss!\n&quot;);
+        else if(result == 2)
+          System.out.println(&quot;\nYou already tried that.\n&quot;);
+        else if(result == -1)
+          System.out.println(&quot;\nInvalid coordinates.\n&quot;);
+        scan.nextLine();
+      }
+      else if(ans.toLowerCase().equals(&quot;b&quot;))
+        System.out.println(&quot;\n&quot; + b + &quot;\n&quot;);
+    }
+    System.out.println(&quot;Game over!&quot;);
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../unit7/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Unit 7: Array​List</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../unit9/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Unit 9: Inheritance</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://github.com/ricky8k/APCSA-ProjectStem">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                    <g fill="currentColor">
+                                                        <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                                    </g>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Unit 8: 2D Array", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>
