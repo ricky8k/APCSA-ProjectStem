@@ -1,5 +1,5 @@
 ---
-label: "Project STEM"
+label: "Home"
 icon: rocket
 order: -1
 ---
@@ -8,10 +8,8 @@ order: -1
 
 Source code to various units of the 2022-23 AP Computer Science A course on Project Stem.
 
-!!!info Note
+!!!info
 This page serves as a key to solve difficult problems on Project Stem, intended for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
-
-*Try working on the problems on your own first!*
 !!!
 
 ## 📃 Unit Selection

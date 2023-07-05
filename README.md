@@ -6,11 +6,9 @@ Source code to various units of the 2022-23 AP Computer Science A course on Proj
 
 > **Note**  
 > This repository serves as a key to solve difficult problems on Project Stem, intended for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
->
-> *Try working on the problems on your own first!*
 
 ## 🌐 Website
-A user-friendly website front-end is available on [roboco.is-cute.moe](https://roboco.is-cute.moe/project-stem).
+A user-friendly website front-end is available on [here](https://ricky8k.github.io/APCSA-ProjectStem/).
   
 ## 📃 Units Available
 - [X] Unit 1: Primitive Types
