@@ -4,7 +4,7 @@ icon: rocket
 order: -1
 ---
 
-# Project STEM
+# Project Stem
 
 Source code to various units of the 2022-23 AP Computer Science A course on Project Stem.
 
