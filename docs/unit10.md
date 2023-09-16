@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: Intro to Recursion
 
 ### Coding Activity 1
+
 +++ U10_L1_Activity_One.java
+
 ```java
 public class U10_L1_Activity_One
 {
@@ -40,7 +42,9 @@ public class U10_L1_Activity_One
   }
 }
 ```
+
 +++ runner_U10_L1_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -60,12 +64,15 @@ public class runner_U10_L1_Activity_One
   
 }
 ```
+
 +++
 
 ## Lesson 2: Recursive Functions with Returns
 
 ### Coding Activity 1
+
 +++ U10_L2_Activity_One.java
+
 ```java
 public class U10_L2_Activity_One
 {
@@ -86,7 +93,9 @@ public class U10_L2_Activity_One
   }
 }
 ```
+
 +++ runner_U10_L2_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -105,12 +114,15 @@ public class runner_U10_L2_Activity_One
   
 }
 ```
+
 +++
 
 ## Assignment 10: Anagrams
 
 ### Coding Activity
+
 +++ AnagramList.java
+
 ```java
 import java.util.ArrayList;
 
@@ -182,7 +194,9 @@ public class AnagramList
   }
 }
 ```
+
 +++ runner_AnagramList.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -213,4 +227,5 @@ public class runner_AnagramList
   }
 }
 ```
-+++ 
+
++++

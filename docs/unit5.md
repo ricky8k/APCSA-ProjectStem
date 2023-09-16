@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: Void Methods
 
 ### Coding Activity 1
+
 +++ U5_L1_Activity_One.java
+
 ```java
 /* Lesson 1 Coding Activity Question 1 */
 
@@ -24,12 +26,15 @@ public class U5_L1_Activity_One
   }
 }
 ```
+
 +++
 
 ## Lesson 2: Parameters
 
 ### Coding Activity 1
+
 +++ U5_L2_Activity_One.java
+
 ```java
 /* Lesson 2 Coding Activity Question 1 */
 
@@ -55,10 +60,13 @@ public class U5_L2_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U5_L2_Activity_Two.java
+
 ```java
 /* Lesson 2 Coding Activity Question 2 */
 
@@ -82,10 +90,13 @@ public class U5_L2_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U5_L2_Activity_Three.java
+
 ```java
 /* Lesson 2 Coding Activity Question 3 */
 
@@ -103,10 +114,13 @@ public class U5_L2_Activity_Three
   }
 }
 ```
+
 +++
 
 ### Coding Activity 4
+
 +++ U5_L2_Activity_Four.java
+
 ```java
 /* Lesson 2 Coding Activity Question 4 */
 
@@ -132,12 +146,15 @@ public class U5_L2_Activity_Four
   }
 }
 ```
+
 +++
 
 ## Lesson 3: Parameters - Primitive vs. Class
 
 ### Coding Activity 1
+
 +++ U5_L3_Activity_One.java
+
 ```java
 /* Lesson 3 Coding Activity Question 1 */
 
@@ -152,10 +169,13 @@ public class U5_L3_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U5_L3_Activity_Two.java
+
 ```java
 /* Lesson 3 Coding Activity Question 2 */
 
@@ -183,10 +203,13 @@ public class U5_L3_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U5_L3_Activity_Three.java
+
 ```java
 /* Lesson 3 Coding Activity Question 3 */
 
@@ -201,12 +224,15 @@ public class U5_L3_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 4: Return Methods
 
 ### Coding Activity 1
+
 +++ U5_L4_Activity_One.java
+
 ```java
 /* Lesson 4 Coding Activity Question 1 */
 
@@ -224,10 +250,13 @@ public class U5_L4_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U5_L4_Activity_Two.java
+
 ```java
 /* Lesson 4 Coding Activity Question 2 */
 
@@ -244,10 +273,13 @@ public class U5_L4_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U5_L4_Activity_Three.java
+
 ```java
 /* Lesson 4 Coding Activity Question 3 */
 
@@ -265,10 +297,13 @@ public class U5_L4_Activity_Three
   }
 }
 ```
+
 +++
 
 ### Coding Activity 4
+
 +++ U5_L4_Activity_Four.java
+
 ```java
 /* Lesson 4 Coding Activity Question 4 */
 
@@ -292,12 +327,15 @@ public class U5_L4_Activity_Four
   }
 }
 ```
+
 +++
 
 ## Lesson 5: Classes - The Basics
 
 ### Coding Activity 1
+
 +++ Person.java
+
 ```java
 public class Person
 {
@@ -323,7 +361,9 @@ public class Person
   }
 }
 ```
+
 +++ runner_Person.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -354,10 +394,13 @@ public class runner_Person
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ Oven.java
+
 ```java
 public class Oven 
 {
@@ -443,7 +486,9 @@ public class Oven
   }
 }
 ```
+
 +++ runner_Oven.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -489,12 +534,15 @@ public class runner_Oven
   }
 }
 ```
+
 +++
 
 ## Lesson 6: Constructors
 
 ### Coding Activity 1
+
 +++ Plane.java
+
 ```java
 public class Plane
 {
@@ -560,7 +608,9 @@ public class Plane
   }
 }
 ```
+
 +++ runner_Plane.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -597,12 +647,15 @@ public class runner_Plane
   }
 }
 ```
+
 +++
 
 ## Lesson 7: Documenting a Class
 
 ### Coding Activity 1
+
 +++ Rectangle.java
+
 ```java
 public class Rectangle
 {
@@ -692,7 +745,9 @@ public class Rectangle
   }
 }
 ```
+
 +++ runner_Rectangle.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -763,7 +818,9 @@ public class runner_Rectangle{
 ## Lesson 8: Static vs. Instance
 
 ### Coding Activity 1
+
 +++ Car.java
+
 ```java
 public class Car
 {
@@ -828,7 +885,9 @@ public class Car
   }
 }
 ```
+
 +++ runner_Car.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -870,12 +929,15 @@ public class runner_Car {
    }
 }
 ```
+
 +++
 
 ## Assignment 5: Player
 
 ### Coding Activity
+
 +++ Player.java
+
 ```java
 public class Player 
 {
@@ -1082,7 +1144,9 @@ public class Player
   }
 }
 ```
+
 +++ runner_Player.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -1283,4 +1347,5 @@ public class runner_Player {
   }
 }
 ```
+
 +++

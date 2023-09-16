@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: 2-D Arrays
 
 ### Coding Activity 1
+
 +++ U8_L1_Activity_One.java
+
 ```java
 public class U8_L1_Activity_One
 {
@@ -34,7 +36,9 @@ public class U8_L1_Activity_One
   }
 }
 ```
+
 +++ runner_U8_L1_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -71,10 +75,13 @@ public class runner_U8_L1_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U8_L1_Activity_Two.java
+
 ```java
 public class U8_L1_Activity_Two
 {
@@ -97,7 +104,9 @@ public class U8_L1_Activity_Two
   }
 }
 ```
+
 +++ runner_U8_L1_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -125,12 +134,15 @@ public class runner_U8_L1_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Lesson 2: 2-D Array Algorithms
 
 ### Coding Activity 1
+
 +++ TemperatureMonth.java
+
 ```java
 public class TemperatureMonth
 {
@@ -220,7 +232,9 @@ public class TemperatureMonth
   }
 }
 ```
+
 +++ runner_TemperatureMonth.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -283,12 +297,15 @@ public class runner_TemperatureMonth {
  }
 }
 ```
+
 +++
 
 ## Assignment 8: Battleship
 
 ### Coding Activity
+
 +++ Board.java
+
 ```java
 public class Board
 {
@@ -461,7 +478,9 @@ public class Board
   }
 }
 ```
+
 +++ Battleship.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -555,4 +574,5 @@ public class Battleship
   }
 }
 ```
+
 +++

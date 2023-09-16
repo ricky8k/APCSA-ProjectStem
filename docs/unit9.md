@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: Inheritance
 
 ### Coding Activity 1
+
 +++ SpecialityCoffee.java
+
 ```java
 public class SpecialityCoffee extends Coffee
 {
@@ -43,7 +45,9 @@ public class SpecialityCoffee extends Coffee
   }
 }
 ```
+
 +++ Coffee.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -98,7 +102,9 @@ public class Coffee
   }
 }
 ```
+
 +++ runner_Coffee.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -148,12 +154,15 @@ public class runner_Coffee
   }
 }
 ```
+
 +++
 
 ## Lesson 2: Inheritance Overriding Methods
 
 ### Coding Activity 1
+
 +++ SpecialityCoffee.java
+
 ```java
 public class SpecialityCoffee extends Coffee 
 {
@@ -211,7 +220,9 @@ public class SpecialityCoffee extends Coffee
   }
 }
 ```
+
 +++ Coffee.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -266,7 +277,9 @@ public class Coffee
   }
 }
 ```
+
 +++ runner_Coffee.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -318,10 +331,13 @@ public class runner_Coffee
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ DoubleCone.java
+
 ```java
 public class DoubleCone extends Cone
 {
@@ -398,7 +414,9 @@ public class DoubleCone extends Cone
   }
 }
 ```
+
 +++ Cone.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -441,7 +459,9 @@ public class Cone
 
 }
 ```
+
 +++ runner_DoubleCone.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -500,12 +520,15 @@ public class runner_DoubleCone {
   }
 }
 ```
+
 +++
 
 ## Lesson 3: Is-a and Has-a Relationships
 
 ### Coding Activity 1
+
 +++ Animal.java
+
 ```java
 public class Animal
 {
@@ -537,7 +560,9 @@ public class Animal
   }
 }
 ```
+
 +++ Cow.java
+
 ```java
 public class Cow extends Animal
 {
@@ -554,7 +579,9 @@ public class Cow extends Animal
   }
 }
 ```
+
 +++ Farm.java
+
 ```java
 public class Farm
 {
@@ -584,7 +611,9 @@ public class Farm
   }
 }
 ```
+
 +++ Farmer.java
+
 ```java
 public class Farmer
 {
@@ -606,7 +635,9 @@ public class Farmer
   }
 }
 ```
+
 +++ Pig.java
+
 ```java
 public class Pig extends Animal
 {
@@ -623,7 +654,9 @@ public class Pig extends Animal
   }
 }
 ```
+
 +++ Sheep.java
+
 ```java
 public class Sheep extends Animal
 {
@@ -640,7 +673,9 @@ public class Sheep extends Animal
   }
 }
 ```
+
 +++ runner_Farm.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -686,12 +721,15 @@ public class runner_Farm
   }
 }
 ```
+
 +++
 
 ## Assignment 9: Ultimate Frisbee
 
 ### Coding Activity
+
 +++ Captain.java
+
 ```java
 public class Captain extends UltimatePlayer
 {
@@ -726,7 +764,9 @@ public class Captain extends UltimatePlayer
   }
 }
 ```
+
 +++ Coach.java
+
 ```java
 public class Coach extends Person
 {
@@ -750,7 +790,9 @@ public class Coach extends Person
   }
 }
 ```
+
 +++ Person.java
+
 ```java
 public class Person
 {
@@ -783,7 +825,9 @@ public class Person
   }
 }
 ```
+
 +++ UltimatePlayer.java
+
 ```java
 public class UltimatePlayer extends Person
 {
@@ -835,7 +879,9 @@ public class UltimatePlayer extends Person
   }
 }
 ```
+
 +++ UltimateTeam.java
+
 ```java
 import java.util.ArrayList;
 
@@ -904,7 +950,9 @@ public class UltimateTeam
   }
 }
 ```
+
 +++ runner_Ultimate.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -980,4 +1028,5 @@ public class runner_Ultimate{
   }
 }
 ```
+
 +++

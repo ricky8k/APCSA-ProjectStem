@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: While Loops
 
 ### Coding Activity 1
+
 +++ U4_L1_Activity_One.java
+
 ```java
 /* Lesson 1 Coding Activity Question 1 */
 
@@ -37,10 +39,13 @@ public class U4_L1_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L1_Activity_Two.java
+
 ```java
 /* Lesson 1 Coding Activity Question 2 */
 
@@ -68,10 +73,13 @@ public class U4_L1_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U4_L1_Activity_Three.java
+
 ```java
 /* Lesson 1 Coding Activity Question 3 */
 
@@ -103,12 +111,15 @@ public class U4_L1_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 1 1/2: Tracing Code
 
 ### Coding Activity 1
+
 +++ U4_L1_5_Activity_One.java
+
 ```java
 /* Lesson 1 1/2 Coding Activity Question 1 */
 
@@ -136,10 +147,13 @@ public class U4_L1_5_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L1_5_Activity_Two.java
+
 ```java
 /* Lesson 4 1/2 Coding Activity Question 2 */
 
@@ -170,12 +184,15 @@ public class U4_L1_5_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Lesson 2: Algorithms for Numbers
 
 ### Coding Activity 1
+
 +++ U4_L2_Activity_One.java
+
 ```java
 /* Lesson 2 Coding Activity Question 1 */
 
@@ -210,10 +227,13 @@ public class U4_L2_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L2_Activity_Two.java
+
 ```java
 /* Lesson 2 Coding Activity Question 2 */
 
@@ -248,10 +268,13 @@ public class U4_L2_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U4_L2_Activity_Three.java
+
 ```java
 /* Lesson 2 Coding Activity Question 3 */
 
@@ -312,12 +335,15 @@ public class U4_L2_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 3: The For Loop
 
 ### Coding Activity 1
+
 +++ U4_L3_Activity_One.java
+
 ```java
 /* Lesson 3 Coding Activity Question 1 */
 
@@ -335,10 +361,13 @@ public class U4_L3_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L3_Activity_Two.java
+
 ```java
 /* Lesson 3 Coding Activity Question 2 */
 
@@ -363,10 +392,13 @@ public class U4_L3_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U4_L3_Activity_Three.java
+
 ```java
 /* Lesson 3 Coding Activity Question 3 */
 
@@ -406,10 +438,13 @@ public class U4_L3_Activity_Three
   }
 }
 ```
+
 +++
 
 ### Coding Activity 4
+
 +++ U4_L3_Activity_Four.java
+
 ```java
 /* Lesson 3 Coding Activity Question 4 */
 
@@ -444,12 +479,15 @@ public class U4_L3_Activity_Four
   }
 }
 ```
+
 +++
 
 ## Lesson 4: Algorithms for Strings
 
 ### Coding Activity 1
+
 +++ U4_L4_Activity_One.java
+
 ```java
 /* Lesson 4 Coding Activity Question 1 */
 
@@ -488,10 +526,13 @@ public class U4_L4_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L4_Activity_Two.java
+
 ```java
 /* Lesson 4 Coding Activity Question 2 */
 
@@ -519,10 +560,13 @@ public class U4_L4_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U4_L4_Activity_Three.java
+
 ```java
 /* Lesson 4 Coding Activity Question 3 */
 
@@ -556,12 +600,15 @@ public class U4_L4_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 5: Nested Loops
 
 ### Coding Activity 1
+
 +++ U4_L5_Activity_One.java
+
 ```java
 /* Lesson 5 Coding Activity Question 1 */
 
@@ -591,10 +638,13 @@ public class U4_L5_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U4_L5_Activity_Two.java
+
 ```java
 /* Lesson 5 Coding Activity Question 2 */
 
@@ -616,12 +666,15 @@ public class U4_L5_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Assignment 4: String Shortener
 
 ### Coding Activity
+
 +++ Assignment4.java
+
 ```java
 import java.util.Scanner;
 
@@ -719,4 +772,5 @@ class Assignment4
   }
 }
 ```
+
 +++

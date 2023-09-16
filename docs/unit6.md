@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: One-Dimensional Arrays
 
 ### Coding Activity 1
+
 +++ U6_L1_Activity_One.java
+
 ```java
 import java.util.Scanner;
 
@@ -33,10 +35,13 @@ public class U6_L1_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U6_L1_Activity_Two.java
+
 ```java
 import java.util.Scanner;
 public class U6_L1_Activity_Two
@@ -68,12 +73,15 @@ public class U6_L1_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Lesson 2: Traversing an Array
 
 ### Coding Activity 1
+
 +++ U6_L2_Activity_One.java
+
 ```java
 public class U6_L2_Activity_One
 {
@@ -97,7 +105,9 @@ public class U6_L2_Activity_One
   }
 }
 ```
+
 +++ runner_U6_L2_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -124,10 +134,13 @@ public class runner_U6_L2_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U6_L2_Activity_Two.java
+
 ```java
 public class U6_L2_Activity_Two
 {
@@ -150,7 +163,9 @@ public class U6_L2_Activity_Two
   }
 }
 ```
+
 +++ runner_U6_L2_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -177,10 +192,13 @@ public class runner_U6_L2_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U6_L2_Activity_Three.java
+
 ```java
 public class U6_L2_Activity_Three
 {
@@ -204,7 +222,9 @@ public class U6_L2_Activity_Three
   }
 }
 ```
+
 +++ runner_U6_L2_Activity_Three.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -231,12 +251,15 @@ public class runner_U6_L2_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 3: Arrays of Strings
 
 ### Coding Activity 1
+
 +++ U6_L3_Activity_One.java
+
 ```java
 public class U6_L3_Activity_One
 {
@@ -259,7 +282,9 @@ public class U6_L3_Activity_One
   }
 }
 ```
+
 +++ runner_U6_L3_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -283,10 +308,13 @@ public class runner_U6_L3_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U6_L3_Activity_Two.java
+
 ```java
 public class U6_L3_Activity_Two
 { 
@@ -319,7 +347,9 @@ public class U6_L3_Activity_Two
   }
 }
 ```
+
 +++ runner_U6_L3_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -343,10 +373,13 @@ public class runner_U6_L3_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U6_L3_Activity_Three.java
+
 ```java
 public class U6_L3_Activity_Three
 {
@@ -363,7 +396,9 @@ public class U6_L3_Activity_Three
   }
 }
 ```
+
 +++ runner_U6_L3_Attivity_Three.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -388,12 +423,15 @@ public class runner_U6_L3_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 4: Algorithms on Arrays
 
 ### Coding Activity 1
+
 +++ U6_L4_Activity_One.java
+
 ```java
 public class U6_L4_Activity_One
 {
@@ -425,7 +463,9 @@ public class U6_L4_Activity_One
   }
 }
 ```
+
 +++ runner_U6_L4_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -459,10 +499,13 @@ public class runner_U6_L4_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U6_L4_Activity_Two.java
+
 ```java
 public class U6_L4_Activity_Two
 {
@@ -495,7 +538,9 @@ public class U6_L4_Activity_Two
   }
 }
 ```
+
 +++ runner_U6_L4_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -533,12 +578,15 @@ public class runner_U6_L4_Activity_Two{
   }
 }
 ```
+
 +++
 
 ## Lesson 5: The Enhanced For Loop
 
 ### Coding Activity 1
+
 +++ U6_L5_Activity_One.java
+
 ```java
 public class U6_L5_Activity_One
 {
@@ -559,7 +607,9 @@ public class U6_L5_Activity_One
   }
 }
 ```
+
 +++ runner_U6_L5_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -587,10 +637,13 @@ public class runner_U6_L5_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U6_L5_Activity_Two.java
+
 ```java
 public class U6_L5_Activity_Two
 {
@@ -608,7 +661,9 @@ public class U6_L5_Activity_Two
   }
 }
 ```
+
 +++ runner_U6_L5_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -632,10 +687,13 @@ public class runner_U6_L5_Activity_Two
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U6_L5_Activity_Three.java
+
 ```java
 public class U6_L5_Activity_Three
 {
@@ -655,7 +713,9 @@ public class U6_L5_Activity_Three
   }
 }
 ```
+
 +++ runner_U6_L5_Activity_Three.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -679,12 +739,15 @@ public class runner_U6_L5_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Assignment 6: Array Statistics
 
 ### Coding Activity
+
 +++ StudentStatsArray.java
+
 ```java
 public class StudentStatsArray 
 {
@@ -856,7 +919,9 @@ public class StudentStatsArray
   }
 }
 ```
+
 +++ runner_StudentStatsArray.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -931,7 +996,9 @@ public class runner_StudentStatsArray {
    }
 }
 ```
+
 +++ Student.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -970,4 +1037,5 @@ public class Student
   }
 }
 ```
+
 +++

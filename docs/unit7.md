@@ -9,7 +9,9 @@ order: -1
 ## Lesson 1: ArrayList
 
 ### Coding Activity 1
+
 +++ U7_L1_Activity_One.java
+
 ```java
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -45,12 +47,15 @@ public class U7_L1_Activity_One
   }
 }
 ```
+
 +++
 
 ## Lesson 2: Traversing ArrayLists
 
 ### Coding Activity 1
+
 +++ U7_L2_Activity_One.java
+
 ```java
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -86,10 +91,13 @@ public class U7_L2_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U7_L2_Activity_Two.java
+
 ```java
 import java.util.ArrayList;
 
@@ -110,7 +118,9 @@ public class U7_L2_Activity_Two
   }
 }
 ```
+
 +++ runner_U7_L2_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -133,10 +143,13 @@ public class runner_U7_L2_Activity_Two{
   }
 }
 ```
+
 +++
 
 ### Coding Activity 3
+
 +++ U7_L2_Activity_Three.java
+
 ```java
 import java.util.ArrayList;
 
@@ -159,7 +172,9 @@ public class U7_L2_Activity_Three
   }
 }
 ```
+
 +++ runner_U7_L2_Activity_Three.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -186,12 +201,15 @@ public class runner_U7_L2_Activity_Three
   }
 }
 ```
+
 +++
 
 ## Lesson 3: Array Algorithms with ArrayLists
 
 ### Coding Activity 1
+
 +++ U7_L3_Activity_One.java
+
 ```java
 import java.util.ArrayList;
 
@@ -209,7 +227,9 @@ public class U7_L3_Activity_One
 }
 
 ```
+
 +++ runner_U7_L3_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -237,10 +257,13 @@ public class runner_U7_L3_Activity_One
   
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U7_L3_Activity_Two.java
+
 ```java
 import java.util.ArrayList;
 
@@ -290,7 +313,9 @@ public class U7_L3_Activity_Two
   }
 }
 ```
+
 +++ runner_U7_L3_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -316,12 +341,15 @@ public class runner_U7_L3_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Lesson 4: Linear Search
 
 ### Coding Activity 1
+
 +++ U7_L4_Activity_One.java
+
 ```java
 import java.util.ArrayList;
 
@@ -344,7 +372,9 @@ public class U7_L4_Activity_One
   }
 }
 ```
+
 +++ runner_U7_L4_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -377,10 +407,13 @@ public class runner_U7_L4_Activity_One
 
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U7_L4_Activity_Two.java
+
 ```java
 import java.util.ArrayList;
 
@@ -406,7 +439,9 @@ public class U7_L4_Activity_Two
   }
 }
 ```
+
 +++ runner_U7_L4_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -435,12 +470,15 @@ public class runner_U7_L4_Activity_Two
 
 }
 ```
+
 +++
 
 ## Lesson 5: Selection Sort
 
 ### Coding Activity 1
+
 +++ U7_L5_Activity_One.java
+
 ```java
 public class U7_L5_Activity_One
 {
@@ -471,7 +509,9 @@ public class U7_L5_Activity_One
   }
 }
 ```
+
 +++ runner_U7_L5_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -501,10 +541,13 @@ public class runner_U7_L5_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U7_L5_Activity_Two.java
+
 ```java
 import java.util.ArrayList;
 
@@ -533,7 +576,9 @@ public class U7_L5_Activity_Two
   }
 }
 ```
+
 +++ runner_U7_L5_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -563,12 +608,15 @@ public class runner_U7_L5_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Lesson 6: Insertion Sort
 
 ### Coding Activity 1
+
 +++ U7_L6_Activity_One.java
+
 ```java
 public class U7_L6_Activity_One
 {
@@ -599,7 +647,9 @@ public class U7_L6_Activity_One
   }
 }
 ```
+
 +++ runner_U7_L6_Activity_One.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -626,10 +676,13 @@ public class runner_U7_L6_Activity_One
   }
 }
 ```
+
 +++
 
 ### Coding Activity 2
+
 +++ U7_L6_Activity_Two.java
+
 ```java
 import java.util.ArrayList;
 
@@ -669,7 +722,9 @@ public class U7_L6_Activity_Two
   }
 }
 ```
+
 +++ runner_U7_L6_Activity_Two.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -697,12 +752,15 @@ public class runner_U7_L6_Activity_Two
   }
 }
 ```
+
 +++
 
 ## Assignment 7: Game Wheel
 
 ### Coding Activity
+
 +++ Game.java
+
 ```java
 import java.util.ArrayList;
 
@@ -759,7 +817,9 @@ public class Game
   }
 }
 ```
+
 +++ GameWheel.java
+
 ```java
 import java.util.ArrayList;
 
@@ -974,7 +1034,9 @@ public class GameWheel
   }
 }
 ```
+
 +++ runner_GameWheel.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -1044,7 +1106,9 @@ public class runner_GameWheel{
   }
 }
 ```
+
 +++ Slice.java
+
 ```java
 // Provided code from Project STEM.
 // No modifications were made to this file.
@@ -1082,4 +1146,5 @@ public class Slice
   }
 }
 ```
+
 +++
