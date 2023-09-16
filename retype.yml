@@ -3,7 +3,7 @@ output: .retype
 url: ricky8k.github.io
 
 branding:
-  logo: icon.png
+  logo: /static/icon.png
   title: Project Stem
 
 footer:
