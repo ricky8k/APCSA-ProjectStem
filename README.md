@@ -1,4 +1,4 @@
-<p><img src="https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/icon.png" width="100"></p>
+<p><img src="https://raw.githubusercontent.com/ricky8k/APCSA-ProjectStem/main/docs/static/icon.png" width="100"></p>
 
 # APCSA Project Stem
 
