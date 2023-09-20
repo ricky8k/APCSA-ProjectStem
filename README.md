@@ -5,7 +5,7 @@
 Source code to various units of the 2022-23 AP Computer Science A course on Project Stem.
 
 > **Note**  
-> This repository serves as a key to solve difficult problems on Project Stem, intended for the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
+> This repository serves as a key to solve difficult problems on Project Stem and is intended to work with the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
 
 ## 🌐 Website
 
@@ -23,6 +23,12 @@ A user-friendly website front-end is available [here](https://ricky8k.github.io/
 - [X] Unit 8: 2D Array
 - [X] Unit 9: Inheritance
 - [X] Unit 10: Recursion
+
+## 📝 Contributing
+
+Notice a typo or error? Feel free to create an [issue](https://github.com/ricky8k/APCSA-ProjectStem/issues/new)!
+
+Please note that support will **not** be provided for code that does not work in newer lessons.
 
 ## 📜 License
 
