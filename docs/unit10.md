@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ U10_L1_Activity_One.java
++++ `U10_L1_Activity_One.java`
 
 ```java
 public class U10_L1_Activity_One
@@ -43,7 +43,7 @@ public class U10_L1_Activity_One
 }
 ```
 
-+++ runner_U10_L1_Activity_One.java
++++ `runner_U10_L1_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -71,7 +71,7 @@ public class runner_U10_L1_Activity_One
 
 ### Coding Activity 1
 
-+++ U10_L2_Activity_One.java
++++ `U10_L2_Activity_One.java`
 
 ```java
 public class U10_L2_Activity_One
@@ -94,7 +94,7 @@ public class U10_L2_Activity_One
 }
 ```
 
-+++ runner_U10_L2_Activity_One.java
++++ `runner_U10_L2_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -121,7 +121,7 @@ public class runner_U10_L2_Activity_One
 
 ### Coding Activity
 
-+++ AnagramList.java
++++ `AnagramList.java`
 
 ```java
 import java.util.ArrayList;
@@ -195,7 +195,7 @@ public class AnagramList
 }
 ```
 
-+++ runner_AnagramList.java
++++ `runner_AnagramList.java`
 
 ```java
 // Provided code from Project STEM.

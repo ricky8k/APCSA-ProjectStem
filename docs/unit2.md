@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ U2_L1_Activity_One.java
++++ `U2_L1_Activity_One.java`
 
 ```java
 /* Lesson 1 Coding Activity Question 1 */
@@ -40,7 +40,7 @@ public class U2_L1_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L1_Activity_Two.java
++++ `U2_L1_Activity_Two.java`
 
 ```java
 /* Lesson 1 Coding Activity Question 2 */
@@ -73,7 +73,7 @@ public class U2_L1_Activity_Two
 
 ### Coding Activity 1
 
-+++ U2_L2_Activity_One.java
++++ `U2_L2_Activity_One.java`
 
 ```java
 /* Lesson 2 Coding Activity Question 1 */
@@ -108,7 +108,7 @@ public class U2_L2_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L2_Activity_One.java
++++ `U2_L2_Activity_One.java`
 
 ```java
 public class U2_L2_Activity_Two
@@ -125,7 +125,7 @@ public class U2_L2_Activity_Two
 
 ### Coding Activity 3
 
-+++ U2_L2_Activity_One.java
++++ `U2_L2_Activity_One.java`
 
 ```java
 /* Lesson 2 Coding Activity Question 3 */
@@ -148,7 +148,7 @@ public class U2_L2_Activity_Three
 
 ### Coding Activity 1
 
-+++ U2_L3_Activity_One.java
++++ `U2_L3_Activity_One.java`
 
 ```java
 /* Lesson 3 Coding Activity Question 1 */
@@ -179,7 +179,7 @@ public class U2_L3_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L3_Activity_Two.java
++++ `U2_L3_Activity_Two.java`
 
 ```java
 /* Lesson 3 Coding Activity Question 2 */
@@ -210,7 +210,7 @@ public class U2_L3_Activity_Two
 
 ### Coding Activity 3
 
-+++ U2_L3_Activity_Three.java
++++ `U2_L3_Activity_Three.java`
 
 ```java
 /* Lesson 3 Coding Activity Question 3 */
@@ -245,7 +245,7 @@ public class U2_L3_Activity_Three
 
 ### Coding Activity 4
 
-+++ U2_L3_Activity_Four.java
++++ `U2_L3_Activity_Four.java`
 
 ```java
 /* Lesson 3 Coding Activity Question 4 */
@@ -275,7 +275,7 @@ public class U2_L3_Activity_Four
 
 ### Coding Activity 1
 
-+++ U2_L4_Activity_One.java
++++ `U2_L4_Activity_One.java`
 
 ```java
 /* Lesson 4 Coding Activity Question 1 */
@@ -311,7 +311,7 @@ public class U2_L4_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L4_Activity_Two.java
++++ `U2_L4_Activity_Two.java`
 
 ```java
 /* Lesson 4 Coding Activity Question 2 */
@@ -341,7 +341,7 @@ public class U2_L4_Activity_Two{
 
 ### Coding Activity 1
 
-+++ U2_L5_Activity_One.java
++++ `U2_L5_Activity_One.java`
 
 ```java
 /* Lesson 5 Coding Activity Question 1 */
@@ -367,7 +367,7 @@ public class U2_L5_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L5_Activity_Two.java
++++ `U2_L5_Activity_Two.java`
 
 ```java
 /* Lesson 5 Coding Activity Question 2 */
@@ -405,7 +405,7 @@ public class U2_L5_Activity_Two
 
 ### Coding Activity 3
 
-+++ U2_L5_Activity_Three.java
++++ `U2_L5_Activity_Three.java`
 
 ```java
 /* Lesson 5 Coding Activity Question 3 */
@@ -441,7 +441,7 @@ public class U2_L5_Activity_Three
 
 ### Coding Activity 1
 
-+++ U2_L6_Activity_One.java
++++ `U2_L6_Activity_One.java`
 
 ```java
 /* Lesson 6 Coding Activity Question 1 */
@@ -472,7 +472,7 @@ public class U2_L6_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L6_Activity_Two.java
++++ `U2_L6_Activity_Two.java`
 
 ```java
 /* Lesson 6 Coding Activity Question 2 */
@@ -517,7 +517,7 @@ public class U2_L6_Activity_Two
 
 ### Coding Activity 1
 
-+++ U2_L7_Activity_One.java
++++ `U2_L7_Activity_One.java`
 
 ```java
 /* Lesson 7 Coding Activity Question 1 */
@@ -541,7 +541,7 @@ public class U2_L7_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L7_Activity_Two.java
++++ `U2_L7_Activity_Two.java`
 
 ```java
 /* Lesson 7 Coding Activity Question 2 */
@@ -576,7 +576,7 @@ public class U2_L7_Activity_Two
 
 ### Coding Activity 3
 
-+++ U2_L7_Activity_Three.java
++++ `U2_L7_Activity_Three.java`
 
 ```java
 /* Lesson 7 Coding Activity Question 3 */
@@ -614,7 +614,7 @@ public class U2_L7_Activity_Three
 
 ### Coding Activity 1
 
-+++ U2_L8_Activity_One.java
++++ `U2_L8_Activity_One.java`
 
 ```java
 /* Lesson 8 Coding Activity Question 1 */
@@ -645,7 +645,7 @@ public class U2_L8_Activity_One
 
 ### Coding Activity 2
 
-+++ U2_L8_Activity_Two.java
++++ `U2_L8_Activity_Two.java`
 
 ```java
 /* Lesson 8 Coding Activity Question 2 */
@@ -684,7 +684,7 @@ public class U2_L8_Activity_Two
 
 ### Coding Activity 3
 
-+++ U2_L8_Activity_Three.java
++++ `U2_L8_Activity_Three.java`
 
 ```java
 /* Lesson 8 Coding Activity Question 3 */
@@ -720,7 +720,7 @@ public class U2_L8_Activity_Three
 
 ### Coding Activity
 
-+++ Assignment2.java
++++ `Assignment2.java`
 
 ```java
 /* Assignment 2 - Control Tower */

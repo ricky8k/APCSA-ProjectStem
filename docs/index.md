@@ -6,13 +6,16 @@ order: -1
 
 # Project Stem
 
-Source code to various units of the 2022-23 AP Computer Science A course on Project Stem.
+Source code for the 2022-23 AP Computer Science A course on Project Stem.
 
-!!!info
-This page serves as a key to solve difficult problems on Project Stem and is intended to work with the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
-!!!
+## 📃 About
 
-## 📃 Unit Selection
+This page contains the source code to various problems on Project Stem. Organized by unit, you will find the necessary activity files to be compiled by the Java environment, as well as runner files provided by Project Stem to test execution (when available).
+
+> **Note**  
+> The provided source code is intended to work with the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
+
+### Table of Contents
 
 - [Unit 1: Primitive Types](unit1.md)
 - [Unit 2: Using Objects](unit2.md)

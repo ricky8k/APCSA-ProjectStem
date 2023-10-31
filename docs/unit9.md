@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ SpecialityCoffee.java
++++ `SpecialityCoffee.java`
 
 ```java
 public class SpecialityCoffee extends Coffee
@@ -46,7 +46,7 @@ public class SpecialityCoffee extends Coffee
 }
 ```
 
-+++ Coffee.java
++++ `Coffee.java`
 
 ```java
 // Provided code from Project STEM.
@@ -103,7 +103,7 @@ public class Coffee
 }
 ```
 
-+++ runner_Coffee.java
++++ `runner_Coffee.java`
 
 ```java
 // Provided code from Project STEM.
@@ -161,7 +161,7 @@ public class runner_Coffee
 
 ### Coding Activity 1
 
-+++ SpecialityCoffee.java
++++ `SpecialityCoffee.java`
 
 ```java
 public class SpecialityCoffee extends Coffee 
@@ -221,7 +221,7 @@ public class SpecialityCoffee extends Coffee
 }
 ```
 
-+++ Coffee.java
++++ `Coffee.java`
 
 ```java
 // Provided code from Project STEM.
@@ -278,7 +278,7 @@ public class Coffee
 }
 ```
 
-+++ runner_Coffee.java
++++ `runner_Coffee.java`
 
 ```java
 // Provided code from Project STEM.
@@ -336,7 +336,7 @@ public class runner_Coffee
 
 ### Coding Activity 2
 
-+++ DoubleCone.java
++++ `DoubleCone.java`
 
 ```java
 public class DoubleCone extends Cone
@@ -415,7 +415,7 @@ public class DoubleCone extends Cone
 }
 ```
 
-+++ Cone.java
++++ `Cone.java`
 
 ```java
 // Provided code from Project STEM.
@@ -460,7 +460,7 @@ public class Cone
 }
 ```
 
-+++ runner_DoubleCone.java
++++ `runner_DoubleCone.java`
 
 ```java
 // Provided code from Project STEM.
@@ -527,7 +527,7 @@ public class runner_DoubleCone {
 
 ### Coding Activity 1
 
-+++ Animal.java
++++ `Animal.java`
 
 ```java
 public class Animal
@@ -561,7 +561,7 @@ public class Animal
 }
 ```
 
-+++ Cow.java
++++ `Cow.java`
 
 ```java
 public class Cow extends Animal
@@ -580,7 +580,7 @@ public class Cow extends Animal
 }
 ```
 
-+++ Farm.java
++++ `Farm.java`
 
 ```java
 public class Farm
@@ -612,7 +612,7 @@ public class Farm
 }
 ```
 
-+++ Farmer.java
++++ `Farmer.java`
 
 ```java
 public class Farmer
@@ -636,7 +636,7 @@ public class Farmer
 }
 ```
 
-+++ Pig.java
++++ `Pig.java`
 
 ```java
 public class Pig extends Animal
@@ -655,7 +655,7 @@ public class Pig extends Animal
 }
 ```
 
-+++ Sheep.java
++++ `Sheep.java`
 
 ```java
 public class Sheep extends Animal
@@ -674,7 +674,7 @@ public class Sheep extends Animal
 }
 ```
 
-+++ runner_Farm.java
++++ `runner_Farm.java`
 
 ```java
 // Provided code from Project STEM.
@@ -728,7 +728,7 @@ public class runner_Farm
 
 ### Coding Activity
 
-+++ Captain.java
++++ `Captain.java`
 
 ```java
 public class Captain extends UltimatePlayer
@@ -765,7 +765,7 @@ public class Captain extends UltimatePlayer
 }
 ```
 
-+++ Coach.java
++++ `Coach.java`
 
 ```java
 public class Coach extends Person
@@ -791,7 +791,7 @@ public class Coach extends Person
 }
 ```
 
-+++ Person.java
++++ `Person.java`
 
 ```java
 public class Person
@@ -826,7 +826,7 @@ public class Person
 }
 ```
 
-+++ UltimatePlayer.java
++++ `UltimatePlayer.java`
 
 ```java
 public class UltimatePlayer extends Person
@@ -880,7 +880,7 @@ public class UltimatePlayer extends Person
 }
 ```
 
-+++ UltimateTeam.java
++++ `UltimateTeam.java`
 
 ```java
 import java.util.ArrayList;
@@ -951,7 +951,7 @@ public class UltimateTeam
 }
 ```
 
-+++ runner_Ultimate.java
++++ `runner_Ultimate.java`
 
 ```java
 // Provided code from Project STEM.

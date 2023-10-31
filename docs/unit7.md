@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ U7_L1_Activity_One.java
++++ `U7_L1_Activity_One.java`
 
 ```java
 import java.util.Scanner;
@@ -54,7 +54,7 @@ public class U7_L1_Activity_One
 
 ### Coding Activity 1
 
-+++ U7_L2_Activity_One.java
++++ `U7_L2_Activity_One.java`
 
 ```java
 import java.util.Scanner;
@@ -96,7 +96,7 @@ public class U7_L2_Activity_One
 
 ### Coding Activity 2
 
-+++ U7_L2_Activity_Two.java
++++ `U7_L2_Activity_Two.java`
 
 ```java
 import java.util.ArrayList;
@@ -119,7 +119,7 @@ public class U7_L2_Activity_Two
 }
 ```
 
-+++ runner_U7_L2_Activity_Two.java
++++ `runner_U7_L2_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -148,7 +148,7 @@ public class runner_U7_L2_Activity_Two{
 
 ### Coding Activity 3
 
-+++ U7_L2_Activity_Three.java
++++ `U7_L2_Activity_Three.java`
 
 ```java
 import java.util.ArrayList;
@@ -173,7 +173,7 @@ public class U7_L2_Activity_Three
 }
 ```
 
-+++ runner_U7_L2_Activity_Three.java
++++ `runner_U7_L2_Activity_Three.java`
 
 ```java
 // Provided code from Project STEM.
@@ -208,7 +208,7 @@ public class runner_U7_L2_Activity_Three
 
 ### Coding Activity 1
 
-+++ U7_L3_Activity_One.java
++++ `U7_L3_Activity_One.java`
 
 ```java
 import java.util.ArrayList;
@@ -228,7 +228,7 @@ public class U7_L3_Activity_One
 
 ```
 
-+++ runner_U7_L3_Activity_One.java
++++ `runner_U7_L3_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -262,7 +262,7 @@ public class runner_U7_L3_Activity_One
 
 ### Coding Activity 2
 
-+++ U7_L3_Activity_Two.java
++++ `U7_L3_Activity_Two.java`
 
 ```java
 import java.util.ArrayList;
@@ -314,7 +314,7 @@ public class U7_L3_Activity_Two
 }
 ```
 
-+++ runner_U7_L3_Activity_Two.java
++++ `runner_U7_L3_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -348,7 +348,7 @@ public class runner_U7_L3_Activity_Two
 
 ### Coding Activity 1
 
-+++ U7_L4_Activity_One.java
++++ `U7_L4_Activity_One.java`
 
 ```java
 import java.util.ArrayList;
@@ -373,7 +373,7 @@ public class U7_L4_Activity_One
 }
 ```
 
-+++ runner_U7_L4_Activity_One.java
++++ `runner_U7_L4_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -412,7 +412,7 @@ public class runner_U7_L4_Activity_One
 
 ### Coding Activity 2
 
-+++ U7_L4_Activity_Two.java
++++ `U7_L4_Activity_Two.java`
 
 ```java
 import java.util.ArrayList;
@@ -440,7 +440,7 @@ public class U7_L4_Activity_Two
 }
 ```
 
-+++ runner_U7_L4_Activity_Two.java
++++ `runner_U7_L4_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -477,7 +477,7 @@ public class runner_U7_L4_Activity_Two
 
 ### Coding Activity 1
 
-+++ U7_L5_Activity_One.java
++++ `U7_L5_Activity_One.java`
 
 ```java
 public class U7_L5_Activity_One
@@ -510,7 +510,7 @@ public class U7_L5_Activity_One
 }
 ```
 
-+++ runner_U7_L5_Activity_One.java
++++ `runner_U7_L5_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -546,7 +546,7 @@ public class runner_U7_L5_Activity_One
 
 ### Coding Activity 2
 
-+++ U7_L5_Activity_Two.java
++++ `U7_L5_Activity_Two.java`
 
 ```java
 import java.util.ArrayList;
@@ -577,7 +577,7 @@ public class U7_L5_Activity_Two
 }
 ```
 
-+++ runner_U7_L5_Activity_Two.java
++++ `runner_U7_L5_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -615,7 +615,7 @@ public class runner_U7_L5_Activity_Two
 
 ### Coding Activity 1
 
-+++ U7_L6_Activity_One.java
++++ `U7_L6_Activity_One.java`
 
 ```java
 public class U7_L6_Activity_One
@@ -648,7 +648,7 @@ public class U7_L6_Activity_One
 }
 ```
 
-+++ runner_U7_L6_Activity_One.java
++++ `runner_U7_L6_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -681,7 +681,7 @@ public class runner_U7_L6_Activity_One
 
 ### Coding Activity 2
 
-+++ U7_L6_Activity_Two.java
++++ `U7_L6_Activity_Two.java`
 
 ```java
 import java.util.ArrayList;
@@ -723,7 +723,7 @@ public class U7_L6_Activity_Two
 }
 ```
 
-+++ runner_U7_L6_Activity_Two.java
++++ `runner_U7_L6_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -759,7 +759,7 @@ public class runner_U7_L6_Activity_Two
 
 ### Coding Activity
 
-+++ Game.java
++++ `Game.java`
 
 ```java
 import java.util.ArrayList;
@@ -818,7 +818,7 @@ public class Game
 }
 ```
 
-+++ GameWheel.java
++++ `GameWheel.java`
 
 ```java
 import java.util.ArrayList;
@@ -1035,7 +1035,7 @@ public class GameWheel
 }
 ```
 
-+++ runner_GameWheel.java
++++ `runner_GameWheel.java`
 
 ```java
 // Provided code from Project STEM.
@@ -1107,7 +1107,7 @@ public class runner_GameWheel{
 }
 ```
 
-+++ Slice.java
++++ `Slice.java`
 
 ```java
 // Provided code from Project STEM.

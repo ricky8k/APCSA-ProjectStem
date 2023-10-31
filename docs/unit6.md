@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ U6_L1_Activity_One.java
++++ `U6_L1_Activity_One.java`
 
 ```java
 import java.util.Scanner;
@@ -40,7 +40,7 @@ public class U6_L1_Activity_One
 
 ### Coding Activity 2
 
-+++ U6_L1_Activity_Two.java
++++ `U6_L1_Activity_Two.java`
 
 ```java
 import java.util.Scanner;
@@ -80,7 +80,7 @@ public class U6_L1_Activity_Two
 
 ### Coding Activity 1
 
-+++ U6_L2_Activity_One.java
++++ `U6_L2_Activity_One.java`
 
 ```java
 public class U6_L2_Activity_One
@@ -106,7 +106,7 @@ public class U6_L2_Activity_One
 }
 ```
 
-+++ runner_U6_L2_Activity_One.java
++++ `runner_U6_L2_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -139,7 +139,7 @@ public class runner_U6_L2_Activity_One
 
 ### Coding Activity 2
 
-+++ U6_L2_Activity_Two.java
++++ `U6_L2_Activity_Two.java`
 
 ```java
 public class U6_L2_Activity_Two
@@ -164,7 +164,7 @@ public class U6_L2_Activity_Two
 }
 ```
 
-+++ runner_U6_L2_Activity_Two.java
++++ `runner_U6_L2_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -197,7 +197,7 @@ public class runner_U6_L2_Activity_Two
 
 ### Coding Activity 3
 
-+++ U6_L2_Activity_Three.java
++++ `U6_L2_Activity_Three.java`
 
 ```java
 public class U6_L2_Activity_Three
@@ -223,7 +223,7 @@ public class U6_L2_Activity_Three
 }
 ```
 
-+++ runner_U6_L2_Activity_Three.java
++++ `runner_U6_L2_Activity_Three.java`
 
 ```java
 // Provided code from Project STEM.
@@ -258,7 +258,7 @@ public class runner_U6_L2_Activity_Three
 
 ### Coding Activity 1
 
-+++ U6_L3_Activity_One.java
++++ `U6_L3_Activity_One.java`
 
 ```java
 public class U6_L3_Activity_One
@@ -283,7 +283,7 @@ public class U6_L3_Activity_One
 }
 ```
 
-+++ runner_U6_L3_Activity_One.java
++++ `runner_U6_L3_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -313,7 +313,7 @@ public class runner_U6_L3_Activity_One
 
 ### Coding Activity 2
 
-+++ U6_L3_Activity_Two.java
++++ `U6_L3_Activity_Two.java`
 
 ```java
 public class U6_L3_Activity_Two
@@ -348,7 +348,7 @@ public class U6_L3_Activity_Two
 }
 ```
 
-+++ runner_U6_L3_Activity_Two.java
++++ `runner_U6_L3_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -378,7 +378,7 @@ public class runner_U6_L3_Activity_Two
 
 ### Coding Activity 3
 
-+++ U6_L3_Activity_Three.java
++++ `U6_L3_Activity_Three.java`
 
 ```java
 public class U6_L3_Activity_Three
@@ -397,7 +397,7 @@ public class U6_L3_Activity_Three
 }
 ```
 
-+++ runner_U6_L3_Attivity_Three.java
++++ `runner_U6_L3_Attivity_Three.java`
 
 ```java
 // Provided code from Project STEM.
@@ -430,7 +430,7 @@ public class runner_U6_L3_Activity_Three
 
 ### Coding Activity 1
 
-+++ U6_L4_Activity_One.java
++++ `U6_L4_Activity_One.java`
 
 ```java
 public class U6_L4_Activity_One
@@ -464,7 +464,7 @@ public class U6_L4_Activity_One
 }
 ```
 
-+++ runner_U6_L4_Activity_One.java
++++ `runner_U6_L4_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -504,7 +504,7 @@ public class runner_U6_L4_Activity_One
 
 ### Coding Activity 2
 
-+++ U6_L4_Activity_Two.java
++++ `U6_L4_Activity_Two.java`
 
 ```java
 public class U6_L4_Activity_Two
@@ -539,7 +539,7 @@ public class U6_L4_Activity_Two
 }
 ```
 
-+++ runner_U6_L4_Activity_Two.java
++++ `runner_U6_L4_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -585,7 +585,7 @@ public class runner_U6_L4_Activity_Two{
 
 ### Coding Activity 1
 
-+++ U6_L5_Activity_One.java
++++ `U6_L5_Activity_One.java`
 
 ```java
 public class U6_L5_Activity_One
@@ -608,7 +608,7 @@ public class U6_L5_Activity_One
 }
 ```
 
-+++ runner_U6_L5_Activity_One.java
++++ `runner_U6_L5_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -642,7 +642,7 @@ public class runner_U6_L5_Activity_One
 
 ### Coding Activity 2
 
-+++ U6_L5_Activity_Two.java
++++ `U6_L5_Activity_Two.java`
 
 ```java
 public class U6_L5_Activity_Two
@@ -662,7 +662,7 @@ public class U6_L5_Activity_Two
 }
 ```
 
-+++ runner_U6_L5_Activity_Two.java
++++ `runner_U6_L5_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -692,7 +692,7 @@ public class runner_U6_L5_Activity_Two
 
 ### Coding Activity 3
 
-+++ U6_L5_Activity_Three.java
++++ `U6_L5_Activity_Three.java`
 
 ```java
 public class U6_L5_Activity_Three
@@ -714,7 +714,7 @@ public class U6_L5_Activity_Three
 }
 ```
 
-+++ runner_U6_L5_Activity_Three.java
++++ `runner_U6_L5_Activity_Three.java`
 
 ```java
 // Provided code from Project STEM.
@@ -746,7 +746,7 @@ public class runner_U6_L5_Activity_Three
 
 ### Coding Activity
 
-+++ StudentStatsArray.java
++++ `StudentStatsArray.java`
 
 ```java
 public class StudentStatsArray 
@@ -920,7 +920,7 @@ public class StudentStatsArray
 }
 ```
 
-+++ runner_StudentStatsArray.java
++++ `runner_StudentStatsArray.java`
 
 ```java
 // Provided code from Project STEM.
@@ -997,7 +997,7 @@ public class runner_StudentStatsArray {
 }
 ```
 
-+++ Student.java
++++ `Student.java`
 
 ```java
 // Provided code from Project STEM.

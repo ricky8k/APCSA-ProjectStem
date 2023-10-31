@@ -10,7 +10,7 @@ order: -1
 
 ### Coding Activity 1
 
-+++ U8_L1_Activity_One.java
++++ `U8_L1_Activity_One.java`
 
 ```java
 public class U8_L1_Activity_One
@@ -37,7 +37,7 @@ public class U8_L1_Activity_One
 }
 ```
 
-+++ runner_U8_L1_Activity_One.java
++++ `runner_U8_L1_Activity_One.java`
 
 ```java
 // Provided code from Project STEM.
@@ -80,7 +80,7 @@ public class runner_U8_L1_Activity_One
 
 ### Coding Activity 2
 
-+++ U8_L1_Activity_Two.java
++++ `U8_L1_Activity_Two.java`
 
 ```java
 public class U8_L1_Activity_Two
@@ -105,7 +105,7 @@ public class U8_L1_Activity_Two
 }
 ```
 
-+++ runner_U8_L1_Activity_Two.java
++++ `runner_U8_L1_Activity_Two.java`
 
 ```java
 // Provided code from Project STEM.
@@ -141,7 +141,7 @@ public class runner_U8_L1_Activity_Two
 
 ### Coding Activity 1
 
-+++ TemperatureMonth.java
++++ `TemperatureMonth.java`
 
 ```java
 public class TemperatureMonth
@@ -233,7 +233,7 @@ public class TemperatureMonth
 }
 ```
 
-+++ runner_TemperatureMonth.java
++++ `runner_TemperatureMonth.java`
 
 ```java
 // Provided code from Project STEM.
@@ -304,7 +304,7 @@ public class runner_TemperatureMonth {
 
 ### Coding Activity
 
-+++ Board.java
++++ `Board.java`
 
 ```java
 public class Board
@@ -479,7 +479,7 @@ public class Board
 }
 ```
 
-+++ Battleship.java
++++ `Battleship.java`
 
 ```java
 // Provided code from Project STEM.
