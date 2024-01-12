@@ -1,27 +1,27 @@
 public class StudentStatsArray 
 {
-
   private final Student[] students;
 
-   public StudentStatsArray(Student[] students) 
-   {
+  // Constructor for students array
+  public StudentStatsArray(Student[] students) 
+  {
     this.students = students;
-   }
+  }
 
-   // Returns the average gpa of the students
-   public double averageGpa() 
-   {
+  // Returns the average gpa of the students
+  public double averageGpa()
+  {
     double total = 0;
     for (Student s: students)
     {
       total += s.getGpa();
     }
     return total / students.length; // t
-   }
+  }
 
-   // Returns the gpa range of the students
-   public double getGpaRange() 
-   {
+  // Returns the gpa range of the students
+  public double getGpaRange() 
+  {
     double maxGpa = students[0].getGpa(), minGpa = students[0].getGpa();
     for (Student s: students)
     {
@@ -35,11 +35,11 @@ public class StudentStatsArray
       }
     }
     return maxGpa - minGpa;
-   }
+  }
 
-   // Returns the name of the student that has the longest length 
-   public String getLongestName()
-   {
+  // Returns the name of the student that has the longest length 
+  public String getLongestName()
+  {
     String longestName = "";
     for (Student s: students)
     {
@@ -47,11 +47,11 @@ public class StudentStatsArray
         longestName = s.getName();
     }
     return longestName;
-   }
+  }
 
-   // Returns a count of the number freshman students
-   public int getNumFreshman()
-   {
+  // Returns a count of the number freshman students
+  public int getNumFreshman()
+  {
     int numFreshman = 0;
     for (Student s: students)
     {
@@ -59,12 +59,12 @@ public class StudentStatsArray
         numFreshman++;
     }
     return numFreshman;
-   }
+  }
 
-   // Returns the index of the first student with a name equal to name. 
-   // Returns -1 if not found
-   public int search(String name) 
-   {
+  // Returns the index of the first student with a name equal to name. 
+  // Returns -1 if not found
+  public int search(String name) 
+  {
     for (int i = 0; i < students.length; i++)
     {
       if (students[i].getName().contains(name))
@@ -73,24 +73,24 @@ public class StudentStatsArray
       }
     }
     return -1;
-   }
+  }
 
-   // Returns the index of the first student with a gpa greater than or equal to the gpa
-   // Returns -1 if not found
-   public int search(double gpa) // me when
-   {
-for (int i = 0; i < students.length; i++)
+  // Returns the index of the first student with a gpa greater than or equal to the gpa
+  // Returns -1 if not found
+  public int search(double gpa) // me when
+  {
+    for (int i = 0; i < students.length; i++)
     {
       if (students[i].getGpa() >= gpa)
         return i;
     }
     return -1;
-   }
+  }
 
-   // Returns 1 if the students are sorted in ascending order by their gpa; -1 if they
-   // are sorted in descending order; 0 otherwise.
-   public int sortStatus() 
-   {
+  // Returns 1 if the students are sorted in ascending order by their gpa; -1 if they
+  // are sorted in descending order; 0 otherwise.
+  public int sortStatus() 
+  {
     int sort = 0;
     double prevGpa = 0;
     prevGpa = students[0].getGpa();
@@ -108,7 +108,6 @@ for (int i = 0; i < students.length; i++)
       }
       if (sort == 0)
         break;
-        
     }
     if (sort == 1)
       return sort;
@@ -129,21 +128,21 @@ for (int i = 0; i < students.length; i++)
         break;
     }
     return sort;
-   }
+  }
 
-
-   // Returns the array of students in JSON like format
-    public String toString() {
-        String output = "[\n";
-        for (int i = 0; i < students.length; i++) {
-            Student s = students[i];
-            output += "{\n";
-            output += "\tname: " + s.getName() + ",\n";
-            output += "\tgpa: " + s.getGpa() + ",\n";
-            output += "\tyear: " + s.getYear() + "\n";
-            output += "},\n" + (i < students.length - 1 ? "" : "");
-        }
-        output += "]";
-        return output;
+  // Returns the array of students in JSON format
+  public String toString()
+  {
+    String output = "[\n";
+    for (Student s : students)
+    {
+      output += "{\n";
+      output += "\tname: " + s.getName() + ",\n";
+      output += "\tgpa: " + s.getGpa() + ",\n";
+      output += "\tyear: " + s.getYear() + "\n";
+      output += "},\n";
     }
+    output += "]";
+    return output;
+  }
 }
