@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758416530492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758420393565">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,12 +27,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.758416530492" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.758420393565" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758416530492" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758420393565" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +163,8 @@
         <span>Lesson 1: Intro to Recursion</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity-1" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u10-l1-activity-one-java">
 <template #title><code v-pre>U10_L1_Activity_One.java</code></template>
@@ -178,24 +174,24 @@
   // Initialize Variables
   public static int count = 0;
   public static int max = 0;
-  
+
   // Print Positive Integer(s) That End in Same Digit
   public static void printUpToEnd(int n)
   {
     // Record Max Value
     if (count &lt; 1)
       max = n;
-      
+
     // Save Integer
     n %= 10;
     n += count * 10;
-    
+
     // Output
     if (n &gt; 0)
       System.out.print(n + &quot; &quot;);
     /// Update Count
     count++;
-    
+
     // Recursive
     if (n &lt; max)
       printUpToEnd(n);
@@ -221,23 +217,20 @@ public class runner_U10_L1_Activity_One
     U10_L1_Activity_One.printUpToEnd(i);
     System.out.println();
   }
-  
+
 }</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 <doc-anchor-target id="lesson-2-recursive-functions-with-returns">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-recursive-functions-with-returns">#</doc-anchor-trigger>
         <span>Lesson 2: Recursive Functions with Returns</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity-1" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u10-l2-activity-one-java">
 <template #title><code v-pre>U10_L2_Activity_One.java</code></template>
@@ -248,14 +241,14 @@ public class runner_U10_L1_Activity_One
   {
     // Temporary Storage
     String str = &quot;&quot;;
-    
+
     // Reverse String
     if (word.length() &gt; 0)
     {
       str = stringReverse(word.substring(1)) + word.substring(0, 1);
       word = word.substring(1);
     }
-    
+
     // End
     return str;
   }
@@ -279,23 +272,20 @@ public class runner_U10_L2_Activity_One
     String s = scan.nextLine();
     System.out.println(&quot;Reversed String: &quot; + U10_L2_Activity_One.stringReverse(s));
   }
-  
+
 }</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 <doc-anchor-target id="assignment-10-anagrams">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-10-anagrams">#</doc-anchor-trigger>
         <span>Assignment 10: Anagrams</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
-        <span>Coding Activity</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity</template>
 <doc-tabs>
 <doc-tab v-cloak id="anagramlist-java">
 <template #title><code v-pre>AnagramList.java</code></template>
@@ -405,6 +395,7 @@ public class runner_AnagramList
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 
                                 
                                 <!-- Required only on API pages -->

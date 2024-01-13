@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758416530492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758420393565">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,12 +27,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.758416530492" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.758420393565" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758416530492" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758420393565" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +163,8 @@
         <span>Lesson 1: Inheritance</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity-1" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="specialitycoffee-java">
 <template #title><code v-pre>SpecialityCoffee.java</code></template>
@@ -177,27 +173,27 @@
 {
   // Initialize Variable
   private String flavor;
-  
+
   // Default SpecialityCoffee()
   public SpecialityCoffee()
   {
     super();
     flavor = &quot;Vanilla&quot;;
   }
-  
+
   // 3-Constructor SpecialityCoffee()
   public SpecialityCoffee(String size, String type, String flavor)
   {
     this(size, false, 1, type, flavor);
   }
-  
+
   // 5-Constructor SpecialityCoffee()
   public SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)
   {
     super(size, isSkinny, shots, type);
     this.flavor = flavor;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -316,29 +312,27 @@ public class runner_Coffee
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 <doc-anchor-target id="lesson-2-inheritance-overriding-methods">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-inheritance-overriding-methods">#</doc-anchor-trigger>
         <span>Lesson 2: Inheritance Overriding Methods</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="specialitycoffee-java">
 <template #title><code v-pre>SpecialityCoffee.java</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">public class SpecialityCoffee extends Coffee 
+<pre class="language-java"><code v-pre class="language-java">public class SpecialityCoffee extends Coffee
 {
   // Initialize Variable
   private String flavor;
 
   // Default SpecialityCoffee()
-  public SpecialityCoffee() 
+  public SpecialityCoffee()
   {
     // Calls super-constructor to create default coffee then sets flavor
     super();
@@ -346,7 +340,7 @@ public class runner_Coffee
   }
 
   // 3-Constructor SpecialityCoffee()
-  public SpecialityCoffee(String size, String type, String flavor) 
+  public SpecialityCoffee(String size, String type, String flavor)
   {
     // Calls constructor below with a mix of parameters and default values
     this(size, false, 1, type, flavor);
@@ -359,13 +353,13 @@ public class runner_Coffee
     super(size, isSkinny, shots, type);
     this.flavor = flavor;
   }
-  
+
   // Get Price of Speciality Coffee
   public int getPrice()
   {
     // Temporary Storage
     int price = super.getPrice();
-    
+
     // Check Size of Coffee
     if (super.getSize().matches(&quot;large|extra large&quot;)) /* L or XL */
     {
@@ -375,17 +369,18 @@ public class runner_Coffee
     {
       price += 30;
     }
-    
+
     // End
     return price;
   }
-  
+
   // Output to String
-  public String toString() 
+  public String toString()
   {
     // Calls Coffee toString and appends flavor to end
     return super.toString() + &quot; with &quot; + flavor;
   }
+
 }</code></pre>
 </doc-codeblock></div>
 </doc-tab>
@@ -395,19 +390,19 @@ public class runner_Coffee
 <pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
 // No modifications were made to this file.
 
-public class Coffee 
+public class Coffee
 {
   private String size;
   private boolean isSkinny;
   private int shots;
   private String type;
 
-  public Coffee() 
+  public Coffee()
   {
     this(&quot;small&quot;, false, 1, &quot;latte&quot;);
   }
 
-  public Coffee(String size, boolean isSkinny, int shots, String type) 
+  public Coffee(String size, boolean isSkinny, int shots, String type)
   {
     this.size = size;
     this.isSkinny = isSkinny;
@@ -415,7 +410,7 @@ public class Coffee
     this.type = type;
   }
 
-  public String toString() 
+  public String toString()
   {
     String s = size;
     if (isSkinny)
@@ -423,12 +418,12 @@ public class Coffee
     return s + &quot; &quot; + shots + &quot;-shot &quot; + type;
   }
 
-  public String getSize() 
+  public String getSize()
   {
     return size;
   }
 
-  public int getPrice() 
+  public int getPrice()
   {
     int price;
     if (size.equals(&quot;extra large&quot;))
@@ -453,21 +448,21 @@ public class Coffee
 // No modifications were made to this file.
 
 import java.util.Scanner;
-public class runner_Coffee 
+public class runner_Coffee
 {
 
   private static SpecialityCoffee c;
 
-  public static void main(String[] args) 
+  public static void main(String[] args)
   {
     Scanner scan = new Scanner(System.in);
     System.out.println(&quot;Choose constructor to test:\n1 - SpecialityCoffee()\n2 - SpecialityCoffee(String size, String type, String flavor)\n3 - SpecialityCoffee(String size, boolean isSkinny, int shots, String type, String flavor)&quot;);
     int which = scan.nextInt();
-    if (which == 1) 
+    if (which == 1)
     {
       c = new SpecialityCoffee();
-    } 
-    else if (which == 2 || which == 3) 
+    }
+    else if (which == 2 || which == 3)
     {
       scan.nextLine();
       System.out.println(&quot;Size?&quot;);
@@ -476,7 +471,7 @@ public class runner_Coffee
       String tp = scan.nextLine();
       System.out.println(&quot;Flavor?&quot;);
       String fl = scan.nextLine();
-      if (which == 3) 
+      if (which == 3)
       {
         boolean iS = false;
         System.out.println(&quot;Is Skinny (y/n)?&quot;);
@@ -490,7 +485,7 @@ public class runner_Coffee
       else
         c = new SpecialityCoffee(sz, tp, fl);
     }
-    if(c != null) 
+    if(c != null)
     {
       System.out.println(c);
       int p = c.getPrice();
@@ -501,12 +496,9 @@ public class runner_Coffee
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="doublecone-java">
 <template #title><code v-pre>DoubleCone.java</code></template>
@@ -517,7 +509,7 @@ public class runner_Coffee
   private String flavor;
   private String flavor2;
   private String topping;
-  
+
   // 2-Constructor DoubleCone()
   public DoubleCone(String f, boolean w)
   {
@@ -526,7 +518,7 @@ public class runner_Coffee
     flavor = f;
     flavor2 = f;
   }
-  
+
   // 3-Constructor DoubleCone()
   public DoubleCone(String f1, String f2, boolean w)
   {
@@ -535,7 +527,7 @@ public class runner_Coffee
     flavor = f1;
     flavor2 = f2;
   }
-  
+
   // Set Flavor of Double Cone
   public void setFlavor(String f)
   {
@@ -544,7 +536,7 @@ public class runner_Coffee
     flavor = f;
     flavor2 = f;
   }
-  
+
   // Set Flavor of Double Cone
   public void setFlavor(String f1, String f2)
   {
@@ -553,20 +545,20 @@ public class runner_Coffee
     flavor = f1;
     flavor2 = f2;
   }
-  
+
   // Add Topping to Double Cone
   public void addTopping(String t)
   {
     // Sets topping to t
     topping = t;
   }
-  
+
   // Output to String
   public String toString()
   {
     // Temporary Storage
     String output = &quot;double &quot; + super.toString();
-    
+
     // Check Flavors
     if (flavor.equals(flavor2)) /* Same 2 Flavors */
     {
@@ -576,11 +568,11 @@ public class runner_Coffee
     {
       output += &quot; and &quot; + flavor2;
     }
-    
+
     // Check Topping
     if (topping != null)
       output += &quot; with &quot; + topping;
-    
+
     // End
     return output;
   }
@@ -659,7 +651,7 @@ public class runner_DoubleCone {
       String t = scan.nextLine();
       c = new DoubleCone(f, w);
       c.addTopping(t);
-      
+
     } else {
       System.out.println(&quot;First flavour?&quot;);
       String f1 = scan.nextLine();
@@ -694,18 +686,16 @@ public class runner_DoubleCone {
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-3-is-a-and-has-a-relationships">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-is-a-and-has-a-relationships">#</doc-anchor-trigger>
         <span>Lesson 3: Is-a and Has-a Relationships</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity-1" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="animal-java">
 <template #title><code v-pre>Animal.java</code></template>
@@ -903,18 +893,15 @@ public class runner_Farm
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 <doc-anchor-target id="assignment-9-ultimate-frisbee">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-9-ultimate-frisbee">#</doc-anchor-trigger>
         <span>Assignment 9: Ultimate Frisbee</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
-        <span>Coding Activity</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity</template>
 <doc-tabs>
 <doc-tab v-cloak id="captain-java">
 <template #title><code v-pre>Captain.java</code></template>
@@ -933,7 +920,7 @@ public class runner_Farm
     // Set Captain Type
     this.type = type;
   }
-  
+
   // Throw Disc and Return Distance
   public int throwDisc(int pow)
   {
@@ -943,7 +930,7 @@ public class runner_Farm
     // Return Distance
     return pow * 5;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -960,7 +947,7 @@ public class runner_Farm
 {
   // Store Coach Role
   private String role;
-  
+
   // Create Coach with Given Values
   public Coach(String firstName, String lastName, String role)
   {
@@ -969,7 +956,7 @@ public class runner_Farm
     // Set Coach Role
     this.role = role;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -987,7 +974,7 @@ public class runner_Farm
   // Store Person's Name
   private String firstName;
   private String lastName;
-  
+
   // Create Person with Given Strings
   public Person(String firstName, String lastName)
   {
@@ -995,7 +982,7 @@ public class runner_Farm
     this.firstName = firstName;
     this.lastName = lastName;
   }
-  
+
   // Throw Disc and Return Distance
   public int throwDisc(int pow)
   {
@@ -1005,7 +992,7 @@ public class runner_Farm
     // Return Distance
     return pow * 2;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -1024,7 +1011,7 @@ public class runner_Farm
   private String position;
   /// Temporary Storage
   private static int playerCount = 1;
-  
+
   // Create Player Using Given Values
   public UltimatePlayer(String firstName, String lastName, String position)
   {
@@ -1042,13 +1029,13 @@ public class runner_Farm
       this.position = &quot;handler&quot;;
     }
   }
-  
+
   // Fetch Player Position
   public String getPosition()
   {
     return position;
   }
-  
+
   // Throw Disc and Return Distance
   public int throwDisc(int pow)
   {
@@ -1058,7 +1045,7 @@ public class runner_Farm
     // Return Distance
     return pow * 4;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -1078,7 +1065,7 @@ public class UltimateTeam
   // Store Team Data
   private ArrayList&lt;UltimatePlayer&gt; players;
   private ArrayList&lt;Coach&gt; coaches;
-  
+
   // Create Team Using Given Values
   public UltimateTeam(ArrayList&lt;UltimatePlayer&gt; players, ArrayList&lt;Coach&gt; coaches)
   {
@@ -1087,7 +1074,7 @@ public class UltimateTeam
     // Set Team Coaches
     this.coaches = coaches;
   }
-  
+
   // Get Cutters from Team
   public String getCutters()
   {
@@ -1102,7 +1089,7 @@ public class UltimateTeam
     }
     return output;
   }
-  
+
   // Get Handlers from Team
   public String getHandlers()
   {
@@ -1117,7 +1104,7 @@ public class UltimateTeam
     }
     return output;
   }
-  
+
   // Output to String
   public String toString()
   {
@@ -1218,6 +1205,7 @@ public class runner_Ultimate{
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 
                                 
                                 <!-- Required only on API pages -->

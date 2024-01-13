@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758416530492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758420393565">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,12 +27,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.758416530492" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.758420393565" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758416530492" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758420393565" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +163,8 @@
         <span>Lesson 1: ArrayList</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity-1" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l1-activity-one-java">
 <template #title><code v-pre>U7_L1_Activity_One.java</code></template>
@@ -182,10 +178,10 @@ public class U7_L1_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Create Variable
     ArrayList&lt;String&gt; words = new ArrayList&lt;String&gt;();
-    
+
     // User Input
     System.out.println(&quot;Please enter words, enter STOP to stop the loop.&quot;);
     String input = scan.nextLine();
@@ -194,7 +190,7 @@ public class U7_L1_Activity_One
       words.add(input);
       input = scan.nextLine();
     }
-    
+
     // Final Output
     System.out.println(&quot;\n&quot; + words.size() + &quot;\n&quot; + words);
     /// Modify words
@@ -209,18 +205,16 @@ public class U7_L1_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 <doc-anchor-target id="lesson-2-traversing-arraylists">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-traversing-arraylists">#</doc-anchor-trigger>
         <span>Lesson 2: Traversing ArrayLists</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l2-activity-one-java">
 <template #title><code v-pre>U7_L2_Activity_One.java</code></template>
@@ -234,11 +228,11 @@ public class U7_L2_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Create Variables
     ArrayList&lt;String&gt; words = new ArrayList&lt;String&gt;();
     String input = &quot;&quot;;
-    
+
     // User Input
     System.out.println(&quot;Please enter words, enter STOP to stop the loop.&quot;);
     while (!(input.equals(&quot;STOP&quot;)))
@@ -248,7 +242,7 @@ public class U7_L2_Activity_One
       if (!(input.equals(&quot;STOP&quot;)))
         words.add(input);
     }
-    
+
     // Final Output
     System.out.println(words);
     /// Reverse Order
@@ -261,12 +255,9 @@ public class U7_L2_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l2-activity-two-java">
 <template #title><code v-pre>U7_L2_Activity_Two.java</code></template>
@@ -284,7 +275,7 @@ public class U7_L2_Activity_Two
       if (num &gt;= highest)
         highest = num;
     }
-    
+
     // End
     return highest;
   }
@@ -317,12 +308,9 @@ public class runner_U7_L2_Activity_Two{
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l2-activity-three-java">
 <template #title><code v-pre>U7_L2_Activity_Three.java</code></template>
@@ -342,7 +330,7 @@ public class U7_L2_Activity_Three
         even.add(vals.get(i));
       }
     }
-    
+
     // End
     return even;
   }
@@ -379,18 +367,17 @@ public class runner_U7_L2_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-3-array-algorithms-with-arraylists">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-array-algorithms-with-arraylists">#</doc-anchor-trigger>
         <span>Lesson 3: Array Algorithms with ArrayLists</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l3-activity-one-java">
 <template #title><code v-pre>U7_L3_Activity_One.java</code></template>
@@ -408,8 +395,7 @@ public class U7_L3_Activity_One
       list.remove(0);
     }
   }
-}
-</code></pre>
+}</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="runner-u7-l3-activity-one-java">
@@ -438,17 +424,14 @@ public class runner_U7_L3_Activity_One
     U7_L3_Activity_One.shiftLeft(words);
     System.out.println(words);
   }
-  
+
 }</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l3-activity-two-java">
 <template #title><code v-pre>U7_L3_Activity_Two.java</code></template>
@@ -464,7 +447,7 @@ public class U7_L3_Activity_Two
     String mode = &quot;no single mode&quot;;
     /// Temporary Storage
     int count = 0, maxCount = 1, savedNum = 0;
-    
+
     // Calculation
     for (Integer num: list)
     {
@@ -495,7 +478,7 @@ public class U7_L3_Activity_Two
     }
     // Average
     double avg = (double) sum / list.size();
-    
+
     // Final Output
     System.out.println(&quot;Sum: &quot; + sum + &quot;\nAverage: &quot; + avg + &quot;\nMode: &quot; + mode);
   }
@@ -531,18 +514,17 @@ public class runner_U7_L3_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-4-linear-search">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-4-linear-search">#</doc-anchor-trigger>
         <span>Lesson 4: Linear Search</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l4-activity-one-java">
 <template #title><code v-pre>U7_L4_Activity_One.java</code></template>
@@ -555,14 +537,14 @@ public class U7_L4_Activity_One
   {
     // Initialize Variable
     int count = 0;
-    
+
     // Check for letter in list
     for (String str: list)
     {
       if (str.toLowerCase().substring(1, 2).equals(letter.toLowerCase()))
         count++;
     }
-    
+
     // End
     return count;
   }
@@ -605,12 +587,9 @@ public class runner_U7_L4_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l4-activity-two-java">
 <template #title><code v-pre>U7_L4_Activity_Two.java</code></template>
@@ -633,7 +612,7 @@ public class U7_L4_Activity_Two
         }
       }
     }
-    
+
     // Not Found
     return -1;
   }
@@ -672,18 +651,17 @@ public class runner_U7_L4_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-5-selection-sort">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-5-selection-sort">#</doc-anchor-trigger>
         <span>Lesson 5: Selection Sort</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l5-activity-one-java">
 <template #title><code v-pre>U7_L5_Activity_One.java</code></template>
@@ -708,7 +686,7 @@ public class runner_U7_L4_Activity_Two
       arr[pos] = arr[maxIndex];
       arr[maxIndex] = temp;
     }
-    
+
     // Final Output
     for (String s: arr)
     {
@@ -751,12 +729,9 @@ public class runner_U7_L5_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l5-activity-two-java">
 <template #title><code v-pre>U7_L5_Activity_Two.java</code></template>
@@ -822,18 +797,17 @@ public class runner_U7_L5_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-6-insertion-sort">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-6-insertion-sort">#</doc-anchor-trigger>
         <span>Lesson 6: Insertion Sort</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l6-activity-one-java">
 <template #title><code v-pre>U7_L6_Activity_One.java</code></template>
@@ -848,7 +822,7 @@ public class runner_U7_L5_Activity_Two
       // Temporary Storage
       String temp = arr[pos];
       int index = pos;
-      
+
       // Sort arr
       while (index &gt; 0 &amp;&amp; temp.compareTo(arr[index - 1]) &gt; 0)
       {
@@ -856,7 +830,7 @@ public class runner_U7_L5_Activity_Two
         index--;
       }
       arr[index] = temp;
-      
+
       // Output Current arr
       System.out.println(&quot;&quot;);
       for (String s : arr)
@@ -898,12 +872,9 @@ public class runner_U7_L6_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u7-l6-activity-two-java">
 <template #title><code v-pre>U7_L6_Activity_Two.java</code></template>
@@ -922,7 +893,7 @@ public class U7_L6_Activity_Two
       // Temporary Storage
       int temp = list.get(pos);
       int index = pos;
-      
+
       for (int rPos = index; rPos &gt; 0; rPos--)
       {
         // Update Count
@@ -978,18 +949,16 @@ public class runner_U7_L6_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="assignment-7-game-wheel">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-7-game-wheel">#</doc-anchor-trigger>
         <span>Assignment 7: Game Wheel</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
-        <span>Coding Activity</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity</template>
 <doc-tabs>
 <doc-tab v-cloak id="game-java">
 <template #title><code v-pre>Game.java</code></template>
@@ -1004,7 +973,7 @@ public class Game
     String spin = &quot;&quot;;
     int totalPrize = 0;
     ArrayList&lt;String&gt; spins = new ArrayList&lt;String&gt;();
-    
+
     // Run 3 Spins on Game Wheel
     for (int trial = 0; trial &lt; 3; trial++)
     {
@@ -1017,7 +986,7 @@ public class Game
       spin += &quot;\nSpin &quot; + (trial + 1) + &quot; - &quot; + g.getSlice(pos);
       spins.add(g.getSlice(pos).getColor());
     }
-    
+
     // Check Spins for Bonus Earnings
     boolean bonus = true;
     for (int pos = 0; pos &lt; spins.size() - 1; pos++)
@@ -1031,7 +1000,7 @@ public class Game
         bonus = false;
       }
     }
-    
+
     // Output
     if (bonus)
     {
@@ -1085,7 +1054,7 @@ public class GameWheel
     ArrayList&lt;Slice&gt; blackSlices = new ArrayList&lt;Slice&gt;();
     ArrayList&lt;Slice&gt; blueSlices = new ArrayList&lt;Slice&gt;();
     ArrayList&lt;Slice&gt; redSlices = new ArrayList&lt;Slice&gt;();
-    
+
     // Sort Slices
     for (int pos = 0; pos &lt; slices.size(); pos++)
     {
@@ -1107,7 +1076,7 @@ public class GameWheel
     }
     /// Clear Existing Slices
     slices.clear();
-    
+
     // Randomize Slices Based on Rule
     for (int pos = 0; pos &lt; 20; pos++)
     {
@@ -1138,7 +1107,7 @@ public class GameWheel
     ArrayList&lt;Slice&gt; blackSlices = new ArrayList&lt;Slice&gt;();
     ArrayList&lt;Slice&gt; blueSlices = new ArrayList&lt;Slice&gt;();
     ArrayList&lt;Slice&gt; redSlices = new ArrayList&lt;Slice&gt;();
-    
+
     // Sort Slices
     for (int pos = 0; pos &lt; slices.size(); pos++)
     {
@@ -1164,7 +1133,7 @@ public class GameWheel
     insertSort(blackSlices);
     insertSort(blueSlices);
     insertSort(redSlices);
-    
+
     // Add Slices
     for (int pos = 0; pos &lt; 20; pos++)
     {
@@ -1380,6 +1349,7 @@ public class Slice
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 
                                 
                                 <!-- Required only on API pages -->

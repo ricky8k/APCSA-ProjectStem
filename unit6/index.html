@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758416530492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758420393565">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,12 +27,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.758416530492" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.758420393565" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758416530492" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758420393565" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +163,9 @@
         <span>Lesson 1: One-Dimensional Arrays</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l1-activity-one-java">
 <template #title><code v-pre>U6_L1_Activity_One.java</code></template>
@@ -181,14 +178,14 @@ public class U6_L1_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Create Array
     double[] arr = new double[3];
     /// User Input
     arr[0] = scan.nextDouble();
     arr[1] = scan.nextDouble();
     arr[2] = scan.nextDouble();
-    
+
     // Final Output
     System.out.println(&quot;Contents: &quot; + arr[0] + &quot; &quot; + arr[1] + &quot; &quot; + arr[2]);
     System.out.println(&quot;Sum: &quot; + (arr[0] + arr[1] + arr[2]));
@@ -197,17 +194,15 @@ public class U6_L1_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l1-activity-two-java">
 <template #title><code v-pre>U6_L1_Activity_Two.java</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-java"><code v-pre class="language-java">import java.util.Scanner;
+
 public class U6_L1_Activity_Two
 {
   public static void main(String[] args)
@@ -224,13 +219,13 @@ public class U6_L1_Activity_Two
     h[7] = h[6] + 8;
     h[8] = h[7] + 9;
     h[9] = h[8] + 10;
-    
+
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     int i = scan.nextInt();
-    
+
     // Final Output
     if (i &gt; 0 &amp;&amp; i &lt;= 10)
       System.out.print(h[i - 1]);
@@ -239,18 +234,17 @@ public class U6_L1_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-2-traversing-an-array">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-traversing-an-array">#</doc-anchor-trigger>
         <span>Lesson 2: Traversing an Array</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l2-activity-one-java">
 <template #title><code v-pre>U6_L2_Activity_One.java</code></template>
@@ -261,7 +255,7 @@ public class U6_L1_Activity_Two
   {
     // Create Variable
     Boolean isNegative = false; /* False if no negatives are found */
-    
+
     // Check Array for Negative Value(s)
     for (int i = 0; i &lt; arr.length; i++)
     {
@@ -271,7 +265,7 @@ public class U6_L1_Activity_Two
         break;
       }
     }
-    
+
     // End
     return isNegative;
   }
@@ -290,7 +284,7 @@ public class runner_U6_L2_Activity_One
 {
   public static void main(String[] args)
   {
-    
+
     Scanner scan = new Scanner(System.in);
     System.out.println(&quot;Enter array length:&quot;);
 
@@ -308,12 +302,9 @@ public class runner_U6_L2_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l2-activity-two-java">
 <template #title><code v-pre>U6_L2_Activity_Two.java</code></template>
@@ -324,7 +315,7 @@ public class runner_U6_L2_Activity_One
   {
     // Create Variable
     int numsDivisible = 0; /* 0 if no divisible values */
-    
+
     // Check Array for Divisible Value(s)
     for (int i = 0; i &lt; arr.length; i++)
     {
@@ -333,7 +324,7 @@ public class runner_U6_L2_Activity_One
         numsDivisible++; /* Adds 1 to total when divisible */
       }
     }
-    
+
     // End
     return numsDivisible;
   }
@@ -370,12 +361,9 @@ public class runner_U6_L2_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l2-activity-three-java">
 <template #title><code v-pre>U6_L2_Activity_Three.java</code></template>
@@ -387,7 +375,7 @@ public class runner_U6_L2_Activity_Two
     // Create Variables
     int divisor = num; /* Divide by provided num */
     int numsDivisible = 0; /* 0 if no divisible values */
-    
+
     // Check Array for Divisible Value(s)
     for (int i = 0; i &lt; arr.length; i++)
     {
@@ -396,7 +384,7 @@ public class runner_U6_L2_Activity_Two
         numsDivisible++;
       }
     }
-    
+
     // End
     return numsDivisible;
   }
@@ -433,18 +421,17 @@ public class runner_U6_L2_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-3-arrays-of-strings">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-arrays-of-strings">#</doc-anchor-trigger>
         <span>Lesson 3: Arrays of Strings</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l3-activity-one-java">
 <template #title><code v-pre>U6_L3_Activity_One.java</code></template>
@@ -455,7 +442,7 @@ public class runner_U6_L2_Activity_Three
   {
     // Create Variable
     String shortestWord = words[1];
-    
+
     // Compare words[i] to shortestWord
     for (int i = 0; i &lt; words.length; i++)
     {
@@ -464,7 +451,7 @@ public class runner_U6_L2_Activity_Three
         shortestWord = words[i]; // Make words[i] the new shortestWord
       }
     }
-    
+
     // End
     return shortestWord;
   }
@@ -498,18 +485,15 @@ public class runner_U6_L3_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l3-activity-two-java">
 <template #title><code v-pre>U6_L3_Activity_Two.java</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-java"><code v-pre class="language-java">public class U6_L3_Activity_Two
-{ 
+{
   public static void removeVowels(String[] words)
   {
     // Create Variable
@@ -567,12 +551,9 @@ public class runner_U6_L3_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l3-activity-three-java">
 <template #title><code v-pre>U6_L3_Activity_Three.java</code></template>
@@ -621,18 +602,17 @@ public class runner_U6_L3_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-4-algorithms-on-arrays">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-4-algorithms-on-arrays">#</doc-anchor-trigger>
         <span>Lesson 4: Algorithms on Arrays</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l4-activity-one-java">
 <template #title><code v-pre>U6_L4_Activity_One.java</code></template>
@@ -705,12 +685,9 @@ public class runner_U6_L4_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l4-activity-two-java">
 <template #title><code v-pre>U6_L4_Activity_Two.java</code></template>
@@ -729,7 +706,7 @@ public class runner_U6_L4_Activity_One
       arr[j] = tempNum[0];
     }
   }
-  
+
   public static void allReverseSwap(int[] arr)
   {
     // Store into temp. array
@@ -788,18 +765,17 @@ public class runner_U6_L4_Activity_Two{
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-5-the-enhanced-for-loop">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-5-the-enhanced-for-loop">#</doc-anchor-trigger>
         <span>Lesson 5: The Enhanced For Loop</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l5-activity-one-java">
 <template #title><code v-pre>U6_L5_Activity_One.java</code></template>
@@ -855,12 +831,9 @@ public class runner_U6_L5_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l5-activity-two-java">
 <template #title><code v-pre>U6_L5_Activity_Two.java</code></template>
@@ -909,12 +882,9 @@ public class runner_U6_L5_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u6-l5-activity-three-java">
 <template #title><code v-pre>U6_L5_Activity_Three.java</code></template>
@@ -965,53 +935,45 @@ public class runner_U6_L5_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="assignment-6-array-statistics">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-6-array-statistics">#</doc-anchor-trigger>
         <span>Assignment 6: Array Statistics</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
-        <span>Coding Activity</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity</template>
 <doc-tabs>
 <doc-tab v-cloak id="studentstatsarray-java">
 <template #title><code v-pre>StudentStatsArray.java</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">public class StudentStatsArray 
+<pre class="language-java"><code v-pre class="language-java">public class StudentStatsArray
 {
-  // Initialize Array
   private final Student[] students;
-  
-  // Add private final variable to hold Students array
-  public StudentStatsArray(Student[] students) 
+
+  // Constructor for students array
+  public StudentStatsArray(Student[] students)
   {
     this.students = students;
   }
 
   // Returns the average gpa of the students
-  public double averageGpa() 
+  public double averageGpa()
   {
-    // Temporary Storage
     double total = 0;
-    // Gather GPAs
     for (Student s: students)
     {
       total += s.getGpa();
     }
-    // End
-    return total / students.length;
+    return total / students.length; // t
   }
 
   // Returns the gpa range of the students
-  public double getGpaRange() 
+  public double getGpaRange()
   {
-    // Temporary Storage
     double maxGpa = students[0].getGpa(), minGpa = students[0].getGpa();
-    // Gather GPAs
     for (Student s: students)
     {
       if (s.getGpa() &gt; maxGpa)
@@ -1023,45 +985,37 @@ public class runner_U6_L5_Activity_Three
         minGpa = s.getGpa();
       }
     }
-    // End
     return maxGpa - minGpa;
   }
 
   // Returns the name of the student that has the longest length
-  public String getLongestName() 
+  public String getLongestName()
   {
-    // Temporary Storage
     String longestName = &quot;&quot;;
-    // Check for longestName
     for (Student s: students)
     {
       if (s.getName().length() &gt; longestName.length())
         longestName = s.getName();
     }
-    // End
     return longestName;
   }
 
   // Returns a count of the number freshman students
-  public int getNumFreshman() 
+  public int getNumFreshman()
   {
-    // Temporary Storage
     int numFreshman = 0;
-    // Check for Freshman
     for (Student s: students)
     {
       if (s.getYear() == 1)
         numFreshman++;
     }
-    // End
     return numFreshman;
   }
 
-  // Returns the index of the first student with a name equal to name. 
+  // Returns the index of the first student with a name equal to name.
   // Returns -1 if not found
-  public int search(String name) 
+  public int search(String name)
   {
-    // Search for Student
     for (int i = 0; i &lt; students.length; i++)
     {
       if (students[i].getName().contains(name))
@@ -1069,33 +1023,27 @@ public class runner_U6_L5_Activity_Three
         return i;
       }
     }
-    // Not Found
     return -1;
   }
 
   // Returns the index of the first student with a gpa greater than or equal to the gpa
   // Returns -1 if not found
-  public int search(double gpa) 
+  public int search(double gpa) // me when
   {
-    // Search for First GPA
     for (int i = 0; i &lt; students.length; i++)
     {
       if (students[i].getGpa() &gt;= gpa)
         return i;
     }
-    // Not Found
     return -1;
   }
 
   // Returns 1 if the students are sorted in ascending order by their gpa; -1 if they
   // are sorted in descending order; 0 otherwise.
-  public int sortStatus() 
+  public int sortStatus()
   {
-    // Temporary Storage
     int sort = 0;
     double prevGpa = 0;
-    
-    // Scan for Ascending Order
     prevGpa = students[0].getGpa();
     for (Student s: students)
     {
@@ -1112,10 +1060,8 @@ public class runner_U6_L5_Activity_Three
       if (sort == 0)
         break;
     }
-    // Check Order
     if (sort == 1)
       return sort;
-    // Scan for Descending Order
     prevGpa = students[0].getGpa();
     for (Student s: students)
     {
@@ -1132,22 +1078,23 @@ public class runner_U6_L5_Activity_Three
       if (sort == 0)
         break;
     }
-    // End
     return sort;
   }
 
-  // Returns the array of students in JSON like format
-  public String toString() 
+  // Returns the array of students in JSON format
+  public String toString()
   {
-    // Temporary Storage
-    String output = &quot;&quot;;
-    // Gather Student Data
-    for (Student s: students)
+    String output = &quot;[\n&quot;;
+    for (Student s : students)
     {
-      output += (&quot;{\n\tname: &quot; + s.getName() + &quot;,\n\tgpa: &quot; + s.getGpa() + &quot;,\n\tyear: &quot; + s.getYear() + &quot;\n},&quot;);
+      output += &quot;{\n&quot;;
+      output += &quot;\tname: &quot; + s.getName() + &quot;,\n&quot;;
+      output += &quot;\tgpa: &quot; + s.getGpa() + &quot;,\n&quot;;
+      output += &quot;\tyear: &quot; + s.getYear() + &quot;\n&quot;;
+      output += &quot;},\n&quot;;
     }
-    // End
-    return &quot;[\n&quot; + output + &quot;\n]&quot;;
+    output += &quot;]&quot;;
+    return output;
   }
 }</code></pre>
 </doc-codeblock></div>
@@ -1235,35 +1182,35 @@ public class runner_StudentStatsArray {
 <pre class="language-java"><code v-pre class="language-java">// Provided code from Project STEM.
 // No modifications were made to this file.
 
-public class Student 
+public class Student
 {
   private String name;
   private double gpa;
   private int year;
 
-  public Student(String name, double gpa, int year) 
+  public Student(String name, double gpa, int year)
   {
     this.name = name;
     this.gpa = gpa;
     this.year = year;
   }
 
-  public String getName() 
-  { 
-    return this.name; 
-  }
-  
-  public double getGpa() 
-  { 
-    return this.gpa; 
-  }
-  
-  public int getYear() 
-  { 
-    return this.year; 
+  public String getName()
+  {
+    return this.name;
   }
 
-  public String toString() 
+  public double getGpa()
+  {
+    return this.gpa;
+  }
+
+  public int getYear()
+  {
+    return this.year;
+  }
+
+  public String toString()
   {
     return &quot;{\n\tname: &quot; + this.name + &quot;,\n\tgpa: &quot; + this.gpa + &quot;,\n\tyear: &quot; + this.year + &quot;\n}&quot;;
   }
@@ -1271,6 +1218,7 @@ public class Student
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 
                                 
                                 <!-- Required only on API pages -->

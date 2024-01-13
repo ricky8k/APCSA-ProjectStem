@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758416530492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758420393565">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,12 +27,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.758416530492" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.758420393565" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758416530492" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758416530492" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.758420393565" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.758420393565" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +163,9 @@
         <span>Lesson 1: Strings and Class Types</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l1-activity-one-java">
 <template #title><code v-pre>U2_L1_Activity_One.java</code></template>
@@ -183,13 +180,13 @@ public class U2_L1_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;What is your name?&quot;);
     String name = scan.nextLine();
     System.out.println(&quot;What is your favorite number?&quot;);
     int number = scan.nextInt();
-    
+
     // Final Output
     System.out.println(&quot;Your name is &quot; + name + &quot; and you like the number &quot; + number + &quot;.&quot;);
   }
@@ -197,12 +194,9 @@ public class U2_L1_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l1-activity-two-java">
 <template #title><code v-pre>U2_L1_Activity_Two.java</code></template>
@@ -217,14 +211,14 @@ public class U2_L1_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Initial Order
     String itemName = &quot;apple pie&quot;;
     System.out.println(&quot;The current order is &quot; + itemName);
     // Change Order
     System.out.println(&quot;I want to eat something else, what do you want to eat?&quot;);
     itemName = scan.nextLine();
-    
+
     // Final Output
     System.out.println(&quot;The order has changed to &quot; + itemName);
   }
@@ -232,18 +226,17 @@ public class U2_L1_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-2-escape-sequences-and-string-concatenation">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-2-escape-sequences-and-string-concatenation">#</doc-anchor-trigger>
         <span>Lesson 2: Escape Sequences and String Concatenation</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-1">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l2-activity-one-java">
 <template #title><code v-pre>U2_L2_Activity_One.java</code></template>
@@ -258,7 +251,7 @@ public class U2_L2_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     /// Type of Item
     System.out.println(&quot;What type of item are you buying?&quot;);
@@ -269,7 +262,7 @@ public class U2_L2_Activity_One
     /// Unit Weight of Item
     System.out.println(&quot;How much does each one weigh?&quot;);
     double unitWeight = scan.nextDouble();
-    
+
     // Final Output
     System.out.println(itemQuantity + &quot; &quot; + itemType + &quot; at &quot; + unitWeight + &quot; pounds each will weigh &quot; + (unitWeight * itemQuantity) + &quot; pounds total&quot;);
   }
@@ -277,17 +270,16 @@ public class U2_L2_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-1">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l2-activity-one-java">
 <template #title><code v-pre>U2_L2_Activity_One.java</code></template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">public class U2_L2_Activity_Two
+<pre class="language-java"><code v-pre class="language-java">/* Lesson 2 Coding Activity Question 2 */
+
+public class U2_L2_Activity_Two
 {
   public static void main(String[] args)
   {
@@ -298,12 +290,9 @@ public class U2_L2_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l2-activity-one-java">
 <template #title><code v-pre>U2_L2_Activity_One.java</code></template>
@@ -323,18 +312,17 @@ public class U2_L2_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-3-string-methods">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-3-string-methods">#</doc-anchor-trigger>
         <span>Lesson 3: String Methods</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-2">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l3-activity-one-java">
 <template #title><code v-pre>U2_L3_Activity_One.java</code></template>
@@ -349,13 +337,13 @@ public class U2_L3_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter a string:&quot;);
     String initStr = scan.nextLine();
     System.out.println(&quot;Enter a number:&quot;);
     int x = scan.nextInt();
-    
+
     // Final Output
     String finalStr = initStr.substring(0, x) + initStr.substring(initStr.length() - x);
     System.out.println(finalStr);
@@ -364,12 +352,9 @@ public class U2_L3_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-2">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l3-activity-two-java">
 <template #title><code v-pre>U2_L3_Activity_Two.java</code></template>
@@ -384,13 +369,13 @@ public class U2_L3_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter a string:&quot;);
     String initStr = scan.nextLine();
     System.out.println(&quot;How many characters would you like to delete at the end?&quot;);
     int delChar = scan.nextInt();
-    
+
     // Final Output
     String finalStr = initStr.substring(0, initStr.length() - delChar);
     System.out.println(finalStr);
@@ -399,12 +384,9 @@ public class U2_L3_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-1">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l3-activity-three-java">
 <template #title><code v-pre>U2_L3_Activity_Three.java</code></template>
@@ -419,7 +401,7 @@ public class U2_L3_Activity_Three
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     /// First Word
     System.out.println(&quot;Enter first word:&quot;);
@@ -427,10 +409,10 @@ public class U2_L3_Activity_Three
     /// Second Word
     System.out.println(&quot;Enter second word:&quot;);
     String w2 = scan.nextLine().toLowerCase();
-    
+
     // Comparing First Letters (ignores dash)
     int wordResult = w1.compareTo(w2);
-    
+
     // Final Output
     System.out.println(&quot;Result: &quot; + wordResult);
   }
@@ -438,12 +420,9 @@ public class U2_L3_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-4">#</doc-anchor-trigger>
-        <span>Coding Activity 4</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-4" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 4</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l3-activity-four-java">
 <template #title><code v-pre>U2_L3_Activity_Four.java</code></template>
@@ -458,11 +437,11 @@ public class U2_L3_Activity_Four
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter a sentence:&quot;);
     String sentence = scan.nextLine();
-    
+
     // Final Output
     System.out.println(sentence.indexOf(&quot; &quot;));
   }
@@ -470,18 +449,17 @@ public class U2_L3_Activity_Four
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-4-classes-and-objects">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-4-classes-and-objects">#</doc-anchor-trigger>
         <span>Lesson 4: Classes and Objects</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-3">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l4-activity-one-java">
 <template #title><code v-pre>U2_L4_Activity_One.java</code></template>
@@ -489,14 +467,14 @@ public class U2_L3_Activity_Four
 <pre class="language-java"><code v-pre class="language-java">/* Lesson 4 Coding Activity Question 1 */
 
 import java.util.Scanner;
- 
+
 public class U2_L4_Activity_One
 {
   public static void main(String[] args)
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     /// Get First String
     System.out.println(&quot;Enter first string&quot;);
@@ -507,7 +485,7 @@ public class U2_L4_Activity_One
     /// Get # of Letters for Each String
     System.out.println(&quot;Enter number of letters from each word&quot;);
     int n = scan.nextInt();
-    
+
     // Final Output
     /// Print Last n Letters of s1 + First n Letters of s2
     System.out.println(s1.substring(s1.length() - n, s1.length()) + s2.substring(0, n));
@@ -516,12 +494,9 @@ public class U2_L4_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-3">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l4-activity-two-java">
 <template #title><code v-pre>U2_L4_Activity_Two.java</code></template>
@@ -532,15 +507,15 @@ import java.util.Scanner;
 
 public class U2_L4_Activity_Two{
   public static void main(String[] args){
-  
+
     // User Input
     Scanner scan = new Scanner(System.in);
     String str1 = scan.nextLine();
     String str2 = str1;
-    
+
     // Final Output
     str1 = str1.toUpperCase();
-    str2 = (str2.substring(0, 1).toUpperCase()) + str2.substring(1, str2.length()); 
+    str2 = (str2.substring(0, 1).toUpperCase()) + str2.substring(1, str2.length());
     System.out.println(str2);
     System.out.println(str1);
   }
@@ -548,18 +523,17 @@ public class U2_L4_Activity_Two{
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-5-using-constructors">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-5-using-constructors">#</doc-anchor-trigger>
         <span>Lesson 5: Using Constructors</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-4">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l5-activity-one-java">
 <template #title><code v-pre>U2_L5_Activity_One.java</code></template>
@@ -584,12 +558,9 @@ public class U2_L5_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-4">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l5-activity-two-java">
 <template #title><code v-pre>U2_L5_Activity_Two.java</code></template>
@@ -605,7 +576,7 @@ public class U2_L5_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Final Output
     /// Parameters for Rectangle 1
     System.out.println(&quot;Type a number for length and width:&quot;);
@@ -617,7 +588,7 @@ public class U2_L5_Activity_Two
     System.out.println(&quot;Type a width:&quot;);
     double s2width= scan.nextDouble();
     Rectangle s2 = new Rectangle(s2length, s2width);
-    
+
     // Final Output
     System.out.println(s1);
     System.out.println(s2);
@@ -626,12 +597,9 @@ public class U2_L5_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-2">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l5-activity-three-java">
 <template #title><code v-pre>U2_L5_Activity_Three.java</code></template>
@@ -647,15 +615,15 @@ public class U2_L5_Activity_Three
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Type a side length:&quot;);
     double sLength = scan.nextDouble();
-    
+
     // Creating Shapes
     RegularPolygon s1 = new RegularPolygon(sLength);
     RegularPolygon s2 = new RegularPolygon(4, sLength);
-    
+
     // Final Output
     System.out.println(s1);
     System.out.println(s2);
@@ -664,18 +632,17 @@ public class U2_L5_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-6-using-methods">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-6-using-methods">#</doc-anchor-trigger>
         <span>Lesson 6: Using Methods</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-5">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l6-activity-one-java">
 <template #title><code v-pre>U2_L6_Activity_One.java</code></template>
@@ -691,13 +658,13 @@ public class U2_L6_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter the radius of the circle:&quot;);
     System.out.print(&quot;&gt; &quot;);
     double r = scan.nextDouble();
     Circle s = new Circle(r);
-    
+
     // Final Output
     System.out.println(&quot;A circle with a radius &quot; + s.getRadius() + &quot; has a circumference of &quot; + s.getCircumference() + &quot; and an area of &quot; + s.getArea());
   }
@@ -705,12 +672,9 @@ public class U2_L6_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-5">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l6-activity-two-java">
 <template #title><code v-pre>U2_L6_Activity_Two.java</code></template>
@@ -726,7 +690,7 @@ public class U2_L6_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     /// Number of Sides
     System.out.println(&quot;Enter number of sides: &quot;);
@@ -736,10 +700,10 @@ public class U2_L6_Activity_Two
     System.out.println(&quot;Enter the side length: &quot;);
     System.out.print(&quot;&gt; &quot;);
     double sLength = scan.nextDouble();
-    
+
     // Calculation
     RegularPolygon polygon = new RegularPolygon(sNum, sLength);
-        
+
     // Final Output
     /// Area with Default sNum
     System.out.println(&quot;Area with &quot; + polygon.getNumSides() + &quot; sides: &quot; + polygon.getArea());
@@ -752,18 +716,17 @@ public class U2_L6_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-7-wrapper-classes">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-7-wrapper-classes">#</doc-anchor-trigger>
         <span>Lesson 7: Wrapper Classes</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-6">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l7-activity-one-java">
 <template #title><code v-pre>U2_L7_Activity_One.java</code></template>
@@ -786,12 +749,9 @@ public class U2_L7_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-6">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l7-activity-two-java">
 <template #title><code v-pre>U2_L7_Activity_Two.java</code></template>
@@ -806,17 +766,17 @@ public class U2_L7_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // Prepare Variables
     Integer x = null;
     Integer y = null;
-    
+
     // User Input
     System.out.println(x + &quot; &quot; + y);
     System.out.println(&quot;Enter values:&quot;);
     x = scan.nextInt();
     y = scan.nextInt();
-    
+
     // Final Output
     Double avg = (((double)(x + y)) / 2);
     System.out.println(&quot;Average of &quot; + x + &quot; and &quot; + y + &quot; is &quot; + avg);
@@ -825,12 +785,9 @@ public class U2_L7_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-3">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l7-activity-three-java">
 <template #title><code v-pre>U2_L7_Activity_Three.java</code></template>
@@ -839,24 +796,24 @@ public class U2_L7_Activity_Two
 
 import java.util.Scanner;
 import shapes.*;
- 
+
 public class U2_L7_Activity_Three
 {
   public static void main(String[] args)
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter number of sides:&quot;);
     Integer sides = scan.nextInt();
     System.out.println(&quot;Enter side length:&quot;);
     Double length = scan.nextDouble();
-    
+
     // Create Shapes
     RegularPolygon p1 = new RegularPolygon(sides, length);
     RegularPolygon p2 = new RegularPolygon(sides + 1, length * 2);
-    
+
     // Final Output
     System.out.println(&quot;The area of a &quot; + p1 + &quot; is: &quot; + p1.getArea());
     System.out.println(&quot;The area of a &quot; + p2 + &quot; is: &quot; + p2.getArea());
@@ -865,18 +822,17 @@ public class U2_L7_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="lesson-8-math-functions">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#lesson-8-math-functions">#</doc-anchor-trigger>
         <span>Lesson 8: Math Functions</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity-1-7">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-1-7">#</doc-anchor-trigger>
-        <span>Coding Activity 1</span>
-    </h3>
-</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="coding-activity-1" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 1</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l8-activity-one-java">
 <template #title><code v-pre>U2_L8_Activity_One.java</code></template>
@@ -892,11 +848,11 @@ public class U2_L8_Activity_One
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter a positive integer:&quot;);
     int n = scan.nextInt();
-    
+
     // Calculation
     System.out.println((int) Math.round((Math.random() * n) + 2));
     System.out.println((int) Math.round((Math.random() * n) + 2));
@@ -906,12 +862,9 @@ public class U2_L8_Activity_One
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-2-7">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-2-7">#</doc-anchor-trigger>
-        <span>Coding Activity 2</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-2" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 2</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l8-activity-two-java">
 <template #title><code v-pre>U2_L8_Activity_Two.java</code></template>
@@ -926,7 +879,7 @@ public class U2_L8_Activity_Two
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     /// Coordinates for x
     System.out.println(&quot;Enter the first x-coordinate:&quot;);
@@ -938,10 +891,10 @@ public class U2_L8_Activity_Two
     double y1 = scan.nextDouble();
     System.out.println(&quot;Enter the second y-coordinate:&quot;);
     double y2 = scan.nextDouble();
-    
+
     // Slope Calculation
     double m = (y2 - y1) / (x2 - x1);
-    
+
     // Final Output
     System.out.println(&quot;Slope: &quot; + m);
   }
@@ -949,12 +902,9 @@ public class U2_L8_Activity_Two
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
-<doc-anchor-target id="coding-activity-3-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity-3-4">#</doc-anchor-trigger>
-        <span>Coding Activity 3</span>
-    </h3>
-</doc-anchor-target>
+   </doc-panel>
+   <doc-panel id="coding-activity-3" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity 3</template>
 <doc-tabs>
 <doc-tab v-cloak id="u2-l8-activity-three-java">
 <template #title><code v-pre>U2_L8_Activity_Three.java</code></template>
@@ -969,17 +919,17 @@ public class U2_L8_Activity_Three
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter two doubles:&quot;);
     System.out.print(&quot;&gt;&quot;);
     Double num1 = scan.nextDouble();
     System.out.print(&quot;&gt;&quot;);
     Double num2 = scan.nextDouble();
-    
+
     // Difference Calculation
     int diff = (int) Math.abs(Math.round(num2 - num1));
-    
+
     // Final Output
     System.out.println(&quot;Difference: &quot; + diff);
   }
@@ -987,18 +937,16 @@ public class U2_L8_Activity_Three
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+   </doc-panel>
+</doc-panels>
 <doc-anchor-target id="assignment-2-control-tower">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#assignment-2-control-tower">#</doc-anchor-trigger>
         <span>Assignment 2: Control Tower</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="coding-activity">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coding-activity">#</doc-anchor-trigger>
-        <span>Coding Activity</span>
-    </h3>
-</doc-anchor-target>
+<doc-panel id="coding-activity" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Coding Activity</template>
 <doc-tabs>
 <doc-tab v-cloak id="assignment2-java">
 <template #title><code v-pre>Assignment2.java</code></template>
@@ -1014,7 +962,7 @@ public class Assignment2
   {
     // Initialize Scanner
     Scanner scan = new Scanner(System.in);
-    
+
     // User Input
     System.out.println(&quot;Enter the details of the third airplane (call-sign, distance, bearing and altitude):&quot;);
     /// Plane3
@@ -1023,7 +971,7 @@ public class Assignment2
     Integer pBear = scan.nextInt(); // Bearing
     Integer pAlti = scan.nextInt(); // Altitude
     System.out.println(&quot;&quot;);
-    
+
     // Creating Planes
     /// Plane1 (AAA01) with dist. 1.0 mi, bearing 0, alti. 0ft
     Airplane plane1 = new Airplane(&quot;AAA01&quot;, 1.0, 0, 0);
@@ -1031,7 +979,7 @@ public class Assignment2
     Airplane plane2 = new Airplane(&quot;AAA02&quot;, 15.8, 128, 30000);
     /// Plane3 (pCsign) with dist. pDist, bearing pBear, alti. pAlti
     Airplane plane3 = new Airplane(pCSign, pDist, pBear, pAlti);
-    
+
     // Initial Run
     /// Plane Positions
     System.out.println(&quot;Initial Positions:&quot;);
@@ -1057,10 +1005,10 @@ public class Assignment2
     int altiDiff3 = (int) Math.abs(plane2.getAlt() - plane3.getAlt()); // Calculate Alti. Between P2 &amp; P3
     System.out.println(&quot;The difference in height between Airplane 2 and Airplane 3 is &quot; + altiDiff3 + &quot; feet.&quot;);
     System.out.println(&quot;&quot;);
-    
+
     // Recalculation
     /// Plane1
-    plane1.move(distDiff3, 65); // Moves plane by init. dist. between P2 &amp; P3; bearing 65 
+    plane1.move(distDiff3, 65); // Moves plane by init. dist. between P2 &amp; P3; bearing 65
     /* Increase Alti. by 3000ft */
     plane1.gainAlt();
     plane1.gainAlt();
@@ -1077,7 +1025,7 @@ public class Assignment2
     plane3.loseAlt();
     plane3.loseAlt();
     plane3.loseAlt();
-    
+
     // New Run
     /// Plane Positions
     System.out.println(&quot;New Positions:&quot;);
@@ -1108,6 +1056,7 @@ public class Assignment2
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
+</doc-panel>
 
                                 
                                 <!-- Required only on API pages -->
