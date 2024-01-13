@@ -13,7 +13,7 @@
 
 This repository contains the source code to various problems on Project Stem. Organized by unit, you will find the necessary activity files to be compiled by the Java environment, as well as runner files provided by Project Stem to test execution (when available).
 
-> **Note**  
+> [!NOTE]
 > The provided source code is intended to work with the 2023 AP CS A course. *These solutions may grow out-of-date as new changes are made to the course every year.*
 
 The user-friendly website front-end [found here](https://ricky8k.github.io/APCSA-ProjectStem/) is built using [Retype](https://retype.com).
