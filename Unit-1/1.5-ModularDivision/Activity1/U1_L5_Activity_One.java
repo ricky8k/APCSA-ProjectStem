@@ -1,4 +1,4 @@
-/* Unit 1 - Lesson 5 - Coding Activity Question 1 */
+/* Lesson 5 - Coding Activity Question 1 */
 
 import java.util.Scanner;
 
